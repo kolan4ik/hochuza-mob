@@ -4767,3 +4767,20 @@
 2014-08-26 16:43:08 unchanged images/icon-s2cf229d574.png
 2014-08-26 16:43:08     error sass/style.scss (Line 10 of sass/_header.scss: Invalid CSS after "  top: 0;": expected "}", was "<<<<<<< HEAD")
 2014-08-26 16:43:08 identical css/style.css 
+2014-08-26 16:49:28 unchanged images/icon-s2cf229d574.png
+2014-08-26 16:49:28     error sass/style.scss (Line 13 of sass/_content.scss: Invalid CSS after "...00% !important;": expected "}", was "<<<<<<< HEAD")
+2014-08-26 16:49:28 overwrite css/style.css 
+2014-08-26 16:50:24 unchanged images/icon-s2cf229d574.png
+2014-08-26 16:50:24     error sass/style.scss (Line 155 of sass/_footer.scss: Invalid CSS after ".icon-user{": expected "}", was "<<<<<<< HEAD")
+2014-08-26 16:50:24 overwrite css/style.css 
+2014-08-26 16:51:13 unchanged images/icon-s2cf229d574.png
+2014-08-26 16:51:14     error sass/style.scss (Line 823 of sass/_footer.scss: Invalid CSS after "  }": expected "}", was "<<<<<<< HEAD")
+2014-08-26 16:51:14 overwrite css/style.css 
+2014-08-26 16:51:27 unchanged images/icon-s2cf229d574.png
+2014-08-26 16:51:28     error sass/style.scss (Line 822 of sass/_footer.scss: Invalid CSS after "  }": expected "}", was "<<<<<<< HEAD")
+2014-08-26 16:51:28 overwrite css/style.css 
+2014-08-26 16:52:02 unchanged images/icon-s2cf229d574.png
+2014-08-26 16:52:03     error sass/style.scss (Line 821 of sass/_footer.scss: Invalid CSS after "  }": expected "}", was "<<<<<<< HEAD")
+2014-08-26 16:52:03 overwrite css/style.css 
+2014-08-26 16:52:36 unchanged images/icon-s2cf229d574.png
+2014-08-26 16:52:37 overwrite css/style.css 
