@@ -4729,6 +4729,7 @@
 2014-08-26 15:51:58 overwrite css/style.css 
 2014-08-26 15:52:04 unchanged images/icon-s2cf229d574.png
 2014-08-26 15:52:05 overwrite css/style.css 
+<<<<<<< HEAD
 2014-08-26 16:09:26 unchanged images/icon-s2cf229d574.png
 2014-08-26 16:09:26 overwrite css/style.css 
 2014-08-26 16:13:27 unchanged images/icon-s2cf229d574.png
@@ -4755,3 +4756,14 @@
 2014-08-26 16:23:59 overwrite css/style.css 
 2014-08-26 16:24:12 unchanged images/icon-s2cf229d574.png
 2014-08-26 16:24:13 overwrite css/style.css 
+=======
+>>>>>>> 4048a3cec0df0e466f971e4d011d08a619709962
+2014-08-26 16:43:07 unchanged images/icon-s2cf229d574.png
+2014-08-26 16:43:07     error sass/style.scss (Line 10 of sass/_header.scss: Invalid CSS after "  top: 0;": expected "}", was "<<<<<<< HEAD")
+2014-08-26 16:43:07 overwrite css/style.css 
+2014-08-26 16:43:07 unchanged images/icon-s2cf229d574.png
+2014-08-26 16:43:07     error sass/style.scss (Line 10 of sass/_header.scss: Invalid CSS after "  top: 0;": expected "}", was "<<<<<<< HEAD")
+2014-08-26 16:43:07 identical css/style.css 
+2014-08-26 16:43:08 unchanged images/icon-s2cf229d574.png
+2014-08-26 16:43:08     error sass/style.scss (Line 10 of sass/_header.scss: Invalid CSS after "  top: 0;": expected "}", was "<<<<<<< HEAD")
+2014-08-26 16:43:08 identical css/style.css 

@@ -14,7 +14,11 @@ $(document).ready(function(){
         $('#mydate').glDatePicker();
     }
     if ($.fn.stepper !== undefined ) {
+<<<<<<< HEAD
         $(".quantity-product input").stepper();
+=======
+        $("input[type=number]").stepper();
+>>>>>>> 4048a3cec0df0e466f971e4d011d08a619709962
     }
     if ($.fn.fancybox !== undefined ) {
         $('.fancybox-thumb').fancybox({
@@ -119,6 +123,12 @@ $(document).ready(function(){
         $(this).parent().removeClass('show');
         return false
     });
+<<<<<<< HEAD
+=======
+    //$('.icon-plus').bind('click', function(){
+    //
+    //});
+>>>>>>> 4048a3cec0df0e466f971e4d011d08a619709962
     $("body").on('click', '.icon-plus' , function(event) {
         if(!$(this).parent().hasClass('clone-box')){
             $(this).parent().clone().insertAfter($(this).parent())
@@ -153,6 +163,7 @@ $(document).ready(function(){
         $('.man').removeClass('man');
     }
 
+<<<<<<< HEAD
     if (!('placeholder' in test)) {
         $('input').each(function () {
             if ($(this).attr('placeholder') != "" && this.value == "") {
@@ -174,6 +185,9 @@ $(document).ready(function(){
             }
         });
     }
+=======
+    
+>>>>>>> 4048a3cec0df0e466f971e4d011d08a619709962
 
 });
 $( window ).resize(function() {

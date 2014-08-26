@@ -152,7 +152,11 @@
   }
 }
 .icon-user{
+<<<<<<< HEAD
   font-size: 29px;
+=======
+  font-size: 26px;
+>>>>>>> 4048a3cec0df0e466f971e4d011d08a619709962
   color: #b7b6b7;
   margin: 0 12px 0 0;
   position: relative;
@@ -372,7 +376,11 @@
 @media screen and (max-width: 805px) {
   header{
     .wrapper{
+<<<<<<< HEAD
       padding: 0 0 0 10px;
+=======
+      padding: 0 5px;
+>>>>>>> 4048a3cec0df0e466f971e4d011d08a619709962
     }
   }
   .small-text,
@@ -626,7 +634,15 @@
   }
 }
 @media screen and (max-width: 460px) {
+<<<<<<< HEAD
 
+=======
+  .form-item{
+    input[type="text"], input[type="password"], input[type="email"]{
+      width: 100% !important;
+    }
+  }
+>>>>>>> 4048a3cec0df0e466f971e4d011d08a619709962
 }
 @media screen and (max-width: 560px) {
   .header{
@@ -814,11 +830,16 @@
       height: 60px;
     }
   }
+<<<<<<< HEAD
   .form-item{
     input[type="text"], input[type="password"], input[type="email"]{
       width: 100% !important;
     }
   }  .box-right,
+=======
+
+  .box-right,
+>>>>>>> 4048a3cec0df0e466f971e4d011d08a619709962
   .box-right-button{
     float: none;
     width: 100%;
