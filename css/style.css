@@ -2394,9 +2394,9 @@ input[type="number"]:after {
 
 .size-popup {
   position: fixed;
-  overflow-y: scroll;
+  overflow-y: auto;
   top: 0;
-  left: 0;
+  right: 0;
   display: none;
   width: 100%;
   height: 100%;
@@ -2831,6 +2831,15 @@ input[type="number"]:after {
   .content-menu li a {
     padding: 0 102px 7px;
   }
+
+  .contact-user__in p {
+    margin: 0 auto;
+  }
+
+  .photo-user,
+  .photo-user img {
+    width: 285px;
+  }
 }
 @media screen and (max-width: 684px) {
   .content-menu {
@@ -2856,6 +2865,8 @@ input[type="number"]:after {
   .contact-user__in {
     text-align: center;
     float: none !important;
+    overflow: hidden;
+    width: 100%;
   }
   .contact-user__in p {
     margin: 0 auto;
@@ -2868,6 +2879,11 @@ input[type="number"]:after {
 
   .preview-gallery .icon-trash-o {
     left: 95%;
+  }
+
+  .pass-popup, .popup {
+    padding-top: 15px;
+    padding-bottom: 20px;
   }
 }
 @media screen and (max-width: 678px) {
@@ -2909,10 +2925,6 @@ input[type="number"]:after {
   .preview-gallery a, .add-photo {
     margin: 0 0 0 6.3%;
     width: 17.6%;
-  }
-
-  .datepicker p {
-    padding: 0 0 0 46px;
   }
 
   .content-menu {
@@ -2967,6 +2979,9 @@ input[type="number"]:after {
   }
   .content-menu li a {
     width: 100%;
+  }
+  .content-menu .preview-gallery a, .content-menu .add-photo {
+    width: 16.5%;
   }
 }
 @media screen and (max-width: 570px) {
@@ -3256,11 +3271,16 @@ input[type="number"]:after {
 }
 @media screen and (max-width: 480px) {
   .open-more-text {
-    width: 45%;
+    width: 64%;
   }
 }
 @media screen and (max-width: 460px) {
   .form-item input[type="text"], .form-item input[type="password"], .form-item input[type="email"] {
     width: 100% !important;
+  }
+}
+@media screen and (max-width: 440px) {
+  .open-more-text {
+    width: 60%;
   }
 }

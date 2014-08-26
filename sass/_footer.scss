@@ -72,9 +72,10 @@
 
 .size-popup{
   position: fixed;
-  overflow-y: scroll;
+  overflow-y: auto;
   top: 0;
-  left: 0;
+
+  right: 0;
   display: none;
   width: 100%;
   height: 100%;
@@ -468,6 +469,15 @@
       padding: 0 102px 7px;
     }
   }
+  .contact-user__in{
+    p{
+      margin: 0 auto;
+    }
+  }
+  .photo-user,
+  .photo-user img{
+    width: 285px;
+  }
 }
 @media screen and (max-width: 684px) {
   .content-menu {
@@ -489,6 +499,8 @@
   .contact-user__in{
     text-align: center;
     float: none !important;
+    overflow: hidden;
+    width: 100%;
     p{
       margin: 0 auto;
     }
@@ -500,7 +512,10 @@
   .preview-gallery .icon-trash-o{
     left: 95%;
   }
-
+  .pass-popup, .popup{
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
 }
 @media screen and (max-width: 678px) {
   .small-text,
@@ -538,9 +553,6 @@
   .preview-gallery a, .add-photo {
     margin: 0 0 0 6.3%;
     width: 17.6%;
-  }
-  .datepicker p {
-    padding: 0 0 0 46px;
   }
   .content-menu {
     margin-left: -30px;
@@ -591,6 +603,9 @@
       a{
         width: 100%;
       }
+    }
+    .preview-gallery a, .add-photo{
+      width: 16.5%;
     }
   }
 }
@@ -863,7 +878,7 @@
 
 @media screen and (max-width: 480px) {
   .open-more-text{
-    width: 45%;
+    width: 64%;
   }
 }
 @media screen and (max-width: 460px) {
@@ -873,6 +888,10 @@
     }
   }
 }
+@media screen and (max-width: 440px) {
+  .open-more-text{
+    width: 60%;
+  }}
 
 
 
