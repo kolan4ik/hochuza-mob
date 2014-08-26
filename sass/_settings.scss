@@ -1,0 +1,205 @@
+* {
+  outline: none;
+}
+
+@import "h5bp";
+@include h5bp-helpers;
+@include h5bp-chromeframe;
+//@include h5bp-media;
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/pie";
+@import "compass/css3/images";
+@import "compass/typography";
+@import "blankwork";
+@import "compass/layout/grid-background";
+@import "compass/css3/box-sizing";
+@import "compass/utilities/sprites/base";
+
+$icon-spacing: 17px;
+@import "icon/*.png";
+
+
+$pie-behavior: url(PIE.htc);
+@mixin spr-m($map,$ico) {
+  background: sprite($map,$ico) no-repeat;
+  @include sprite-dimensions($map,$ico) ;
+}
+@mixin spr($map,$ico) {
+  @include images-sprite($ico);
+  height: images-sprite-height($ico);
+  width: images-sprite-width($ico);
+}
+@mixin grad($grad) {
+  @include background-image($grad);
+  -pie-background: $grad;
+  background: -ms-#{$grad};
+}
+@mixin h-line-height($h) {
+  height: $h;
+  line-height: $h;
+}
+
+$h2Color: #54a44b;
+@mixin myTextbox($height: 43px, $lheight: 43px, $width: 304px) {
+  height: $height;
+  line-height: $lheight;
+  @include grad(linear-gradient(top, #e1e1e1, #e4e4e4));
+  @include pie;
+  @include border-radius(50px);
+  @include box-shadow(0 2px 1px #ffffff, 0 2px 2px #c9c9c9 inset);
+  border: none;
+  color: #333;
+  font-size: 12px;
+  padding: 0 17px;
+  width: $width;
+  text-shadow: 0 1px 0 #fff;
+  output: none !important;
+
+  &::-webkit-input-placeholder {
+    color: #333;
+    line-height: $lheight;
+  }
+  &:-moz-placeholder {
+    color: #333;
+  }
+  &.placeholder {
+    color: #333;
+  }
+}
+
+@mixin italicBold {
+  font-family: Georgia;
+  font-style: italic;
+  color: #aaa;
+  text-shadow: 0 1px 0 #fff;
+}
+
+@mixin btn {
+  font-family: 'Franklin Gothic Medium' !important;
+  font-style: normal;
+  text-shadow: 0px 1px 0px #fff;
+  height: 31px;
+  line-height: 31px;
+  text-decoration: none;
+  color: #333 !important;
+}
+
+a{
+  color: #c19100;
+  &:hover{
+    color: #e5ab00;
+    text-decoration: underline;
+  }
+}
+
+.db{
+  display: block;
+}
+.dib{
+  display: inline-block;
+}
+.fl_l{
+  float: left !important;
+}
+.fl_r{
+  float: right !important;
+}
+.center{
+  overflow: hidden;
+}
+.tac{
+  text-align: center;
+}
+
+.nav{
+  list-style: none;
+}
+.nav_hor{
+  @extend .nav;
+  @include horizontal-list;
+}
+strong{
+  font-weight: bold;
+}
+.form-item{
+  overflow: hidden;
+  margin: 0 0 18px;
+
+  label{
+    color: #9f9f9f;
+    font-family: "HelveticaNeueCyr";
+    font-size: 16px;
+    float: left;
+    width: 147px;
+    text-align: left;
+    line-height: 40px;
+    padding: 0 0 0 50px;
+  }
+  input{
+    width: 312px;
+    height: 42px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    float: left;
+    margin: 0 0 5px;
+    padding: 0 0 0 14px;
+    @include box-sizing(border-box);
+  }
+  span{
+    color: #9f9f9f !important;
+    font-size: 12px !important;
+    margin: 0 !important;
+    display: block !important;
+    padding: 0 0 0 197px;
+    text-align: left;
+    clear: both;
+  }
+}
+.login-form-item{
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 15px;
+  margin: 0 0 15px;
+  label{
+    float: left;
+  }
+  input{
+    float: left;
+    margin: 0 0 0 -43px;
+    color: #a3a3a3;
+    font-family: "HelveticaNeueCyr";
+    font-size: 16px;
+    width: 357px;
+    height: 42px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    padding: 0 0 0 54px;
+    @include box-sizing(border-box);
+  }
+  .icon-mail{
+    margin-top: 11px;
+    font-size: 22px;
+    color: #aaaaaa;
+  }
+  .icon-mobile{
+    font-size: 22px;
+    margin-top: 11px;
+    color: #aaaaaa;
+  }
+}
+form{
+  text-align: center;
+
+}
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+  box-shadow: none !important;
+}
+input.error{
+  border: 1px solid #ff0000;
+  color: red;
+}
+
+ 
