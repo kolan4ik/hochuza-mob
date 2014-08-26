@@ -1,0 +1,230 @@
+.header {
+  width: 100%;
+  @include opacity(.95);
+  background-color: #ab4d3f;
+  @include box-sizing(border-box);
+  padding: 48px 0 39px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+
+}
+.logo{
+  background: url("../images/logo.png") no-repeat;
+  display: block;
+  margin: 0 auto;
+  width: 257px;
+  height: 40px;
+  background-size: contain;
+
+}
+.link-cabinet{
+  color: #fff;
+  font-family: "HelveticaNeueCyr";
+  font-size: 12px;
+  float: right;
+  margin: 0 -14px 0 0;
+  line-height: 38px;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover{
+    color: #f0e2e1;
+    text-decoration: none;
+  }
+  i{
+    width: 38px;
+    height: 38px;
+    @include border-radius(19px);
+    @include background-clip(padding-box);
+    background-color: #fff;
+    color: #d5614f;
+    font-size: 30px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 51px;
+    margin: 0 18px 0 0;
+
+  }
+}
+
+.nav-menu{
+  li{
+    border-bottom: 1px solid #aa4d3e;
+    &:first-child{
+      border-top: 1px solid #aa4d3e;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+    height: 61px;
+    font-family: "helveticaneuecyrlight";
+    font-size: 18px;
+    text-transform: uppercase;
+    display:block;
+    padding: 0 0 0 22px;
+    line-height: 61px;
+    width: 100%;
+    @include box-sizing(border-box);
+    i{
+      color: #2c1612;
+      font-size: 23px;
+      position: relative;
+      top: 4px;
+      margin: 0 22px 0 0;
+    }
+    &:hover{
+      background: #b05649;
+      i{
+        color: #ffffff;
+      }
+    }
+  }
+}
+.menu-btn{
+  background: none;
+  display: inline-block;
+  float: left;
+  width: 67px;
+  height: 37px;
+  border: 1px solid #ffffff;
+  color: #fff;
+  font-family: "HelveticaNeueCyr";
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 !important;
+  cursor: pointer;
+}
+.pushy-active .site-overlay{
+    display: block;
+}
+
+.pushy{
+  background: none repeat scroll 0 0 #df5f4b;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 329px;
+  z-index: 9999;
+  transition: transform 0.4s cubic-bezier(0.16, 0.68, 0.43, 0.99) 0s;
+
+}
+.pushy-left {
+  transform: translate3d(-329px, 0px, 0px);
+}
+.pushy-open {
+  transform: translate3d(0px, 0px, 0px);
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+  content: "\f007";
+}
+.icon-trash-o:before {
+  content: "\f014";
+}
+.icon-home:before {
+  content: "\e600";
+}
+.icon-file:before {
+  content: "\e601";
+}
+.icon-location:before {
+  content: "\e604";
+}
+.icon-calendar:before {
+  content: "\e60a";
+}
+.icon-mobile:before {
+  content: "\e605";
+}
+.icon-user2:before {
+  content: "\e606";
+}
+.icon-key:before {
+  content: "\e607";
+}
+.icon-lock:before {
+  content: "\e608";
+}
+.icon-unlocked:before {
+  content: "\e609";
+}
+.icon-cog:before {
+  content: "\e602";
+}
+.icon-pie:before {
+  content: "\e603";
+}
+.icon-upload:before {
+  content: "\e60b";
+}
+.icon-close:before {
+  content: "\e60c";
+}
+.icon-checkmark:before {
+  content: "\e60d";
+}
+.icon-minus:before {
+  content: "\e60e";
+}
+.icon-plus:before {
+  content: "\e60f";
+}
+.icon-googleplus:before {
+  content: "\e610";
+}
+.icon-facebook:before {
+  content: "\e611";
+}
+.icon-instagram:before {
+  content: "\e612";
+}
+.icon-pinterest:before {
+  content: "\e613";
+}
+.icon-out:before {
+  content: "\e614";
+}
+.icon-search:before {
+  content: "\e615";
+}
+.icon-mail:before {
+  content: "\e616";
+}
+.icon-pencil:before {
+  content: "\e61c";
+}
+.icon-cart:before {
+  content: "\e617";
+}
+.icon-arrow-left:before {
+  content: "\e618";
+}
+.icon-arrow-down:before {
+  content: "\e619";
+}
+.icon-arrow-up:before {
+  content: "\e61a";
+}
+.icon-arrow-right:before {
+  content: "\e61b";
+}

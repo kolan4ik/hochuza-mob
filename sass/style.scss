@@ -1,0 +1,167 @@
+
+@import "blankwork";
+@import "settings";
+html{
+  height: 100%;
+}
+body {
+  font-family: "HelveticaNeueCyr";
+  height: 100%;
+  min-height: 100%;
+  display: table;
+  width: 100%;
+  position: relative;
+  background: #f3f3f3;
+}
+.wrapper{
+  max-width: 1036px;
+  width: 100%;
+  margin: 0 auto ;
+  position: relative;
+  z-index: 5;
+  @include clearfix;
+}
+@font-face {
+  font-family: 'Veles';
+  src: url('../css/fonts/veles-bold.0.9.2-webfont.eot');
+  src: url('../css/fonts/veles-bold.0.9.2-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../css/fonts/veles-bold.0.9.2-webfont.woff') format('woff'),
+  url('../css/fonts/veles-bold.0.9.2-webfont.ttf') format('truetype'),
+  url('../css/fonts/veles-bold.0.9.2-webfont.svg#velesbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../css/fonts/helveticaneuecyr-bold-webfont.eot');
+  src: url('../css/fonts/helveticaneuecyr-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../css/fonts/helveticaneuecyr-bold-webfont.woff') format('woff'),
+  url('../css/fonts/helveticaneuecyr-bold-webfont.ttf') format('truetype'),
+  url('../css/fonts/helveticaneuecyr-bold-webfont.svg#helveticaneuecyrbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'Veles';
+  src: url('../css/fonts/veles-regular.0.5-webfont.eot');
+  src: url('../css/fonts/veles-regular.0.5-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../css/fonts/veles-regular.0.5-webfont.woff') format('woff'),
+  url('../css/fonts/veles-regular.0.5-webfont.ttf') format('truetype'),
+  url('../css/fonts/veles-regular.0.5-webfont.svg#velesregular-uk') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../css/fonts/helveticaneuecyr-roman-webfont.eot');
+  src: url('../css/fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../css/fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
+  url('../css/fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype'),
+  url('../css/fonts/helveticaneuecyr-roman-webfont.svg#helveticaneuecyrroman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'helveticaneuecyrlight';
+  src: url('../css/fonts/helveticaneuecyr-light-webfont.eot');
+  src: url('../css/fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../css/fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+  url('../css/fonts/helveticaneuecyr-light-webfont.ttf') format('truetype'),
+  url('../css/fonts/helveticaneuecyr-light-webfont.svg#helveticaneuecyrlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'icomoon';
+  src:url('../css/fonts/icomoon.eot?kc63vh');
+  src:url('../css/fonts/icomoon.eot?#iefixkc63vh') format('embedded-opentype'),
+  url('../css/fonts/icomoon.woff?kc63vh') format('woff'),
+  url('../css/fonts/icomoon.ttf?kc63vh') format('truetype'),
+  url('../css/fonts/icomoon.svg?kc63vh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.btn{
+  @include border-radius(2px);
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  font-family: "HelveticaNeueCyr";
+  font-size: 18px;
+  @include box-shadow(inset 0 -3px 0 rgba(0,0,0,.21));
+  max-width: 205px;
+  @include box-sizing(border-box);
+  text-align: center;
+  &:hover{
+    box-shadow: none !important;
+  }
+  &.disabled{
+    cursor: default;
+    background-color: #a9a9a9 !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn-red{
+  cursor: pointer;
+  padding: 0 61px;
+  height: 63px;
+  background-color: #df5f4b;
+}
+.btn-green{
+  padding: 0 48px;
+  height: 63px;
+  background-color: #00ad9d;
+}
+h2{
+  color: #00ad9d;
+  font-family: "Veles";
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 45px;
+  text-align: center;
+
+}
+h3{
+  color: #d5614f;
+  font-family: "Veles";
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 45px;
+
+}
+h4{
+  color: #00ad9d;
+  font-family: "Veles";
+  font-size: 22px;
+  font-weight: bold;
+  display: inline-block;
+  float: left;
+  line-height: 52px;
+  margin: 4px 89px 0 4px;
+}
+
+
+/***************************************************/
+/*      header
+/***************************************************/
+@import "header";
+
+/***************************************************/
+/*      content
+/***************************************************/
+@import "content";
+
+/***************************************************/
+/*      footer
+/***************************************************/
+@import "footer";
+
+
