@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    var $hText = $('.orders-text p').outerHeight();
+    var $hText = $('.orders-text p').outerHeight(),
+        test = document.createElement('input');
     $('.orders-text > p').height(139);
     if ($.fn.checkBox !== undefined ) {
         $('.checkbox-item').checkBox();
@@ -31,7 +32,10 @@ $(document).ready(function(){
             }
         });
     }
-
+    $('.bt-dropdown-option').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    });
     $('.checkBox label').on('click',function(){
         $(this).siblings('div.bt-checkbox').children('a').click();
     });
@@ -128,7 +132,7 @@ $(document).ready(function(){
         else{
             $(this).parent().remove();
         }
-    })
+    });
     $('.icon-pencil').on('click', function(){
         $(this).parents('div.contact-user__in').find('input').removeAttr('readonly');
         $(this).parents('div.contact-user__in').addClass('chenche');

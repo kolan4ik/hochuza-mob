@@ -11,7 +11,6 @@
   width: 100% !important;
   height: 100% !important;
   min-height: 700px !important;
-  min-height: 100% !important;
   overflow: hidden;
 }
 .container{
@@ -355,8 +354,6 @@
   }
   .icon-mobile{
     position: relative;
-    top: 2px;
-    font-size: 24px;
     top: 0px;
     font-size: 21px;
     color: #aaaaaa;
@@ -382,7 +379,6 @@
     display: none !important;
   }
   .icon-mail{
-    margin-top: 8px;
     font-size: 24px;
     margin-top: 11px;
   }
@@ -670,7 +666,6 @@
     }
   }
   .bt-dropdown{
-    //float: left;
     position: relative;
     z-index: 5;
     border: 1px solid transparent;
@@ -757,6 +752,15 @@
     }
   }
 
+
+}
+.bt-dropdown-option{
+  &.active{
+    background: #cacaca;
+    a{
+      color: #fff;
+    }
+  }
 }
 .bt-dropdown-options{
   position: absolute;
@@ -1301,10 +1305,8 @@ input[type="number"]{
   display: inline-block;
 }
 .more-text{
-  //display: none;
   padding: 0 0 2px;
   overflow: hidden;
-
 }
 .icon-cart{
   font-size: 20px;

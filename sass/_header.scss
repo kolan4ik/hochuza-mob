@@ -23,7 +23,7 @@
   font-family: "HelveticaNeueCyr";
   font-size: 12px;
   float: right;
-  margin: 0 -14px 0 0;
+  margin: 0;
   line-height: 38px;
   text-decoration: none;
   text-transform: uppercase;
@@ -45,7 +45,6 @@
     vertical-align: bottom;
     line-height: 51px;
     margin: 0 18px 0 0;
-
   }
 }
 
@@ -128,8 +127,6 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
