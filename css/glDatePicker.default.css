@@ -2,7 +2,6 @@
 	position: relative;
     left: 0;
     top: 0 !important;
-    overflow: hidden;
     padding: 4px 0 0;
 }
 .gldp-default .core {
@@ -17,7 +16,6 @@
     height: 28px !important;
 	padding: 0;
 	margin: 0;
-	font-size: 14px;
 	text-align: center;
 	cursor: pointer;
 	color: #00ae9d;
@@ -149,6 +147,8 @@
     height: 16px;
     display: block;
     margin: 0 0 0 29px;
+    z-index: 10;
+    position: relative;
 }
 .next-arrow{
     color: transparent;
@@ -157,6 +157,8 @@
     height: 16px;
     display: block;
     margin: 0 0 0 -16px;
+    z-index: 10;
+    position: relative;
 }
 .gldp-el{
     display: none;

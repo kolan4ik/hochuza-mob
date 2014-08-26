@@ -117,7 +117,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-.icon-sprite, .fatal-icon, .add-new-photo, .preview-product p:after, .select-box, .prev-arrow, .next-arrow, .title-more, .title-more.active, .stepper-arrow.up, .stepper-arrow.down, .update-icon, .tagsinput button, .tag a, .open-more-text, .back, .close-popup {
+.icon-sprite, .fatal-icon, .preview-product p:after, .select-box, .prev-arrow, .next-arrow, .title-more, .title-more.active, .stepper-arrow.up, .stepper-arrow.down, .update-icon, .tagsinput button, .tag a, .open-more-text, .back, .close-popup {
   background: url('../images/icon-s2cf229d574.png') no-repeat;
 }
 
@@ -241,7 +241,7 @@ strong {
 }
 .login-form-item input {
   float: left;
-  margin: 0 0 0 -43px;
+  margin: 0 0 0 -46px;
   color: #a3a3a3;
   font-family: "HelveticaNeueCyr";
   font-size: 16px;
@@ -272,10 +272,17 @@ form {
 input[type="text"],
 input[type="password"],
 input[type="email"] {
-  box-shadow: none !important;
+  -webkit-appearance: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-appearance: none;
 }
-
-input.error {
+input[type="text"].error,
+input[type="password"].error,
+input[type="email"].error {
   border: 1px solid #ff0000;
   color: red;
 }
@@ -437,14 +444,17 @@ h4 {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
   opacity: 0.95;
   background-color: #ab4d3f;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   padding: 48px 0 39px;
   position: absolute;
   left: 0;
   top: 0;
   overflow: hidden;
+}
+.header .wrapper {
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -1027,19 +1037,29 @@ h4 {
   height: 100%;
   background: rgba(0, 0, 0, 0.75);
   text-align: center;
-  padding: 220px 91px 0;
+  padding: 220px 107px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .add-new-photo {
-  background-position: 0 -598px;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #FFFFFF;
+  display: inline-block;
+  float: left;
   width: 26px;
   height: 28px;
-  display: inline-block;
-  margin: 0 22px 0 0;
-  float: left;
+  font-size: 26px;
+  margin: 1px 0 0;
   opacity: 0.7;
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
@@ -1049,6 +1069,25 @@ h4 {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  cursor: pointer;
+  position: relative;
+}
+.add-new-photo:before {
+  content: "\e614";
+}
+.add-new-photo i {
+  font-size: 30px !important;
+  color: #fff !important;
+}
+.add-new-photo:hover {
+  opacity: 1;
+}
+.add-new-photo input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .add-new-photo input {
   font-size: 0;
@@ -1231,8 +1270,10 @@ h4 {
 }
 
 .remove-photo {
+  text-align: right;
   float: right;
-  margin: -4px 0 0 !important;
+  margin: -2px 0 0 -10px !important;
+  padding: 0;
   background: none;
   border: none;
   box-shadow: none;
@@ -1471,14 +1512,21 @@ h4 {
   border: 1px solid #ebebeb;
 }
 .select-box .bt-dropdown-options {
-  padding: 0 0 0 20px;
   top: 40px;
   display: none;
   left: -1px;
-  width: 210px;
+  width: 230px;
+  overflow: hidden;
 }
-.select-box .bt-dropdown-options li {
-  padding: 0 0 10px;
+.select-box .bt-dropdown-options li a {
+  padding: 5px 0 5px 20px;
+  display: inline-block;
+  width: 100%;
+  line-height: 20px;
+}
+.select-box .bt-dropdown-options li a:hover {
+  color: #fff;
+  background: #cacaca;
 }
 
 .select {
@@ -1540,18 +1588,14 @@ h4 {
   display: inline-block;
   width: 100%;
 }
-.select-categories .bt-dropdown-option:hover {
-  background: #cacaca;
-}
 .select-categories .bt-dropdown-option:hover a {
   color: #fff;
-}
-
-.bt-dropdown-option.active {
   background: #cacaca;
 }
+
 .bt-dropdown-option.active a {
   color: #fff;
+  background: #cacaca;
 }
 
 .bt-dropdown-options {
@@ -1876,29 +1920,35 @@ input[type="number"]:after {
 
 #tags_1_tagsinput {
   width: 341px !important;
-  height: 53px !important;
+  height: auto !important;
   border: 1px solid #ebebeb;
   background-color: #fff;
-  padding: 13px 0 0 19px;
+  padding: 13px 44px 7px 13px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-align: left;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .tag {
   overflow: hidden;
+  display: inline-block;
+  float: left;
 }
 .tag span {
   float: left;
   height: 24px;
   background-color: #f9f9f9;
   padding: 0 0 0 7px;
-  display: inline-block;
   color: #959595;
   font-family: "HelveticaNeueCyr-Light";
   font-size: 13px;
   line-height: 24px;
+  margin: 0 0 5px;
 }
 .tag a {
   float: left;
@@ -1922,7 +1972,7 @@ input[type="number"]:after {
   border: none;
   width: 59px !important;
   background: transparent;
-  height: 24px;
+  height: 24px !important;
   padding: 0 0 0 7px;
   display: inline-block;
   color: #959595 !important;
@@ -2075,8 +2125,9 @@ input[type="number"]:after {
   padding: 0 0 5px;
   margin: -1px 0 0;
 }
-.orders-text p {
+.orders-text p, .orders-text a {
   line-height: 21px;
+  text-decoration: none;
   overflow: hidden !important;
   color: #696a6a;
   font-family: "HelveticaNeueCyr";
@@ -2343,6 +2394,7 @@ input[type="number"]:after {
 
 .size-popup {
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   display: none;
@@ -2575,19 +2627,6 @@ input[type="number"]:after {
   }
 }
 @media screen and (max-width: 899px) {
-  .recover-password, .pass-popup,
-  .login-form,
-  .box-right,
-  .box-right-button,
-  .orders-page,
-  .product-info,
-  .profile-user,
-  .popup,
-  .profile-user {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-  }
-
   .small-text,
   .choice-product textarea {
     width: 73.5%;
@@ -2851,14 +2890,11 @@ input[type="number"]:after {
 @media screen and (max-width: 640px) {
   .logo {
     position: relative;
-    left: -20px;
+    left: 5px;
   }
 
   .big-search input[type="text"] {
     margin-bottom: 15px !important;
-  }
-  .big-search:after {
-    display: none;
   }
 
   .small-text,
@@ -2949,14 +2985,9 @@ input[type="number"]:after {
     width: 190px;
   }
 }
-@media screen and (max-width: 460px) {
-  .form-item input[type="text"], .form-item input[type="password"], .form-item input[type="email"] {
-    width: 100% !important;
-  }
-}
 @media screen and (max-width: 560px) {
   .header {
-    padding: 48px 0 16px;
+    padding: 35px 0 16px;
   }
 
   .logo {
@@ -2969,6 +3000,10 @@ input[type="number"]:after {
     margin: 0 0px 0 0;
   }
 
+  .close-popup {
+    right: 0;
+  }
+
   .big-search {
     padding-left: 5px;
     padding-right: 5px;
@@ -2979,9 +3014,6 @@ input[type="number"]:after {
     margin-bottom: 15px;
     float: none;
   }
-  .big-search:after {
-    display: none;
-  }
 
   .cash {
     text-align: center;
@@ -2991,26 +3023,13 @@ input[type="number"]:after {
     margin: 15px 13px 0 22px;
   }
 
-  .recover-password, .pass-popup,
-  .login-form,
-  .box-right,
-  .box-right-button,
-  .orders-page,
-  .product-info,
-  .profile-user,
-  .popup,
-  .profile-user {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
   .contact-user p {
     display: inline-block;
     width: auto;
-    min-width: 400px;
+    min-width: 296px;
   }
   .contact-user p .icon-plus {
-    right: 30px;
+    right: 9px;
   }
 
   .contact-user__in {
@@ -3219,10 +3238,6 @@ input[type="number"]:after {
     height: 70px;
   }
 
-  .big-search:after {
-    display: none;
-  }
-
   .preview-gallery {
     height: 72px;
   }
@@ -3237,5 +3252,15 @@ input[type="number"]:after {
 
   .footer-nav-menu {
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .open-more-text {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .form-item input[type="text"], .form-item input[type="password"], .form-item input[type="email"] {
+    width: 100% !important;
   }
 }

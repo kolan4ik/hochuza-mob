@@ -2,12 +2,15 @@
   width: 100%;
   @include opacity(.95);
   background-color: #ab4d3f;
-  @include box-sizing(border-box);
   padding: 48px 0 39px;
   position: absolute;
   left: 0;
   top: 0;
   overflow: hidden;
+  .wrapper{
+    padding: 0 10px;
+    @include box-sizing(border-box);
+  }
 }
 .logo{
   background: url("../images/logo.png") no-repeat;

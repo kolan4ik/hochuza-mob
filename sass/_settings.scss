@@ -166,7 +166,7 @@ strong{
   }
   input{
     float: left;
-    margin: 0 0 0 -43px;
+    margin: 0 0 0 -46px;
     color: #a3a3a3;
     font-family: "HelveticaNeueCyr";
     font-size: 16px;
@@ -195,11 +195,17 @@ form{
 input[type="text"],
 input[type="password"],
 input[type="email"]{
-  box-shadow: none !important;
-}
-input.error{
+  -webkit-appearance: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  &.error{
   border: 1px solid #ff0000;
   color: red;
+}
 }
 
  

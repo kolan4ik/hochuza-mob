@@ -72,6 +72,7 @@
 
 .size-popup{
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   display: none;
@@ -279,17 +280,6 @@
   }
 }
 @media screen and (max-width: 899px) {
-  .recover-password,
-  .login-form,
-  .box-right,
-  .box-right-button,
-  .orders-page,
-  .product-info,
-  .popup,
-  .profile-user{
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-  }
   .small-text,
   .choice-product textarea{
     width: 73.5%;
@@ -531,14 +521,11 @@
 @media screen and (max-width: 640px) {
   .logo{
     position: relative;
-    left: -20px;
+    left: 5px;
   }
   .big-search{
     input[type="text"]{
       margin-bottom: 15px !important;
-    }
-    &:after {
-      display: none;
     }
   }
   .small-text,
@@ -622,16 +609,9 @@
     }
   }
 }
-@media screen and (max-width: 460px) {
-  .form-item{
-    input[type="text"], input[type="password"], input[type="email"]{
-      width: 100% !important;
-    }
-  }
-}
 @media screen and (max-width: 560px) {
   .header{
-    padding: 48px 0 16px;
+    padding: 35px 0 16px;
   }
   .logo{
     width: 162px;
@@ -641,7 +621,9 @@
     font-size: 0;
     margin: 0 0px 0 0;
   }
-
+  .close-popup{
+    right: 0;
+  }
   .big-search{
     padding-left: 5px;
     padding-right: 5px;
@@ -651,9 +633,6 @@
       margin-bottom: 15px;
       float: none;
     }
-    &:after{
-      display: none;
-    }
   }
   .cash{
     text-align: center;
@@ -662,23 +641,12 @@
       margin: 15px 13px 0 22px;
     }
   }
-  .recover-password,
-  .login-form,
-  .box-right,
-  .box-right-button,
-  .orders-page,
-  .product-info,
-  .popup,
-  .profile-user{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
   .contact-user p{
     display: inline-block;
     width: auto;
-    min-width: 400px;
+    min-width: 296px;
     .icon-plus{
-      right: 30px;
+      right: 9px;
     }
   }
   .contact-user__in{
@@ -722,7 +690,6 @@
     float: none;
 
   }
-
   .content-tel{
     margin: 0 auto 15px;
     float: none;
@@ -776,11 +743,11 @@
       float: none;
       padding: 10px 0 0;
     }
-   a{
-     width: 100%;
-     padding: 0 !important;
-     text-align: center;
-   }
+    a{
+      width: 100%;
+      padding: 0 !important;
+      text-align: center;
+    }
   }
   .tagsinput{
     float: left;
@@ -820,18 +787,17 @@
       width: 100% !important;
     }
   }  .box-right,
+     .box-right,
+     .box-right-button{
+       float: none;
+       width: 100%;
+       text-align: center;
+       margin: 0 0 15px;
+       &.btn-group{
+         padding: 14px 30px !important;
+       }
 
-  .box-right,
-  .box-right-button{
-    float: none;
-    width: 100%;
-    text-align: center;
-    margin: 0 0 15px;
-    &.btn-group{
-      padding: 14px 30px !important;
-    }
-
-  }
+     }
   .box-right p,
   .box-right-button p{
     margin: 0 0 10px;
@@ -879,11 +845,7 @@
 
   }
   .add-photo{}
-  .big-search{
-    &:after{
-      display: none;
-    }
-  }
+
   .preview-gallery{
     height: 72px;
     .icon-trash-o{
@@ -896,6 +858,19 @@
   }
   .footer-nav-menu{
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .open-more-text{
+    width: 45%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .form-item{
+    input[type="text"], input[type="password"], input[type="email"]{
+      width: 100% !important;
+    }
   }
 }
 

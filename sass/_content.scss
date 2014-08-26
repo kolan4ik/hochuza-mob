@@ -267,19 +267,59 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.75);
   text-align: center;
-  padding: 220px 91px 0;
+  padding: 220px 107px 0;
   @include box-sizing(border-box);
 }
 .add-new-photo{
-  @include icon-sprite(add-new-photo-icon);
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #FFFFFF;
+  display: inline-block;
+  float: left;
   width: 26px;
   height: 28px;
-  display: inline-block;
-  margin:0 22px 0 0;
-  float: left;
+  font-size: 26px;
+  margin: 1px 0 0;
   opacity: 0.7;
   @include transition-property(opacity);
   @include transition-duration(0.5s);
+  cursor: pointer;
+  position: relative;
+  &:before{
+    content: "\e614";
+  }
+  i{
+    font-size: 30px !important;
+    color: #fff !important;
+  }
+  &:hover{
+    opacity: 1;
+  }
+  input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  //@include icon-sprite(add-new-photo-icon);
+  //
+  //
+  //
+  //margin:0 22px 0 0;
+  //float: left;
+  //opacity: 0.7;
+  //@include transition-property(opacity);
+  //@include transition-duration(0.5s);
   input{
     font-size: 0;
     color: transparent;
@@ -454,9 +494,10 @@
 
 }
 .remove-photo{
-  //@extend .icon-trash-o;
+  text-align: right;
   float: right;
-  margin: -4px 0 0 !important;
+  margin: -2px 0 0 -10px !important;
+  padding: 0;
   background: none;
   border: none;
   box-shadow: none;
@@ -678,13 +719,22 @@
 
   }
   .bt-dropdown-options{
-    padding: 0 0 0 20px;
     top: 40px;
     display: none;
     left: -1px;
-    width: 210px;
+    width: 230px;
+    overflow: hidden;
     li{
-      padding: 0 0 10px;
+      a{
+        padding: 5px 0 5px 20px;
+        display: inline-block;
+        width: 100%;
+        line-height: 20px;
+        &:hover{
+          color: #fff;
+          background: #cacaca;
+        }
+      }
     }
   }
 }
@@ -730,6 +780,7 @@
     padding: 0 0 0 26px;
     @include box-sizing(border-box);
 
+
   }
   .bt-dropdown-options{
     top: 50px;
@@ -745,9 +796,9 @@
   }
   .bt-dropdown-option{
     &:hover{
-      background: #cacaca;
       a{
         color: #fff;
+        background: #cacaca;
       }
     }
   }
@@ -756,9 +807,10 @@
 }
 .bt-dropdown-option{
   &.active{
-    background: #cacaca;
     a{
       color: #fff;
+      background: #cacaca;
+
     }
   }
 }
@@ -1069,26 +1121,30 @@ input[type="number"]{
 }
 #tags_1_tagsinput{
   width: 341px !important;
-  height: 53px !important;
+  height: auto !important;
   border: 1px solid #ebebeb;
   background-color: #fff;
-  padding: 13px 0 0 19px;
+  padding: 13px 44px 7px 13px;
   @include box-sizing(border-box);
   text-align: left;
-
+  overflow: hidden;
+  @include box-sizing(border-box);
 }
 .tag{
   overflow: hidden;
+  display: inline-block;
+  float: left;
   span{
     float: left;
     height: 24px;
     background-color: #f9f9f9;
     padding: 0 0 0 7px;
-    display: inline-block;
+    //display: inline-block;
     color: #959595;
     font-family: "HelveticaNeueCyr-Light";
     font-size: 13px;
     line-height: 24px;
+    margin: 0 0 5px;
 
   }
   a{
@@ -1112,7 +1168,7 @@ input[type="number"]{
     border: none;
     width: 59px !important;
     background: transparent;
-    height: 24px;
+    height: 24px !important;
     padding: 0 0 0 7px;
     display: inline-block;
     color: #959595 !important;
@@ -1259,8 +1315,9 @@ input[type="number"]{
   overflow: hidden;
   padding: 0 0 5px;
   margin: -1px 0 0;
-  p{
+  p, a{
     line-height: 21px;
+    text-decoration: none;
     overflow: hidden !important;
     color: #696a6a;
     font-family: "HelveticaNeueCyr";

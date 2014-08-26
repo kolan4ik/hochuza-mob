@@ -178,7 +178,6 @@ $(document).ready(function(){
             }
         });
     }
-
 });
 $( window ).resize(function() {
     if($('.content').height() < 800){
