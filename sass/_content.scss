@@ -309,17 +309,6 @@
     width: 100%;
     height: 100%;
   }
-
-
-  //@include icon-sprite(add-new-photo-icon);
-  //
-  //
-  //
-  //margin:0 22px 0 0;
-  //float: left;
-  //opacity: 0.7;
-  //@include transition-property(opacity);
-  //@include transition-duration(0.5s);
   input{
     font-size: 0;
     color: transparent;
@@ -333,33 +322,6 @@
   }
   &:hover{
     opacity: 1;
-  }
-}
-.icon-plus{
-  width: 40px;
-  height: 40px;
-  border-left: 1px solid #f4f4f4;
-  background: #fcfcfc;
-  @include box-sizing(border-box);
-  color: #00ae9d;
-  font-size: 16px;
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  padding: 13px 0 0 15px;
-  display: none !important;
-  cursor: pointer;
-}
-.chenche{
-  .icon-plus{
-    display: block !important;
-  }
-}
-.clone-box{
-  .icon-plus{
-    &:before {
-      content: "\e60e";
-    }
   }
 }
 .contact-user{
@@ -425,7 +387,34 @@
   .icon-pencil{
     position: absolute !important;
   }
+  .icon-plus{
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid #f4f4f4;
+    background: #fcfcfc;
+    @include box-sizing(border-box);
+    color: #00ae9d;
+    font-size: 16px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    padding: 13px 0 0 15px;
+    display: none !important;
+    cursor: pointer;
+  }
 
+}
+.chenche{
+  .icon-plus{
+    display: block !important;
+  }
+}
+.clone-box{
+  .icon-plus{
+    &:before {
+      content: "\e60e";
+    }
+  }
 }
 .icon-pencil{
   width: 40px !important;
@@ -640,6 +629,11 @@
     position: absolute;
     left: 95%;
     top: 1px;
+    color: #00ae9d;
+    font-size: 22px;
+    margin: 40px 3px 0 0;
+    float: right;
+    cursor: pointer;
   }
 }
 .add-photo{
@@ -665,19 +659,14 @@
     cursor: pointer;
   }
 }
-.icon-trash-o{
-  color: #00ae9d;
-  font-size: 22px;
-  margin: 40px 3px 0 0;
-  float: right;
-  cursor: pointer;
-}
-.select-box{
+.select-box-in{
   @include box-sizing(border-box);
   padding: 0 0 0 43px;
   margin: 7px 0 0;
   float: left;
+  display: inline-block;
   @include icon-sprite(select-icon);
+  text-align: left;
   select{
     display: none;
   }
@@ -690,9 +679,10 @@
   }
   .bt-dropdown-toggle{
     position: relative;
-    padding: 10px 10px 10px 20px;
+    padding: 10px 30px 10px 20px;
     display: inline-block;
-    width: 200px !important;
+    width: auto !important;
+    min-width: 200px;
     &:after{
       content: "";
       width: 0;
@@ -722,7 +712,7 @@
     top: 40px;
     display: none;
     left: -1px;
-    width: 230px;
+    width: 100%;
     overflow: hidden;
     li{
       a{
@@ -730,6 +720,7 @@
         display: inline-block;
         width: 100%;
         line-height: 20px;
+        @include box-sizing(border-box);
         &:hover{
           color: #fff;
           background: #cacaca;
@@ -1139,7 +1130,6 @@ input[type="number"]{
     height: 24px;
     background-color: #f9f9f9;
     padding: 0 0 0 7px;
-    //display: inline-block;
     color: #959595;
     font-family: "HelveticaNeueCyr-Light";
     font-size: 13px;
