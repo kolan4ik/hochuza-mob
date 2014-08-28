@@ -269,24 +269,6 @@ form {
   text-align: center;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-  -webkit-appearance: none;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  -webkit-appearance: none;
-}
-input[type="text"].error,
-input[type="password"].error,
-input[type="email"].error {
-  border: 1px solid #ff0000;
-  color: red;
-}
-
 html {
   height: 100%;
 }
@@ -380,11 +362,12 @@ body {
   -webkit-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.21);
   -moz-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.21);
   box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.21);
-  max-width: 205px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
+  display: inline-block;
+  padding: 0 32px;
 }
 .btn:hover {
   box-shadow: none !important;
@@ -393,6 +376,18 @@ body {
   cursor: default;
   background-color: #a9a9a9 !important;
   box-shadow: none !important;
+}
+
+.btn-big {
+  width: 271px;
+}
+
+.btn_w175 {
+  width: 175px;
+}
+
+.btn_w205 {
+  width: 205px;
 }
 
 .btn-red {
@@ -541,7 +536,6 @@ h4 {
   background: none;
   display: inline-block;
   float: left;
-  width: 67px;
   height: 37px;
   border: 1px solid #ffffff;
   color: #fff;
@@ -550,7 +544,10 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0 !important;
+  padding: 0 12px !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   cursor: pointer;
 }
 
@@ -877,10 +874,6 @@ h4 {
   box-sizing: border-box;
   text-align: center;
 }
-.login-form .btn {
-  width: 271px;
-  max-width: 271px;
-}
 .login-form .checkBox {
   margin: 21px 0 14px;
 }
@@ -1186,8 +1179,8 @@ h4 {
   font-size: 16px;
   position: absolute;
   top: 1px;
-  right: 1px;
-  padding: 13px 0 0 15px;
+  right: 4px;
+  padding: 13px 0 0 12px;
   display: none !important;
   cursor: pointer;
 }
@@ -2072,7 +2065,7 @@ input[type="number"]:after {
 }
 .box-right i, .box-right-button i {
   float: left;
-  margin: -3px 10px 0 0;
+  margin: -3px 23px 0 -6px;
 }
 .box-right ul, .box-right-button ul {
   border-bottom: 1px solid #cbcbcb;
@@ -2113,7 +2106,7 @@ input[type="number"]:after {
 
 .box-right-button button {
   width: 128px;
-  padding: 0;
+  padding: 0 14px;
   font-size: 12px;
   text-transform: uppercase;
   margin: 18px 0 0;
@@ -2565,6 +2558,24 @@ input[type="number"]:after {
 }
 .lt-ie9 .orders-icon {
   margin: -3px 10px -5px 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  -webkit-appearance: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-appearance: none;
+}
+input[type="text"].error,
+input[type="password"].error,
+input[type="email"].error {
+  border: 1px solid #ff0000;
+  color: red;
 }
 
 @media screen and (max-width: 1065px) {

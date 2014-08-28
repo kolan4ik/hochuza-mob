@@ -96,9 +96,10 @@ body {
   font-family: "HelveticaNeueCyr";
   font-size: 18px;
   @include box-shadow(inset 0 -3px 0 rgba(0,0,0,.21));
-  max-width: 205px;
   @include box-sizing(border-box);
   text-align: center;
+  display: inline-block;
+  padding: 0 32px;
   &:hover{
     box-shadow: none !important;
   }
@@ -108,7 +109,15 @@ body {
     box-shadow: none !important;
   }
 }
-
+.btn-big{
+  width: 271px;
+}
+.btn_w175{
+  width: 175px;
+}
+.btn_w205{
+  width: 205px;
+}
 .btn-red{
   cursor: pointer;
   padding: 0 61px;

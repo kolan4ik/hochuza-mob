@@ -89,7 +89,6 @@
   background: none;
   display: inline-block;
   float: left;
-  width: 67px;
   height: 37px;
   border: 1px solid #ffffff;
   color: #fff;
@@ -98,7 +97,8 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0 !important;
+  padding: 0 12px!important;
+  @include box-sizing(border-box);
   cursor: pointer;
 }
 .pushy-active .site-overlay{

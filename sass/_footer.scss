@@ -69,7 +69,6 @@
   width: 142px;
   height: 207px;
 }
-
 .size-popup{
   position: fixed;
   overflow-y: auto;
@@ -213,7 +212,6 @@
     opacity: 1;
   }
 }
-
 .lt-ie9{
   .open-more-text{
     background: none;
@@ -222,6 +220,25 @@
       margin: -3px 10px -5px 0;
   }
 }
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+  -webkit-appearance: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  &.error{
+    border: 1px solid #ff0000;
+    color: red;
+  }
+}
+
+
+
 @media screen and (max-width: 1065px) {
   .link-cabinet{
     margin-right: 10px;

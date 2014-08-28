@@ -124,10 +124,6 @@
   padding: 32px 69px 0;
   @include box-sizing(border-box);
   text-align: center;
-  .btn{
-    width: 271px;
-    max-width: 271px;
-  }
   .checkBox{
     margin: 21px 0 14px;
   }
@@ -397,8 +393,8 @@
     font-size: 16px;
     position: absolute;
     top: 1px;
-    right: 1px;
-    padding: 13px 0 0 15px;
+    right: 4px;
+    padding: 13px 0 0 12px;
     display: none !important;
     cursor: pointer;
   }
@@ -1250,7 +1246,7 @@ input[type="number"]{
   }
   i{
     float: left;
-    margin: -3px 10px 0 0;
+    margin: -3px 23px 0 -6px;
   }
   ul{
     border-bottom: 1px solid #cbcbcb;
@@ -1292,7 +1288,7 @@ input[type="number"]{
 .box-right-button{
   button{
     width: 128px;
-    padding: 0;
+    padding: 0 14px;
     font-size: 12px;
     text-transform: uppercase;
     margin: 18px 0 0 ;
