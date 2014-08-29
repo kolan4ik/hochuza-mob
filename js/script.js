@@ -12,7 +12,16 @@ $(document).ready(function(){
         $('.select').dropDown({useNativeMobile: true});
     }
     if ($.fn.glDatePicker !== undefined ) {
-        $('#mydate').glDatePicker();
+        $( ".mydate" ).each(function( index ) {
+            $(this).glDatePicker({
+                onClick: function(target, cell, date, data) {
+                    target.val(date.getDate() + '/' +
+                        date.getMonth() + '/' +
+                        date.getFullYear());
+                }
+            });
+        });
+
     }
     if ($.fn.stepper !== undefined ) {
         $(".quantity-product input").stepper();
@@ -143,6 +152,20 @@ $(document).ready(function(){
         $('.contact-user__in ').removeClass('chenche');
         $(this).siblings().addClass('disabled');
     });
+
+    $('.accordion-title').on('click', function(){
+        if($(this).hasClass('active')){
+            $(this).removeClass('active');
+            $(this).siblings().slideUp();
+        }
+        else{
+            $('.accordion-title').removeClass('active')
+            $(this).addClass('active');
+            $('.accordion-in').slideUp();
+            $(this).siblings().slideDown();
+        }
+    })
+
     if($('.content').height() < 800){
         $('.man').addClass('slippers');
         $('.man').removeClass('man');
@@ -178,6 +201,8 @@ $(document).ready(function(){
             }
         });
     }
+
+
 });
 $( window ).resize(function() {
     if($('.content').height() < 800){

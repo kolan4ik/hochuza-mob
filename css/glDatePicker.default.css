@@ -1,8 +1,9 @@
 .gldp-default {
-	position: relative;
-    left: 0;
-    top: 0 !important;
+    position: absolute;
     padding: 4px 0 0;
+    width: 226px !important;
+    top: 0 !important;
+
 }
 .gldp-default .core {
 	box-sizing: border-box;
@@ -160,6 +161,8 @@
     z-index: 10;
     position: relative;
 }
-.gldp-el{
-    display: none;
+
+
+.datepicker {
+
 }

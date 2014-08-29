@@ -3,9 +3,9 @@
 <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>
 <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>
+<!--[if IE 9]>
 <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->
+<!--[if gt IE 9]><!-->
 <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
@@ -16,8 +16,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/glDatePicker.default.css">
+    <script>document.write('<script src="http://'
+            + (location.host || 'localhost').split(':')[0]
+            + ':35729/livereload.js"></'
+            + 'script>')</script>
 </head>
-<body >
+<body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div class="container">
     <nav class="pushy pushy-left nav-menu">
@@ -46,15 +50,70 @@
             </article>
         </header>
         <div class="content">
-            <article class="recover-password">
-                <h3>Восстановление пароля</h3>
-                <i class="fatal-icon"></i>
-                <p><strong>Пользователь не найден!</strong> <br/> Пожалуйста, убедитесь в правильности данных.</p>
-                <span>Укажите <strong>телефон</strong> или <strong>e-mail</strong>, <br/> который Вы использовали для входа на сайт:</span>
-                <form action="">
-                    <input type="text" class="error" placeholder="Телефон или e-mail"/>
-                    <button type="submit" class="btn btn-red disabled open-popup btn_w175">далее</button>
-                </form>
+            <article class="wrapper balance-page">
+                <h2>Немного статистики...</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <p class="accordion-title">
+                            <i class="icon-arrow-up"></i>
+                            <i class="icon-arrow-down"></i>
+                            Популярные товары
+                        </p>
+                        <div class="accordion-in">
+                            <ul>
+                                <li class="active"><a href="#">день</a></li>
+                                <li><a href="#">неделя</a></li>
+                                <li><a href="#">месяц</a></li>
+                                <li><a href="#">год</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-title">
+                            <i class="icon-arrow-up"></i>
+                            <i class="icon-arrow-down"></i>
+                            график заявок на сайте
+                        </p>
+                        <div class="accordion-in">
+                            <ul>
+                                <li class="active"><a href="#">день</a></li>
+                                <li><a href="#">неделя</a></li>
+                                <li><a href="#">месяц</a></li>
+                                <li><a href="#">год</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-title">
+                            <i class="icon-arrow-up"></i>
+                            <i class="icon-arrow-down"></i>
+                            купленные заявки
+                        </p>
+                        <div class="accordion-in">
+                            <ul>
+                                <li class="active"><a href="#">день</a></li>
+                                <li><a href="#">неделя</a></li>
+                                <li><a href="#">месяц</a></li>
+                                <li><a href="#">год</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item ">
+                        <p class="accordion-title active">
+                            <i class="icon-arrow-up"></i>
+                            <i class="icon-arrow-down"></i>
+                            работа менеджеров
+                        </p>
+                        <div style="display: block" class="accordion-in">
+                            <ul>
+                                <li class="active"><a href="#">день</a></li>
+                                <li><a href="#">неделя</a></li>
+                                <li><a href="#">месяц</a></li>
+                                <li><a href="#">год</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </article>
         </div>
         <footer class="footer">
@@ -75,29 +134,8 @@
             </article>
         </footer>
     </div>
-    <div class="size-popup">
-        <div class="popup-wrap">
-            <div class="popup__in">
-                <div class="popup">
-                    <p class="title-popup">Это та страница, к которой необходимо восстановить доступ?</p>
-                    <div class="info-user">
-                        <img src="images/photo-user.jpg" alt=""/>
-                        <div class="info-user__in">
-                            <p><i class="icon-user"></i>Имя Фамилия</p>
-                            <span><i class="icon-mail"></i>welcome@bigdig.com.ua</span>
-                        </div>
-                        <div class="btn-group">
-                            <button class="back"></button>
-                            <button class="btn btn-green">Верно!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="popup-overlay"></div>
-    </div>
-
 </div>
+
 
 
 <script src="js/libs/jquery-1.9.1.min.js"></script>

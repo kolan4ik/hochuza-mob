@@ -54,7 +54,7 @@
 }
 .footer-img{
   position: absolute;
-  left: -21%;
+  left: -58%;
   bottom: 22px;
 }
 .slippers{
@@ -271,6 +271,30 @@ input[type="email"]{
     padding-right: 4% !important;
   }
 }
+@media screen and (max-width: 988px) {
+  .search-table{
+    margin: 0 auto;
+    float: none;
+  }
+  .data-filter {
+      text-align: center;
+  }
+  .pagination-settings{
+    width: 100%;
+    margin-bottom: 15px;
+    float: none;
+  }
+  .calc-item{
+    width: 100%;
+    float: none;
+    clear: both;
+    margin:0 0 32px;
+    overflow: hidden;
+  }
+  .pagination{
+    margin: -9px 0 15px 0;
+  }
+}
 @media screen and (max-width: 966px) {
   .recover-password,
   .login-form,
@@ -283,6 +307,10 @@ input[type="email"]{
     padding-left: 2% !important;
     padding-right: 2% !important;
   }
+  thead td:first-child{
+    width: 147px;
+  }
+
 }
 @media screen and (max-width: 926px) {
   .recover-password,
@@ -296,6 +324,10 @@ input[type="email"]{
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
+  thead td:first-child{
+    width: 180px;
+  }
+
 }
 @media screen and (max-width: 899px) {
   .small-text,
@@ -368,16 +400,31 @@ input[type="email"]{
   }
 }
 @media screen and (max-width: 819px) {
+  .balance-page{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .content-menu {
     li a{
       padding: 0 155px 7px;
     }
   }
+  thead td:first-child{
+    width: 150px;
+  }
+  table td:nth-child(3), table td:nth-child(4){
+    width: 155px;
+    padding-right: 0;
+  }
+  thead a{
+    font-size: 17px;
+  }
 }
 @media screen and (max-width: 805px) {
   header{
+    padding: 0;
     .wrapper{
-      padding: 0 10px !important;
+      padding: 0 10px;
     }
   }
   .small-text,
@@ -424,6 +471,13 @@ input[type="email"]{
   .preview-gallery .icon-trash-o{
     left: 90%;
   }
+  .balance-info{
+    text-align: center;
+    button{
+      float: none !important;
+    }
+  }
+
 
 }
 @media screen and (max-width: 782px) {
@@ -458,6 +512,12 @@ input[type="email"]{
   .content-menu li a{
     padding: 0 125px 7px;
   }
+  .managing-menu{
+    margin-left: -24px;
+    a{
+      width: 158px;
+    }
+  }
 }
 @media screen and (max-width: 753px) {
   .preview-gallery a, .add-photo{
@@ -468,6 +528,16 @@ input[type="email"]{
   }
   .open-more-text{
     width: 77%;
+  }
+  .add-cash{
+    margin: 0;
+    clear: right;
+    &:after{
+      display: none !important;
+    }
+  }
+  .history-table{
+
   }
 }
 @media screen and (max-width: 719px) {
@@ -492,6 +562,14 @@ input[type="email"]{
   .photo-user,
   .photo-user img{
     width: 285px;
+  }
+  .history-table{
+    margin: 26px -24px 24px;
+  }
+  .managing-menu {
+    li {
+      margin: 0 0 0 50px;
+    }
   }
 }
 @media screen and (max-width: 684px) {
@@ -560,6 +638,12 @@ input[type="email"]{
       padding: 0 91px 7px;
     }
   }
+  thead td{
+    font-size: 17px;
+    &:first-child{
+      width: 221px;
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -613,6 +697,13 @@ input[type="email"]{
   .nav-menu{
     a{
       padding: 0 0 0 12px;
+    }
+  }
+  .managing-menu {
+    li {
+      float: none;
+      display: block;
+      margin: 0;
     }
   }
 }
@@ -891,6 +982,48 @@ input[type="email"]{
 }
 
 @media screen and (max-width: 480px) {
+  .header{
+    height: 72px;
+    padding: 0;
+    .wrapper{
+      padding: 20px 48px 24px 24px;
+    }
+  }
+  .nav-menu{
+    a{
+      font-size: 16px;
+    }
+  }
+  .scroller{
+    min-height: 100% !important;
+  }
+
+
+
+  .content{
+    padding: 72px 24px 43px;
+  }
+  .big-search{
+    padding: 26px 24px;
+  }
+
+
+  .footer-nav-menu{
+    display: none !important;
+  }
+  .social-menu{
+    li{
+      margin: 0 0 0 70px;
+    }
+  }
+
+
+
+
+
+
+
+
   .open-more-text{
     width: 64%;
   }

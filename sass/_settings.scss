@@ -86,9 +86,7 @@ $h2Color: #54a44b;
 }
 
 a{
-  color: #c19100;
   &:hover{
-    color: #e5ab00;
     text-decoration: underline;
   }
 }
@@ -125,7 +123,6 @@ strong{
 .form-item{
   overflow: hidden;
   margin: 0 0 18px;
-
   label{
     color: #9f9f9f;
     font-family: "HelveticaNeueCyr";
@@ -154,6 +151,7 @@ strong{
     padding: 0 0 0 197px;
     text-align: left;
     clear: both;
+
   }
 }
 .login-form-item{
@@ -191,4 +189,72 @@ strong{
 form{
   text-align: center;
 
+}
+table{
+  width: 100%;
+  a{
+    color: #656565;
+    font-family: "HelveticaNeueCyr";
+    font-size: 14px;
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+
+  }
+  span{
+    font-size: 24px;
+    font-family: "helveticaneuecyrlight";
+  }
+  td{
+    padding: 13px 8px 15px 0;
+    color: #656565;
+    font-family: "HelveticaNeueCyr";
+    font-size: 14px;
+    width: 457px;
+    @include box-sizing(border-box);
+    &:first-child{
+      padding: 13px 0 16px 35px;
+      width: 140px;
+    }
+    &:nth-child(3),
+    &:nth-child(4){
+      text-align: right;
+      width: 146px;
+    }
+  }
+}
+thead{
+  border-bottom: 2px solid #afafaf;
+  display: inline-block;
+  width: 100%;
+  td{
+    text-transform: uppercase;
+    padding: 0 8px 5px 0;
+    &:first-child{
+      padding:  0 0 5px 35px;
+      width: 138px;
+    }
+  }
+  a{
+    color: #9f9f9f;
+    font-family: "HelveticaNeueCyr";
+    font-size: 18px;
+    text-decoration: none;
+    &:hover, &:hover i{
+      color: #00ae9d;
+    }
+  }
+}
+tbody{
+  border-bottom: 2px solid #afafaf;
+  @include box-sizing(border-box);
+  tr{
+    &:nth-child(even){
+      background: #eeeeee;
+    }
+  }
+  td{
+    height: 52px;
+  }
 }
