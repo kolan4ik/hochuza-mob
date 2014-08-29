@@ -159,12 +159,21 @@ strong{
   overflow: hidden;
   padding: 0 15px;
   margin: 0 0 15px;
+  @include box-sizing(border-box);
   label{
     float: left;
+    width: 42px;
+    height: 42px;
+    @include box-sizing(border-box);
+    border: 1px solid #ebebeb;
+    background: #fefefe;
+    position: relative;
+    z-index: 4;
+    cursor: pointer;
   }
   input{
     float: left;
-    margin: 0 0 0 -46px;
+    margin: 0 0 0 -42px;
     color: #a3a3a3;
     font-family: "HelveticaNeueCyr";
     font-size: 16px;
@@ -184,6 +193,24 @@ strong{
     font-size: 22px;
     margin-top: 11px;
     color: #aaaaaa;
+  }
+  span{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    float: left;
+    clear: left;
+    color: #b4b4b4;
+    font-family: "HelveticaNeueCyr";
+    font-size: 12px;
+    margin: 6px 0 0;
+    padding: 0 0 0 43px;
+    @include clearfix;
+  }
+  i{
+    margin: 8px 0 0 !important;
+    float: none;
+    width: auto;
   }
 }
 form{
@@ -250,11 +277,12 @@ tbody{
   border-bottom: 2px solid #afafaf;
   @include box-sizing(border-box);
   tr{
+   height: 52px;
     &:nth-child(even){
       background: #eeeeee;
     }
   }
   td{
-    height: 52px;
+    min-height: 52px;
   }
 }

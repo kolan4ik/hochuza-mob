@@ -3,9 +3,9 @@
 <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>
 <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 9]>
+<!--[if IE 8]>
 <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!-->
+<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/glDatePicker.default.css">
-    <script>document.write('<script src="http://'
-            + (location.host || 'localhost').split(':')[0]
-            + ':35729/livereload.js"></'
-            + 'script>')</script>
+        <script>document.write('<script src="http://'
+                        + (location.host || 'localhost').split(':')[0]
+                        + ':35729/livereload.js"></'
+                        + 'script>')</script>
 </head>
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
@@ -50,70 +50,39 @@
             </article>
         </header>
         <div class="content">
-            <article class="wrapper balance-page">
-                <h2>Немного статистики...</h2>
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <p class="accordion-title">
-                            <i class="icon-arrow-up"></i>
-                            <i class="icon-arrow-down"></i>
-                            Популярные товары
-                        </p>
-                        <div class="accordion-in">
-                            <ul>
-                                <li class="active"><a href="#">день</a></li>
-                                <li><a href="#">неделя</a></li>
-                                <li><a href="#">месяц</a></li>
-                                <li><a href="#">год</a></li>
-                            </ul>
+            <article class="login-form">
+                <h2>Регистрация</h2>
+                <form class="" action="">
+                    <div class="login-form-item">
+                        <label for="name"><i class="icon-user"></i></label>
+                        <input id="name" type="text" placeholder="Как Вас зовут?"/>
+                    </div>
+                    <div class="login-form-item error-forms">
+                        <label for="email"><i class="icon-mail"></i></label>
+                        <input class="error" id="email" type="email" placeholder="e-mail"/>
+                        <span>Неверный формат адреса!</span>
+                    </div>
+                    <div class="login-form-item">
+                        <label for="tel"><i class="icon-mobile"></i></label>
+                        <input id="tel" type="text" placeholder="Номер телефона"/>
+                        <span class="deposit-balance">На этот номер будет отправлен код подтверждения</span>
+                    </div>
+                    <div class="new-pass">
+                        <div class="login-form-item">
+                            <label for="pass1"><i class="icon-key"></i></label>
+                            <input type="password" placeholder="Придумайте пароль" id="pass1"/>
+                            <span>более 6 символов</span>
+                        </div>
+                        <div class="login-form-item">
+                            <label for="pass2"><i class="icon-key"></i></label>
+                            <input type="password" placeholder="Повторите пароль" id="pass2"/>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <p class="accordion-title">
-                            <i class="icon-arrow-up"></i>
-                            <i class="icon-arrow-down"></i>
-                            график заявок на сайте
-                        </p>
-                        <div class="accordion-in">
-                            <ul>
-                                <li class="active"><a href="#">день</a></li>
-                                <li><a href="#">неделя</a></li>
-                                <li><a href="#">месяц</a></li>
-                                <li><a href="#">год</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <p class="accordion-title">
-                            <i class="icon-arrow-up"></i>
-                            <i class="icon-arrow-down"></i>
-                            купленные заявки
-                        </p>
-                        <div class="accordion-in">
-                            <ul>
-                                <li class="active"><a href="#">день</a></li>
-                                <li><a href="#">неделя</a></li>
-                                <li><a href="#">месяц</a></li>
-                                <li><a href="#">год</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="accordion-item ">
-                        <p class="accordion-title active">
-                            <i class="icon-arrow-up"></i>
-                            <i class="icon-arrow-down"></i>
-                            работа менеджеров
-                        </p>
-                        <div style="display: block" class="accordion-in">
-                            <ul>
-                                <li class="active"><a href="#">день</a></li>
-                                <li><a href="#">неделя</a></li>
-                                <li><a href="#">месяц</a></li>
-                                <li><a href="#">год</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                    <button type="submit" class="btn btn-red btn-big open-popup-tel">зарегистрироваться!</button>
+                </form>
+                <section class="regis-bottom">
+                    <p>Уже есть аккаунт? <a href="#">Войти!</a></p>
+                </section>
             </article>
         </div>
         <footer class="footer">
@@ -134,8 +103,29 @@
             </article>
         </footer>
     </div>
-</div>
 
+    <div class="size-popup">
+        <div class="popup-wrap">
+            <div class="popup__in">
+                <div class="popup-tel">
+                    <h2>Подтверждение номера</h2>
+                    <p>На номер <strong>+38 (093) 123-45-67</strong> <br/>
+                        было отправлено SMS с кодом, <br/>
+                        который необходимо ввести ниже:</p>
+                    <form action="">
+                        <input type="text" placeholder="Пожалуйста, введите код">
+                        <span>Код был отправлен повторно</span>
+                        <div class="btn-group">
+                            <button class="back"></button>
+                            <button type="submit" class="btn btn-green">ВПЕРЕД!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="popup-overlay"></div>
+    </div>
+</div>
 
 
 <script src="js/libs/jquery-1.9.1.min.js"></script>

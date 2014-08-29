@@ -6,6 +6,7 @@
   padding: 167px 0 90px 0;
   @include box-sizing(border-box);
 }
+
 .scroller{
   display: table;
   width: 100% !important;
@@ -76,6 +77,11 @@
     padding: 0 45px;
     margin: 0 0 47px;
     line-height: 1em;
+    a{
+      color: #656565;
+      font-size: 20px;
+      text-decoration: none;
+    }
   }
   span{
     color: #656565;
@@ -115,7 +121,6 @@
 .login-form{
   max-width: 605px;
   width: 100%;
-  height: 464px;
   @include border-radius(2px);
   background-color: #f9f9f9;
   margin: 0 auto;
@@ -288,9 +293,6 @@
   @include transition-duration(0.5s);
   cursor: pointer;
   position: relative;
-  &:before{
-    content: "\e614";
-  }
   i{
     font-size: 30px !important;
     color: #fff !important;
@@ -408,7 +410,7 @@
 .clone-box{
   .icon-plus{
     &:before {
-      content: "\e60e";
+      content: "\e611";
     }
   }
 }
@@ -1339,8 +1341,10 @@ input[type="number"]{
 }
 .active{
   .icon-arrow-down{
-    @extend .icon-arrow-up;
     color: #1cb7a8;
+    &:before {
+      content: "\e61f";
+    }
   }
 }
 .icon-arrow-down{
@@ -1530,7 +1534,7 @@ input[type="number"]{
     border: none;
     color: #656565;
     font-family: "helveticaneuecyrlight";
-    font-size: 23px;
+    font-size: 22px;
   }
   .gldp-default{
     @include border-radius(2px);
@@ -1633,6 +1637,13 @@ input[type="number"]{
     display: inline-block;
     width: auto;
   }
+  .arr-bottom{
+      .icon-caret-up{
+        &:before{
+          content: "\f0d7";
+        }
+      }
+  }
 }
 .result-table{
   color: #afafaf;
@@ -1719,7 +1730,6 @@ input[type="number"]{
     padding: 0 3px;
   }
 }
-
 .pagination{
   float: left;
   margin: -9px 0 0;
@@ -1900,6 +1910,9 @@ input[type="number"]{
       display: inline-block;
     }
   }
+  .icon-arrow-down{
+    display: none;
+  }
   &.active{
     color: #656565;
     i{
@@ -1908,6 +1921,9 @@ input[type="number"]{
     }
     .icon-arrow-down{
       display: inline-block;
+      &:before{
+        content: "\e61e" !important;
+      }
     }
   }
   i{
@@ -1916,9 +1932,7 @@ input[type="number"]{
     float: left;
     margin: 0 10px 0 0;
   }
-  .icon-arrow-down{
-    display: none;
-  }
+
 }
 .accordion-in{
   display: none;
@@ -1948,4 +1962,33 @@ input[type="number"]{
       border-bottom: 2px solid #00ad9d;
     }
   }
+}
+.new-pass{
+  border-top: 1px solid #e1e1e1;
+  padding: 17px 0 0 ;
+  margin: 0 0 18px;
+}
+.error-forms{
+  span{
+    color: #d5614f;
+  }
+  label{
+    border-right: 1px solid #e0a69d;
+    text-align: center;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"]{
+    border: 1px solid #e0a69d;
+    background: #fff9f9;
+  }
+}
+.regis-bottom{
+  @extend .login-bottom;
+  border-top: 0;
+  padding: 0 0 15px;
+  margin: 12px 0 0;
+}
+.mydate{
+  line-height: 40px;
 }

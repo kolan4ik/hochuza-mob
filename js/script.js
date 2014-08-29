@@ -49,7 +49,7 @@ $(document).ready(function(){
         $(this).siblings('div.bt-checkbox').children('a').click();
     });
     $('.popup-overlay, .back, .close-popup').on('click',function(){
-        $('.popup-overlay, .size-popup, .popup, .pass-popup').fadeOut();
+        $('.popup-overlay, .size-popup, .popup, .pass-popup, .popup-tel').fadeOut();
         return false
     });
     $('.icon-trash-o').on('click',function(){
@@ -62,6 +62,10 @@ $(document).ready(function(){
     });
     $('.open-popup').on('click',function(){
         $('.popup-overlay, .size-popup, .popup').fadeIn();
+        return false
+    });
+    $('.open-popup-tel').on('click',function(){
+        $('.popup-overlay, .size-popup, .popup-tel').fadeIn();
         return false
     });
     $('.open-pass-popup').on('click',function(){
@@ -164,7 +168,11 @@ $(document).ready(function(){
             $('.accordion-in').slideUp();
             $(this).siblings().slideDown();
         }
-    })
+    });
+    $('thead a').on('click', function(){
+       $(this).parent('td').toggleClass('arr-bottom');
+        return false
+    });
 
     if($('.content').height() < 800){
         $('.man').addClass('slippers');

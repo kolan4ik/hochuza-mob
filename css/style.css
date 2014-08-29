@@ -231,13 +231,26 @@ strong {
   overflow: hidden;
   padding: 0 15px;
   margin: 0 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .login-form-item label {
   float: left;
+  width: 42px;
+  height: 42px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ebebeb;
+  background: #fefefe;
+  position: relative;
+  z-index: 4;
+  cursor: pointer;
 }
 .login-form-item input {
   float: left;
-  margin: 0 0 0 -46px;
+  margin: 0 0 0 -42px;
   color: #a3a3a3;
   font-family: "HelveticaNeueCyr";
   font-size: 16px;
@@ -259,6 +272,31 @@ strong {
   font-size: 22px;
   margin-top: 11px;
   color: #aaaaaa;
+}
+.login-form-item span {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  float: left;
+  clear: left;
+  color: #b4b4b4;
+  font-family: "HelveticaNeueCyr";
+  font-size: 12px;
+  margin: 6px 0 0;
+  padding: 0 0 0 43px;
+  *zoom: 1;
+}
+.login-form-item span:before, .login-form-item span:after {
+  content: "";
+  display: table;
+}
+.login-form-item span:after {
+  clear: both;
+}
+.login-form-item i {
+  margin: 8px 0 0 !important;
+  float: none;
+  width: auto;
 }
 
 form {
@@ -329,11 +367,14 @@ tbody {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+tbody tr {
+  height: 52px;
+}
 tbody tr:nth-child(even) {
   background: #eeeeee;
 }
 tbody td {
-  height: 52px;
+  min-height: 52px;
 }
 
 html {
@@ -447,6 +488,7 @@ body {
 
 .btn-big {
   width: 271px;
+  padding: 0 !important;
 }
 
 .btn_w175 {
@@ -578,7 +620,7 @@ h4 {
   font-size: 18px;
   text-transform: uppercase;
   display: block;
-  padding: 0 0 0 22px;
+  padding: 0 0 0 18px;
   line-height: 61px;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -590,7 +632,7 @@ h4 {
   font-size: 23px;
   position: relative;
   top: 4px;
-  margin: 0 22px 0 0;
+  margin: 0 18px 0 0;
 }
 .nav-menu a:hover {
   background: #b05649;
@@ -653,130 +695,6 @@ h4 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-user:before {
-  content: "\f007";
-}
-
-.icon-trash-o:before {
-  content: "\f014";
-}
-
-.icon-home:before {
-  content: "\e600";
-}
-
-.icon-file:before {
-  content: "\e601";
-}
-
-.icon-location:before {
-  content: "\e604";
-}
-
-.icon-calendar:before {
-  content: "\e60a";
-}
-
-.icon-mobile:before {
-  content: "\e605";
-}
-
-.icon-user2:before {
-  content: "\e606";
-}
-
-.icon-key:before {
-  content: "\e607";
-}
-
-.icon-lock:before {
-  content: "\e608";
-}
-
-.icon-unlocked:before {
-  content: "\e609";
-}
-
-.icon-cog:before {
-  content: "\e602";
-}
-
-.icon-pie:before {
-  content: "\e603";
-}
-
-.icon-upload:before {
-  content: "\e60b";
-}
-
-.icon-close:before {
-  content: "\e60c";
-}
-
-.icon-checkmark:before {
-  content: "\e60d";
-}
-
-.icon-minus:before, .chenche .clone-box .add-icon:before {
-  content: "\e60e";
-}
-
-.icon-plus:before {
-  content: "\e60f";
-}
-
-.icon-googleplus:before {
-  content: "\e610";
-}
-
-.icon-facebook:before {
-  content: "\e611";
-}
-
-.icon-instagram:before {
-  content: "\e612";
-}
-
-.icon-pinterest:before {
-  content: "\e613";
-}
-
-.icon-out:before {
-  content: "\e614";
-}
-
-.icon-search:before {
-  content: "\e615";
-}
-
-.icon-mail:before {
-  content: "\e616";
-}
-
-.icon-pencil:before {
-  content: "\e61c";
-}
-
-.icon-cart:before {
-  content: "\e617";
-}
-
-.icon-arrow-left:before {
-  content: "\e618";
-}
-
-.icon-arrow-down:before {
-  content: "\e619";
-}
-
-.icon-arrow-up:before, .active .icon-arrow-down:before {
-  content: "\e61a";
-}
-
-.icon-arrow-right:before {
-  content: "\e61b";
-}
-
 .icon-three-bars:before {
   content: "\f05e";
 }
@@ -805,7 +723,7 @@ h4 {
   content: "\e605";
 }
 
-.icon-user:before {
+.icon-user2:before {
   content: "\e606";
 }
 
@@ -813,7 +731,7 @@ h4 {
   content: "\e607";
 }
 
-.icon-user2:before {
+.icon-user3:before {
   content: "\e608";
 }
 
@@ -877,8 +795,12 @@ h4 {
   content: "\e617";
 }
 
-.icon-user3:before {
+.icon-user:before {
   content: "\f007";
+}
+
+.icon-group:before {
+  content: "\f0c0";
 }
 
 .icon-caret-down:before {
@@ -897,8 +819,14 @@ h4 {
   content: "\f0da";
 }
 
-.icon-uniE618:before {
+.icon-add-new-photo:before,
+.add-new-photo:before {
   content: "\e618";
+}
+
+.icon-icon-trash-o:before,
+.icon-trash-o:before {
+  content: "\f014";
 }
 
 .icon-mail:before {
@@ -909,8 +837,16 @@ h4 {
   content: "\e61a";
 }
 
+.icon-user-add:before {
+  content: "\e622";
+}
+
 .icon-cart:before {
   content: "\e61b";
+}
+
+.icon-lock2:before {
+  content: "\e623";
 }
 
 .icon-plus5:before {
@@ -925,16 +861,16 @@ h4 {
   content: "\e61d";
 }
 
+.icon-arrow-right:before {
+  content: "\e620";
+}
+
 .icon-arrow-down:before {
   content: "\e61e";
 }
 
-.icon-arrow-up:before, .active .icon-arrow-down:before {
+.icon-arrow-up:before {
   content: "\e61f";
-}
-
-.icon-arrow-right:before {
-  content: "\e620";
 }
 
 /***************************************************/
@@ -1014,7 +950,7 @@ h4 {
   box-sizing: border-box;
 }
 
-.recover-password, .pass-popup {
+.recover-password, .popup-tel, .pass-popup {
   max-width: 605px;
   width: 100%;
   -webkit-border-radius: 2px;
@@ -1037,7 +973,7 @@ h4 {
   position: relative;
   text-align: center;
 }
-.recover-password p, .pass-popup p {
+.recover-password p, .popup-tel p, .pass-popup p {
   color: #656565;
   font-family: "HelveticaNeueCyr";
   font-size: 20px;
@@ -1045,14 +981,19 @@ h4 {
   margin: 0 0 47px;
   line-height: 1em;
 }
-.recover-password span, .pass-popup span {
+.recover-password p a, .popup-tel p a, .pass-popup p a {
+  color: #656565;
+  font-size: 20px;
+  text-decoration: none;
+}
+.recover-password span, .popup-tel span, .pass-popup span {
   color: #656565;
   font-family: "HelveticaNeueCyr";
   font-size: 14px;
   display: inline-block;
   margin: -6px 0 21px;
 }
-.recover-password input[type="text"], .pass-popup input[type="text"] {
+.recover-password input[type="text"], .popup-tel input[type="text"], .pass-popup input[type="text"] {
   max-width: 458px;
   width: 100%;
   height: 40px;
@@ -1083,7 +1024,6 @@ h4 {
 .login-form {
   max-width: 605px;
   width: 100%;
-  height: 464px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -1154,24 +1094,24 @@ h4 {
   background: url("../images/checkbox-checked.jpg") no-repeat;
 }
 
-.login-bottom {
+.login-bottom, .regis-bottom {
   margin: 40px 0 0;
   padding: 20px 0 24px;
   border-top: 1px solid #e1e1e1;
 }
-.login-bottom p {
+.login-bottom p, .regis-bottom p {
   color: #656565;
   font-family: "HelveticaNeueCyr";
   font-size: 16px;
 }
-.login-bottom a {
+.login-bottom a, .regis-bottom a {
   color: #00ad9d;
   font-family: "HelveticaNeueCyr";
   font-size: 18px;
   font-weight: bold;
   text-decoration: underline;
 }
-.login-bottom a:hover {
+.login-bottom a:hover, .regis-bottom a:hover {
   text-decoration: none;
 }
 
@@ -1291,9 +1231,6 @@ h4 {
   transition-duration: 0.5s;
   cursor: pointer;
   position: relative;
-}
-.add-new-photo:before {
-  content: "\e614";
 }
 .add-new-photo i {
   font-size: 30px !important;
@@ -1417,7 +1354,7 @@ h4 {
 }
 
 .clone-box .icon-plus:before {
-  content: "\e60e";
+  content: "\e611";
 }
 
 .icon-pencil {
@@ -2395,6 +2332,9 @@ input[type="number"]:after {
 .active .icon-arrow-down {
   color: #1cb7a8;
 }
+.active .icon-arrow-down:before {
+  content: "\e61f";
+}
 
 .icon-arrow-down {
   width: 81px;
@@ -2607,7 +2547,7 @@ input[type="number"]:after {
   border: none;
   color: #656565;
   font-family: "helveticaneuecyrlight";
-  font-size: 23px;
+  font-size: 22px;
 }
 .data-filter .gldp-default {
   -webkit-border-radius: 2px;
@@ -2719,6 +2659,9 @@ input[type="number"]:after {
 .history-table i {
   display: inline-block;
   width: auto;
+}
+.history-table .arr-bottom .icon-caret-up:before {
+  content: "\f0d7";
 }
 
 .result-table, .calc-item {
@@ -2990,6 +2933,9 @@ input[type="number"]:after {
 .accordion-title:hover .icon-arrow-down {
   display: inline-block;
 }
+.accordion-title .icon-arrow-down {
+  display: none;
+}
 .accordion-title.active {
   color: #656565;
 }
@@ -3000,14 +2946,14 @@ input[type="number"]:after {
 .accordion-title.active .icon-arrow-down {
   display: inline-block;
 }
+.accordion-title.active .icon-arrow-down:before {
+  content: "\e61e" !important;
+}
 .accordion-title i {
   color: #afafaf;
   width: auto;
   float: left;
   margin: 0 10px 0 0;
-}
-.accordion-title .icon-arrow-down {
-  display: none;
 }
 
 .accordion-in {
@@ -3036,6 +2982,36 @@ input[type="number"]:after {
 .accordion-in .active a {
   color: #00ad9d;
   border-bottom: 2px solid #00ad9d;
+}
+
+.new-pass {
+  border-top: 1px solid #e1e1e1;
+  padding: 17px 0 0;
+  margin: 0 0 18px;
+}
+
+.error-forms span {
+  color: #d5614f;
+}
+.error-forms label {
+  border-right: 1px solid #e0a69d;
+  text-align: center;
+}
+.error-forms input[type="text"],
+.error-forms input[type="password"],
+.error-forms input[type="email"] {
+  border: 1px solid #e0a69d;
+  background: #fff9f9;
+}
+
+.regis-bottom {
+  border-top: 0;
+  padding: 0 0 15px;
+  margin: 12px 0 0;
+}
+
+.mydate {
+  line-height: 40px;
 }
 
 /***************************************************/
@@ -3182,6 +3158,22 @@ input[type="number"]:after {
   margin: 0 51px 0 0;
 }
 
+.popup-tel {
+  position: relative;
+  z-index: 30;
+  box-shadow: none;
+  padding: 38px 46px 45px;
+  background: #e9e9e9;
+}
+.popup-tel span {
+  color: #00ad9d;
+  font-family: "HelveticaNeueCyr";
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  margin: -35px 0 20px;
+}
+
 .title-popup {
   color: #5d5d5d;
   font-family: "HelveticaNeueCyr";
@@ -3303,12 +3295,6 @@ input[type="email"] {
   border-radius: 0px;
   -webkit-appearance: none;
 }
-input[type="text"].error,
-input[type="password"].error,
-input[type="email"].error {
-  border: 1px solid #ff0000;
-  color: red;
-}
 
 @media screen and (max-width: 1065px) {
   .link-cabinet {
@@ -3316,7 +3302,7 @@ input[type="email"].error {
   }
 }
 @media screen and (max-width: 1052px) {
-  .recover-password, .pass-popup,
+  .recover-password, .popup-tel, .pass-popup,
   .login-form,
   .box-right,
   .box-right-button,
@@ -3330,7 +3316,7 @@ input[type="email"].error {
   }
 }
 @media screen and (max-width: 1032px) {
-  .recover-password, .pass-popup,
+  .recover-password, .popup-tel, .pass-popup,
   .login-form,
   .box-right,
   .box-right-button,
@@ -3372,7 +3358,7 @@ input[type="email"].error {
   }
 }
 @media screen and (max-width: 966px) {
-  .recover-password, .pass-popup,
+  .recover-password, .popup-tel, .pass-popup,
   .login-form,
   .box-right,
   .box-right-button,
@@ -3390,7 +3376,7 @@ input[type="email"].error {
   }
 }
 @media screen and (max-width: 926px) {
-  .recover-password, .pass-popup,
+  .recover-password, .popup-tel, .pass-popup,
   .login-form,
   .box-right,
   .box-right-button,
@@ -3484,8 +3470,8 @@ input[type="email"].error {
 }
 @media screen and (max-width: 819px) {
   .balance-page {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .content-menu li a {
@@ -3814,13 +3800,99 @@ input[type="email"].error {
   }
 
   .nav-menu a {
-    padding: 0 0 0 12px;
+    padding: 0 0 0 10px;
+    font-size: 14px;
+  }
+  .nav-menu i {
+    margin: 0 10px 0 0;
   }
 
   .managing-menu li {
     float: none;
     display: block;
     margin: 0;
+  }
+
+  .search-table {
+    width: 100%;
+  }
+
+  .history-table {
+    margin-left: -11px;
+    margin-right: -11px;
+  }
+  .history-table td {
+    padding: 0 0 0 5px;
+  }
+  .history-table td:first-child {
+    padding: 0;
+  }
+  .history-table span {
+    font-size: 17px;
+  }
+
+  thead a {
+    font-size: 12px;
+  }
+  thead td {
+    width: 300px;
+  }
+  thead td:first-child {
+    width: 490px;
+  }
+
+  table td:nth-child(3),
+  table td:nth-child(4) {
+    width: 177px;
+  }
+
+  .date-after span,
+  .date-before span {
+    font-size: 22px;
+  }
+
+  .pagination-settings {
+    font-size: 13px;
+  }
+
+  .calc-item p {
+    float: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .date-after,
+  .date-before {
+    margin: 0;
+  }
+  .date-after p,
+  .date-before p {
+    width: 100%;
+  }
+  .date-after .gldp-default,
+  .date-before .gldp-default {
+    left: 50% !important;
+    margin-left: -116px;
+  }
+  .date-after .gldp-default:last-child,
+  .date-before .gldp-default:last-child {
+    left: 50% !important;
+    margin-left: -116px;
+  }
+
+  .accordion-title {
+    font-size: 18px;
+  }
+
+  .login-form {
+    padding: 32px 0 0;
+  }
+
+  .recover-password input[type="text"], .popup-tel input[type="text"], .pass-popup input[type="text"],
+  .popup-tel input[type="text"],
+  .pass-popup input[type="text"] {
+    width: 95%;
   }
 }
 @media screen and (max-width: 599px) {
@@ -3945,7 +4017,7 @@ input[type="email"].error {
     width: 188px;
   }
 
-  .login-bottom a {
+  .login-bottom a, .regis-bottom a {
     padding: 15px 0 0;
   }
 
@@ -3971,11 +4043,15 @@ input[type="email"].error {
   }
 
   .login-form-item {
-    padding: 0 0 0 15px;
     width: 100%;
   }
   .login-form-item input {
     width: 100%;
+  }
+
+  .btn-big {
+    padding: 0;
+    text-align: center;
   }
 
   .select-categories {
@@ -4115,38 +4191,6 @@ input[type="email"].error {
   }
 }
 @media screen and (max-width: 480px) {
-  .header {
-    height: 72px;
-    padding: 0;
-  }
-  .header .wrapper {
-    padding: 20px 48px 24px 24px;
-  }
-
-  .nav-menu a {
-    font-size: 16px;
-  }
-
-  .scroller {
-    min-height: 100% !important;
-  }
-
-  .content {
-    padding: 72px 24px 43px;
-  }
-
-  .big-search {
-    padding: 26px 24px;
-  }
-
-  .footer-nav-menu {
-    display: none !important;
-  }
-
-  .social-menu li {
-    margin: 0 0 0 70px;
-  }
-
   .open-more-text {
     width: 64%;
   }
