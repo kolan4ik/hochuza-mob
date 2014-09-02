@@ -24,28 +24,21 @@
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div class="container">
-    <nav class="pushy pushy-left nav-menu">
+    <nav id="main-nav" class="pushy pushy-left nav-menu">
         <ul>
+            <li><a class="logo" href="web-page_main.html"></a></li>
             <li><a href="web-page_main.html"><i class="icon-home"></i>главная</a></li>
             <li><a href="statistic.html"><i class="icon-pie"></i>статистика сайта</a></li>
             <li><a href="web-page_main.html"><i class="icon-file"></i>заявки</a></li>
             <li><a href="setting.html"><i class="icon-cog"></i>настройки</a></li>
-            <li><a href="#"><i class="icon-users"></i>пользователи</a></li>
-            <li><a href="#"><i class="icon-credit"></i>реквизиты</a></li>
-            <li><a href="#"><i class="icon-user3"></i>модерация</a></li>
-            <li><a href="#"><i class="icon-bars"></i>парсинг</a></li>
-            <li><a href="balance.html"><i class="icon-info"></i>баланс</a></li>
-            <li><a href="#"><i class="icon-lock2"></i>магазины</a></li>
-            <li><a href="managing.html"><i class="icon-user-add"></i>управление персоналом</a></li>
-            <li><a href="#"><i class="icon-group"></i>администраторы</a></li>
         </ul>
     </nav>
     <div class="site-overlay"></div>
     <div class="scroller">
         <header class="header">
             <article class="wrapper">
-                <button class="menu-btn">Menu</button>
-                <a class="link-cabinet" href="web-page_profile_all.html"><i class="icon-user2"></i> user profile</a>
+                <button class="menu-btn"><i class="icon-three-bars"></i></button>
+                <a class="link-cabinet" href="web-page_profile_all.html"><i class="icon-user"></i><i class="icon-caret-down"></i></a>
                 <a class="logo" href="web-page_main.html"></a>
             </article>
         </header>
@@ -57,10 +50,9 @@
                         <label for="name"><i class="icon-user"></i></label>
                         <input id="name" type="text" placeholder="Как Вас зовут?"/>
                     </div>
-                    <div class="login-form-item error-forms">
+                    <div class="login-form-item">
                         <label for="email"><i class="icon-mail"></i></label>
-                        <input class="error" id="email" type="email" placeholder="e-mail"/>
-                        <span>Неверный формат адреса!</span>
+                        <input id="email" type="email" placeholder="e-mail"/>
                     </div>
                     <div class="login-form-item">
                         <label for="tel"><i class="icon-mobile"></i></label>
@@ -78,21 +70,15 @@
                             <input type="password" placeholder="Повторите пароль" id="pass2"/>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-red btn-big open-popup-tel">зарегистрироваться!</button>
+                    <button type="submit" class="btn btn-red">регистрироваться!</button>
                 </form>
-                <section class="regis-bottom">
+                <section class="login-bottom">
                     <p>Уже есть аккаунт? <a href="#">Войти!</a></p>
                 </section>
             </article>
         </div>
         <footer class="footer">
             <article class="wrapper">
-                <ul class="footer-nav-menu">
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="privacy.html">privacy</a></li>
-                    <li><a href="terms.html">terms</a></li>
-                    <li><a href="policy.html">policy</a></li>
-                </ul>
                 <ul class="social-menu">
                     <li><a href="#"><i class="icon-googleplus"></i></a></li>
                     <li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -103,38 +89,16 @@
             </article>
         </footer>
     </div>
-
-    <div class="size-popup">
-        <div class="popup-wrap">
-            <div class="popup__in">
-                <div class="popup-tel">
-                    <h2>Подтверждение номера</h2>
-                    <p>На номер <strong>+38 (093) 123-45-67</strong> <br/>
-                        было отправлено SMS с кодом, <br/>
-                        который необходимо ввести ниже:</p>
-                    <form action="">
-                        <input type="text" placeholder="Пожалуйста, введите код">
-                        <span>Код был отправлен повторно</span>
-                        <div class="btn-group">
-                            <button class="back"></button>
-                            <button type="submit" class="btn btn-green">ВПЕРЕД!</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="popup-overlay"></div>
-    </div>
 </div>
 
-
 <script src="js/libs/jquery-1.9.1.min.js"></script>
-<script src="js/libs/jquery.fancybox.js"></script>
-<script src="js/libs/handsome.js"></script>
 <script src="js/libs/modernizr.custom.71422.js"></script>
 <script src="js/libs/pushy.js"></script>
+<script src="js/libs/handsome.js"></script>
+<script src="js/libs/jquery.fancybox.js"></script>
 <script src="js/libs/glDatePicker.min.js"></script>
 <script src="js/libs/jquery.fs.stepper.js"></script>
+<script src="js/libs/jquery.touchSwipe.min.js"></script>
 <script src="js/libs/jquery.tagsinput.min.js"></script>
 
 <script src="js/script.js"></script>

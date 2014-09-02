@@ -16,10 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/glDatePicker.default.css">
-    <script>document.write('<script src="http://'
-                + (location.host || 'localhost').split(':')[0]
-                + ':35729/livereload.js"></'
-                + 'script>')</script>
+
 </head>
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
@@ -43,26 +40,18 @@
             </article>
         </header>
         <div class="content">
-            <article class="login-form">
-                <h2>Вход на сайт</h2>
-                <form class="" action="">
-                    <div class="login-form-item">
-                        <label for="email"><i class="icon-mail"></i></label>
-                        <input id="email" type="email" placeholder="e-mail"/>
-                    </div>
-                    <div class="login-form-item">
-                        <label for="pass"><i class="icon-key"></i></label>
-                        <input id="pass" type="password" class="error" placeholder="Пароль"/>
-                    </div>
-                    <div class="checkBox">
-                        <input type="checkbox"  id="checkBox" class="checkbox-item"/>
-                        <label for="checkBox">Запомнить меня</label>
-                    </div>
+            <article class="login-form confirmation-numbers">
+                <h2>Подтверждение <br /> номера</h2>
+                <p>На номер <strong>+38 (093) 123-45-67</strong> <br />
+                    было отправлено SMS с кодом, <br />
+                    который необходимо ввести ниже:</p>
+                <form action="">
+                    <input type="text" placeholder="Пожалуйста, введите код">
                     <button type="submit" class="btn btn-green">войти!</button>
-                    <a class="form-link" href="web-page_password.html">Забыли пароль?</a>
+                    <a href="#">Не получили код? Отправить ещё!</a>
                 </form>
                 <section class="login-bottom">
-                    <p>Ещё не зарегистрированы? <a href="regis.html">Регистрация!</a></p>
+                    <p>Уже есть аккаунт? <a href="#">Войти!</a></p>
                 </section>
             </article>
         </div>

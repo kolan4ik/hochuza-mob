@@ -3,7 +3,7 @@
   vertical-align: middle;
   height: 100%;
   width: 100%;
-  padding: 167px 0 90px 0;
+  padding: 45px 12px;
   @include box-sizing(border-box);
 }
 
@@ -11,7 +11,6 @@
   display: table;
   width: 100% !important;
   height: 100% !important;
-  min-height: 700px !important;
   overflow: hidden;
 }
 .container{
@@ -27,7 +26,7 @@
   @include border-radius(2px);
   background-color: #f9f9f9;
   @include box-sizing(border-box);
-  padding: 27px 25px 27px 23px;
+  padding: 13px 12px;
   margin: 0 auto;
   @include box-shadow(#c1c1c1 0 0 12px 0px);
   position: relative;
@@ -35,47 +34,58 @@
     content: "";
     position: absolute;
     background: url("../images/men.png") no-repeat;
-    width: 142px;
-    height: 207px;
+    width: 103px;
+    height: 150px;
+    background-size: contain;
     display: inline-block;
     left:50%;
-    top: -199px;
-    margin-left: -71px;
+    top: -141px;
+    margin-left: -50px;
   }
   input[type="text"]{
-    max-width: 407px;
+    max-width: 271px;
     width: 100%;
-    height: 62px;
+    height: 31px;
     border: 1px solid #ebebeb;
     background-color: #fff;
     color: #aeaeae;
     font-family: "HelveticaNeueCyr";
-    font-size: 18px;
-    padding: 0 0 0 30px;
-    margin: 0 21px 0 0;
+    font-size: 9px;
+    padding: 0 0 0 12px;
+    margin: 0 12px 0 0;
     display: inline-block;
     @include box-sizing(border-box);
-
+  }
+  button{
+    width: 32.5px;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    height: 31px;
   }
 }
 .recover-password{
-  max-width: 605px;
   width: 100%;
   @include border-radius(2px);
-  @include background-clip(padding-box);
   background-color: #f9f9f9;
   @include box-sizing(border-box);
-  padding: 27px 25px 72px 23px;
+  padding: 15px 12px 34px 12px;
   margin: 0 auto;
   @include box-shadow(#c1c1c1 0 0 12px 0px);
   position: relative;
   text-align: center;
+  h2{
+    margin: 0 0 12px;
+  }
   p{
     color: #656565;
     font-family: "HelveticaNeueCyr";
-    font-size: 20px;
-    padding: 0 45px;
-    margin: 0 0 47px;
+    font-size: 15px;
+    margin: 0 0 21px;
+    display: inline-block;
     line-height: 1em;
     a{
       color: #656565;
@@ -90,18 +100,21 @@
     display: inline-block;
     margin: -6px 0 21px;
   }
+  input[type="email"],
   input[type="text"]{
-    max-width: 458px;
     width: 100%;
-    height: 40px;
+    display: inline-block;
+    height: 31px;
     border: 1px solid #ebebeb;
     background-color: #fff;
     color: #a3a3a3;
     font-family: "HelveticaNeueCyr";
-    font-size: 16px;
+    font-size: 13px;
     text-align: center;
-    margin: 0 0 52px;
+    margin: 0 0 32px;
+    @include box-sizing(border-box);
   }
+
 }
 .fatal-icon{
   @include icon-sprite(fatal-icon);
@@ -110,37 +123,32 @@
   display: inline-block;
   margin: -9px 0 5px;
 }
-.form-chenche-password{
-  .btn{
-    width: 163px;
-    margin: 43px 0 0;
-    text-align: center;
-    padding: 0 !important;
-  }
-}
 .login-form{
-  max-width: 605px;
   width: 100%;
+  overflow: hidden;
   @include border-radius(2px);
   background-color: #f9f9f9;
   margin: 0 auto;
   @include box-shadow(#c1c1c1 0 0 12px 0px);
   position: relative;
-  padding: 32px 69px 0;
+  padding: 15px 11px 5px;
   @include box-sizing(border-box);
   text-align: center;
   .checkBox{
-    margin: 21px 0 14px;
+    margin: 15px 0 24px;
   }
   h2{
     margin: 0 0 27px;
+  }
+  button{
+    padding: 0 60px;
   }
 
 }
 .form-link{
   color: #656565;
   font-family: "HelveticaNeueCyr";
-  font-size: 16px;
+  font-size: 12px;
   text-decoration: underline;
   display: block;
   margin: 17px 0 0;
@@ -158,50 +166,90 @@
 .checkBox{
   label{
     cursor: pointer;
-    line-height: 26px;
+    line-height: 17px;
     color: #656565;
     font-family: "HelveticaNeueCyr";
-    font-size: 16px;
+    font-size: 9px;
     margin: 0 0 0 4px;
 
   }
 }
 .bt-checkbox{
   display: inline-block;
-  margin: 0 0 -8px;
+  margin: 0 0 -5px;
 }
 .bt-checker{
-  width: 25px;
-  height: 26px;
+  width: 17px;
+  height: 17px;
   border: 1px solid #ebebeb;
   background-color: #fff;
   display: inline-block;
   float: left;
+  background-size: contain;
+  margin: -1px 0 0;
   &.checked{
-    background: url("../images/checkbox-checked.jpg") no-repeat;
+    background: url("../images/checkbox-checked.jpg") no-repeat -3px -3px;
 
   }
 }
-.login-bottom{
-  margin: 40px 0 0;
-  padding: 20px 0 24px;
-  border-top: 1px solid #e1e1e1;
+
+.confirmation-numbers{
   p{
     color: #656565;
     font-family: "HelveticaNeueCyr";
-    font-size: 16px;
-
+    font-size: 15px;
+    margin: 0 0 20px;
+  }
+  input{
+    height: 31px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    text-align: center;
+    color: #a3a3a3;
+    font-family: "HelveticaNeueCyr";
+    width: 100%;
+    font-size: 12px;
+    margin: 0 0 31px;
   }
   a{
-    color: #00ad9d;
+    color: #656565;
     font-family: "HelveticaNeueCyr";
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    width: 100%;
     text-decoration: underline;
     &:hover{
       text-decoration: none;
     }
-
+  }
+  button{
+    margin: 0 0 14px;
+    padding: 0 60px;
+  }
+}
+.login-bottom{
+  margin: 20px 0 0;
+  padding: 10px 0;
+  border-top: 1px solid #e1e1e1;
+  overflow: hidden;
+  p{
+    color: #656565;
+    font-family: "HelveticaNeueCyr";
+    font-size: 12px;
+    margin: 0;
+  }
+  a{
+    color: #00ad9d;
+    font-family: "HelveticaNeueCyr";
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    display: block;
+    width: 100%;
+    &:hover{
+      text-decoration: none;
+    }
   }
 }
 .icon-mobile{
@@ -215,47 +263,53 @@
   @include border-radius(2px);
   background-color: #f9f9f9;
   @include box-shadow(#c1c1c1 0 0 12px 0px);
-  padding: 30px 74px 35px 72px;
+  padding: 15px 12px 21px 12px;
   @include box-sizing(border-box);
   overflow: hidden;
   h2{
     margin: 0 0 26px;
   }
   .checkBox{
-    margin-bottom: 37px;
+    margin-bottom: 30px;
   }
   .btn{
     padding: 0 34px;
   }
 }
 .orders-page{
-  padding: 28px 74px 35px 70px;
+  padding: 15px 12px 10px;
   @include box-sizing(border-box);
   @include border-radius(2px);
   background-color: #f9f9f9;
   @include box-shadow(#e5e5e1 0 0 12px 0px);
+  h2{
+    margin: 0 0 18px 0;
+  }
 }
 .profile-user{
   @extend .product-info;
-  padding: 27px 74px 73px 72px;
+  padding: 15px 12px 21px 12px;
 }
 .photo-user{
-  width: 305px;
-  height: 304px;
+  width: 160px;
+  height: 160px;
   overflow: hidden;
-  border-radius: 152px;
+  border-radius: 80px;
   position: relative;
   cursor: pointer;
-  float: left;
+  margin: 0 auto 22px;
   img{
     display: block;
-    width: 305px;
-    height: 304px;
+    width: 160px;
+    height: 160px;
   }
   &:hover{
     div{
       opacity: 1;
     }
+  }
+  .add-new-photo, .remove-photo i{
+    font-size: 15px !important;
   }
 }
 .photo-overlay{
@@ -268,7 +322,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.75);
   text-align: center;
-  padding: 220px 107px 0;
+  padding: 105px 40px 0;
   @include box-sizing(border-box);
 }
 .add-new-photo{
@@ -284,17 +338,15 @@
   color: #FFFFFF;
   display: inline-block;
   float: left;
-  width: 26px;
-  height: 28px;
-  font-size: 26px;
-  margin: 1px 0 0;
+  font-size: 15px;
+  margin: 4px 0 0;
   opacity: 0.7;
   @include transition-property(opacity);
   @include transition-duration(0.5s);
   cursor: pointer;
   position: relative;
   i{
-    font-size: 30px !important;
+    font-size: 15px !important;
     color: #fff !important;
   }
   &:hover{
@@ -326,51 +378,52 @@
   overflow: hidden;
   input[type="text"],
   input[type="email"]{
-    width: 313px;
-    padding: 0 0 0 14px;
-    height: 42px;
+    width: 100%;
+    padding: 0 0 0 45px;
+    height: 33px;
     border: 1px solid #ebebeb;
     background-color: #fff;
     @include box-sizing(border-box);
     color: #676767;
     font-family: "HelveticaNeueCyr";
-    font-size: 20px;
-    &[readonly=""],
-    &[readonly="readonly"]{
-      border: 1px solid transparent;
-      background: none;
-    }
+    font-size: 12px;
   }
   p{
-    margin: 0 0 19px;
+    margin: 0 0 10px;
     position: relative;
-    width: 367px;
     text-align: left;
+    overflow: hidden;
+    width: 100%;
   }
   i{
-    margin: 0;
-    width: 51px;
-    display: inline-block;
+    margin: 0 !important;
+    font-size: 20px !important;
+    display: inline-block !important;
+    float: none;
+    line-height: 28px;
+    color: #b0b0b0;
+    width: auto;
+    height: auto;
   }
-  .icon-mobile{
-    position: relative;
-    top: 0px;
-    font-size: 21px;
-    color: #aaaaaa;
+  label{
+    width: 31px;
+    height: 31px;
+    background: #fcfcfc;
+    border: 1px solid #ebebeb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
   }
   a{
     color: #00ad9d;
     font-family: "HelveticaNeueCyr";
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: underline;
     line-height: 27px;
     &:hover{
       text-decoration: none;
     }
-  }
-  .icon-key{
-    margin: 4px 12px -5px 2px;
-    float: left;
   }
 }
 .contact-user__in{
@@ -400,7 +453,22 @@
     display: none !important;
     cursor: pointer;
   }
-
+  .icon-key{
+    width: 33px;
+    position: relative;
+    top: 3px;
+  }
+  .icon-checkmark{
+    color: #f1f1f1;
+  }
+  .accept{
+    .icon-checkmark{
+      color: #00ae9d;
+    }
+  }
+}
+.cheange-pass{
+  display: none;
 }
 .chenche{
   .icon-plus{
@@ -503,52 +571,54 @@
   }
 }
 .choice-product{
-  margin: 0 0 29px;
+  margin: 0 0 20px;
   overflow: hidden;
   position: relative;
   span{
     color: #00ad9d;
     font-family: "Veles";
-    font-size: 16px;
+    font-size: 11px;
     font-weight: bold;
-    line-height: 68px;
+    line-height: 31px;
     display: inline-block;
-    height: 68px;
+    height: 31px;
   }
   textarea{
     float: left;
-    width: 662px;
-    line-height: 30px;
+    width: 100%;
+    line-height: 31px;
     border: 1px solid #ebebeb;
     background-color: #fff;
     color: #676767;
     font-family: "HelveticaNeueCyr";
-    font-size: 20px;
-    padding: 17px 0 0 22px;
+    font-size: 12px;
+    padding: 0 0 0 22px;
     @include box-sizing(border-box);
     resize: none;
-    height: 68px;
-    margin: 0 18px 0 0;
+    height: 31px;
+    margin: 0 18px 12px 0;
     position: relative;
   }
   input{
-    width: 108px;
-    height: 66px;
+    width: 61px;
+    height: 31px;
     border: 1px solid #ebebeb;
     background-color: #fff;
     text-align: center;
     color: #676767;
     font-family: "HelveticaNeueCyr";
-    font-size: 20px;
+    font-size: 12px;
     margin: 0 13px 0 22px;
 
   }
   &.show{
     border-bottom: 1px solid #d5d5d5;
     padding: 0 0 28px;
-
-
   }
+}
+.cash{
+  text-align: center;
+  padding: 12px 0 0;
 }
 .show{
   .btn-update{
@@ -566,69 +636,51 @@
   left: 0;
   top: 0;
   z-index: 5;
-  width: 662px;
+  width: 100%;
   overflow: hidden;
-  line-height: 46px;
+  line-height: 31px;
   border: 1px solid #ebebeb;
   background-color: #fff;
   color: #676767;
   font-family: "HelveticaNeueCyr";
-  font-size: 20px;
-  padding: 11px 0 0 22px;
+  font-size: 12px;
+  padding: 0 0 0 22px;
   @include box-sizing(border-box);
-  height: 68px;
+  height: 31px;
 }
 .preview-product{
   overflow: hidden;
-  margin: 0 0 21px;
-  p{
-    line-height: 24px;color: #00ad9d;
-    font-family: "Veles";
-    font-size: 16px;
-    font-weight: bold;
-    width: 205px;
-    position: relative;
-    float: left;
-    margin: 31px 94px 0 2px;
-    &:after{
-      content: "";
-      display: inline-block;
-      position: absolute;
-      @include icon-sprite(arr);
-      width: 59px;
-      height: 13px;
-      top: 15px;
-      right: -70px;
-    }
-  }
+  margin: 0 0 25px;
+  clear: both;
 }
 .preview-gallery{
   position: relative;
-  height: 109px;
+  height: 57px;
   overflow: hidden;
+  width: 100%;
   a{
     float: left;
     border: 1px solid #e0e5e3;
-    margin: 0 0 0 36px;
-    width: 106px;
-    height: 107px;
+    margin: 0 0 0 10px;
+    height: 55px;
+    width: 52px;
     display: block;
     &:first-child{
       margin: 0;
     }
     img{
       width: 100%;
-      height: 107px;
+      height: 55px;
       display: block;
     }
   }
   .icon-trash-o{
     position: absolute;
-    left: 95%;
-    top: 1px;
+    left: 93%;
+    top: 18px;
     color: #00ae9d;
     font-size: 22px;
-    margin: 40px 3px 0 0;
+    margin: 0;
     float: right;
     cursor: pointer;
   }
@@ -637,9 +689,9 @@
   font-size: 0;
   color: transparent;
   border: 1px solid #e0e5e3;
-  width: 106px;
-  height: 107px;
-  margin: 0 0 0 36px;
+  width: 52px;
+  height: 55px;
+  margin: 0 0 0 10px;
   display: inline-block;
   background: url("../images/add-icon.jpg") no-repeat center center;
   cursor: pointer;
@@ -658,28 +710,43 @@
 }
 .select-box-in{
   @include box-sizing(border-box);
-  padding: 0 0 0 43px;
-  margin: 7px 0 0;
+  padding: 0 0 0 17px;
+  margin: 7px 0 5px;
   float: left;
   display: inline-block;
-  @include icon-sprite(select-icon);
   text-align: left;
+  position: relative;
+  &:after{
+    content: "\e603";
+    color: #b9b8b8;
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 17px;
+    position: absolute;
+    top: 6px;
+    left: 1px;
+  }
   select{
     display: none;
   }
   a{
     color: #656565;
     font-family: "HelveticaNeueCyr";
-    font-size: 20px;
+    font-size: 12px;
     text-decoration: none;
-
   }
   .bt-dropdown-toggle{
     position: relative;
-    padding: 10px 30px 10px 20px;
+    padding: 10px 30px 10px 12px;
     display: inline-block;
     width: auto !important;
-    min-width: 200px;
     &:after{
       content: "";
       width: 0;
@@ -690,7 +757,7 @@
       border-right: 7px solid transparent;
       border-top: 7px solid #00ae9d;
       right:10px;
-      top: 15px;
+      top: 13px;
     }
   }
   .bt-dropdown{
@@ -706,7 +773,7 @@
 
   }
   .bt-dropdown-options{
-    top: 40px;
+    top: 31px;
     display: none;
     left: -1px;
     width: 100%;
@@ -730,12 +797,12 @@
   display: none;
 }
 .select-categories{
-  float: left;
   position: relative;
   z-index: 5;
+  width: 100%;
   .bt-dropdown-toggle{
-    width: 339px !important;
-    height: 51px;
+    width: 100% !important;
+    height: 31px;
     @include box-sizing(border-box);
     display: block;
     position: relative;
@@ -749,15 +816,15 @@
       border-right: 7px solid transparent;
       border-top: 7px solid #bdbbbc;
       right: 17px;
-      top: 22px;
+      top: 11px;
     }
   }
   .bt-dropdown{
-    width: 339px;
-    height: 51px;
+    width: 100%;
+    height: 31px;
     border: 1px solid #ebebeb;
     background-color: #fff;
-    line-height: 50px;
+    line-height: 31px;
     position: relative;
   }
   a{
@@ -765,10 +832,8 @@
     font-family: "HelveticaNeueCyr";
     font-size: 16px;
     text-decoration: none;
-    padding: 0 0 0 26px;
+    padding: 0 0 0 13px;
     @include box-sizing(border-box);
-
-
   }
   .bt-dropdown-options{
     top: 50px;
@@ -823,38 +888,39 @@
   }
 }
 .content-tel{
-  float: right;
+  float: left;
   margin: 0 0 30px;
   input[readonly="readonly"],
   input[readonly=""] {
     background: transparent;
     border: 1px solid transparent;
-
-
   }
   input{
-    line-height: 21px;
-    height: 41px;
+    line-height: 31px;
+    height: 31px;
+    width: 100px;
     border: 1px solid #ebebeb;
     background-color: #fff;
     color: #656565;
     font-family: "HelveticaNeueCyr";
-    font-size: 20px;
+    font-size: 12px;
     padding: 0 0 0 10px;
-    margin: 0 0 0 13px;
+    margin: 0 0 0 5px;
   }
   .icon-mobile{
-    font-size: 35px;
+    font-size: 20px;
     float: left;
     color: #aaa;
-    margin-top: 6px !important;
+    margin: 5px 0 0 !important;
   }
   .icon-pencil{
     color: #00ae9d;
-    font-size: 23px;
+    font-size: 12px;
     background: none;
-    margin: 0 -8px 0 0;
+    margin: 0 -8px 0 -11px;
     top: 0;
+    width: auto !important;
+    height: auto !important;
     box-shadow: none;
     &:after{
       display: none;
@@ -879,10 +945,11 @@
 .more-info{
   width: 100%;
   position: relative;
-  margin: 0 0 31px;
+  margin: -27px 0 31px;
   border-bottom: 1px solid #d5d5d5;
-  padding: 0 0 31px;
+  padding: 0;
   display: none;
+  text-align: center;
   &:after, &:before{
     content: "";
     width: 0;
@@ -901,50 +968,39 @@
     bottom:-6px;
   }
 }
+
 .title-more{
-  color: #c6c6c6;
-  font-family: "HelveticaNeueCyr";
-  font-size: 16px;
-  @include icon-sprite(arr-bottom);
-  background-position: 143% -895px;
-  background-color: #fafafa;
-  display: block;
-  width: 160px;
-  margin: -8px auto 35px;
-  cursor: pointer;
-  text-align: left;
-  position: relative;
-  clear: both;
-  @include transition-property(margin);
-  @include transition-duration(0.5s);
-  &.active{
-    @include icon-sprite(arr-top-active);
-    margin-bottom: 0;
-    background-position: 143% -921px;
-    font-size: 0;
-    color: transparent;
-    span{
+  border-top: 1px solid #d5d5d5;
+  margin: 0 0 27px;
+  span{
+    text-align: left;
+    width: 110px;
+    margin: -5px auto 0;
+    background: #fafafa;
+    color: #c6c6c6;
+    font-family: "HelveticaNeueCyr";
+    font-size: 10px;
+    padding: 0 7px 0 5px;
+    @include box-sizing(border-box);
+    display: none;
+    &:first-child{
       display: block;
-      color: #c6c6c6;
-      font-family: "HelveticaNeueCyr";
-      font-size: 16px;
     }
   }
-  span{
-    display: none;
+  i{
+    float: right;
+    width: auto;
   }
-  &:after, &:before{
-    content: "";
-    border-top: 1px solid #d5d5d5;
-    top: 7px;
-    left: -366px;
-    width: 339px;
-    display: inline-block;
-    position: absolute;
-  }
-  &:before{
-    left: auto;
-    right: -366px;
+  &.active{
+    span{
+      display: block;
+      &:first-child{
+        display: none;
+      }
+    }
+    i{
+      color: #1cb7a8;
+    }
   }
 }
 .color_red{
@@ -961,16 +1017,14 @@
   p{
     color: #a7a7a7;
     font-family: "HelveticaNeueCyr";
-    font-size: 16px;
-    float: left;
-    margin: 0 39px 0 0;
-
+    font-size: 11px;
+    margin: 0 0 15px;
   }
   .gldp-default{
     display: block !important;
-    float: left;
     position: relative;
     left: 0;
+    margin: 0 0 0 25px;
   }
   .gldp-el{
     display: none;
@@ -992,11 +1046,12 @@ input[type="number"]{
 }
 .stepper {
   border-radius: 3px;
-  margin: 10px 0 10px 0;
+  margin: 10px auto;
   overflow: hidden;
   position: relative;
-  width: 112px;
+  width: 80px;
   height: 40px;
+  text-align: center;
 }
 .stepper .stepper-input {
   background: transparent;
@@ -1004,16 +1059,15 @@ input[type="number"]{
   border-radius: 3px;
   color: #00ad9d;
   font-family: "helveticaneuecyrlight";
-  font-size: 36px;
-  text-align: right;
+  font-size: 30px;
+  text-align: center;
   margin: 0;
   overflow: hidden;
-  width: 100px;
+  width: 50px;
   @include box-sizing(border-box);
-  padding: 0 14px 0 0;
+  padding: 0 5px;
   z-index: 49;
   -moz-appearance: textfield;
-  float: left;
 }
 .stepper .stepper-input::-webkit-inner-spin-button,
 .stepper .stepper-input::-webkit-outer-spin-button {
@@ -1021,42 +1075,61 @@ input[type="number"]{
   margin: 0;
 }
 .stepper-arrow.up{
-  @include icon-sprite(top);
-  width: 19px;
-  height: 11px;
   display: block;
   color: transparent;
   font-size: 0;
-  float: left;
   position: absolute;
-  right: 0;
+  left: 0;
   top: 6px;
   cursor: pointer;
+  &:before{
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e61d";
+    color: #00ae9d;
+    font-size: 25px;
+  }
 
 }
 .stepper-arrow.down{
-  width: 19px;
   position: absolute;
   right: 0;
-  bottom: 4px;
-  height: 11px;
+  top: 6px;
   display: block;
   color: transparent;
   float: left;
   font-size: 0;
   cursor: pointer;
-  @include icon-sprite(bottom);
+  &:before{
+    content: "\e620";
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #00ae9d;
+    font-size: 25px;
+  }
 
 }
 .quantity-product{
-  float: right;
-  width: 284px;
+  width: 100%;
   p{
-    float: left;
     margin: 22px -9px 0 0;
     color: #9f9f9f;
     font-family: "HelveticaNeueCyr";
-    font-size: 16px;
+    font-size: 11px;
 
   }
 }
@@ -1092,31 +1165,30 @@ input[type="number"]{
 }
 .tagsinput{
   position: relative;
-  width: 341px;
-  height: 53px;
+  width: 100%;
   text-align: left;
+  margin: 0 0 14px;
   float: right;
   button{
-    @include icon-sprite(search-icon);
-    width: icon-sprite-width(search-icon);
-    height: icon-sprite-height(search-icon);
     display: inline-block;
+    background: transparent;
+    height: 31px;
+    line-height: 31px;
+    font-size: 12px;
     border: none;
-    font-size: 0;
-    color: transparent;
+    color: #a1a1a1;
     position: absolute;
-    right: 21px;
-    top: 14px;
+    right: 0;
+    top: 3px;
     cursor: pointer;
   }
 }
 #tags_1_tagsinput{
-  width: 341px !important;
+  width: 100% !important;
   height: auto !important;
   border: 1px solid #ebebeb;
   background-color: #fff;
-  padding: 13px 44px 7px 13px;
-  @include box-sizing(border-box);
+  padding: 3px 44px 3px 13px;
   text-align: left;
   overflow: hidden;
   @include box-sizing(border-box);
@@ -1158,42 +1230,37 @@ input[type="number"]{
     border: none;
     width: 59px !important;
     background: transparent;
-    height: 24px !important;
+    height: 33px !important;
     padding: 0 0 0 7px;
     display: inline-block;
     color: #959595 !important;
     font-family: "helveticaneuecyrlight";
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 31px;
+    margin: -3px 0;
   }
 }
 .content-menu{
-  padding: 25px 0 27px;
+  padding: 0 0 12px;
   overflow: hidden;
   clear: both;
   li{
     float: left;
-    &:first-child a{
-      padding: 0 84px 7px;
-    }
-    &:last-child a{
-      padding: 0 51px 7px;
-    }
+    width: 33.33333333%;
     a{
-      display: inline-block;
+      display:block;
       width: 100%;
+      text-align: center;
       @include box-sizing(border-box);
-      padding: 0 192px 7px;
+      padding: 0 0 4px;
       color: #c6c6c6;
       font-family: "HelveticaNeueCyr";
-      font-size: 18px;
+      font-size: 10px;
       text-transform: uppercase;
       text-decoration: none;
       border-bottom: 2px solid #d5d5d5;
       &:hover{
         color: #00ad9d;
-        font-family: "HelveticaNeueCyr";
-        font-size: 18px;
         border-bottom: 2px solid #00ae9d;
       }
     }
@@ -1201,8 +1268,6 @@ input[type="number"]{
   .active{
     a{
       color: #00ad9d;
-      font-family: "HelveticaNeueCyr";
-      font-size: 18px;
       border-bottom: 2px solid #00ae9d;
     }
   }
@@ -1216,103 +1281,140 @@ input[type="number"]{
   }
 }
 .small-preview{
-  width: 172px;
+  width: 90px;
   float: left;
+  height: 90px;
+  overflow: hidden;
   margin: 0 6px 0 -7px;
   li{
-    float: left;
-    margin: 0 7px 11px;
     border: 1px solid #ececec;
+    position: relative;
+    &:first-child{
+      &:after{
+        position: absolute;
+        right: 5px;
+        bottom: 6px;
+        content: "все фото";
+        display: inline-block;
+        color: #fff;
+        font-family: "HelveticaNeueCyr";
+        font-size: 9px;
+        text-decoration: underline;
+      }
+    }
   }
   img{
-    width: 69px;
-    height: 69px;
+    width: 90px;
+    height: 90px;
   }
 }
 .box-right, .box-right-button{
   float: right;
   clear: none !important;
-  padding: 14px !important;
-  width: 155px;
+  padding: 14px  0 ;
+  text-align: center;
+  width: 62.13235%;
   background-color: #f1f1f1;
-  margin: 0 0 0 15px;
+  height: 90px;
+  font-family: "HelveticaNeueCyr";
   @include box-sizing(border-box);
+  margin: 0 0 10px;
   button{
     color: #fff;
     font-family: "HelveticaNeueCyr";
-    font-size: 16px;
+    font-size: 9px;
     font-weight: bold;
-    text-transform: none;
-    height: 50px;
+    text-transform: uppercase;
+    height: 25px;
     span{
       font-size: 14px;
     }
   }
   i{
     float: left;
-    margin: -3px 23px 0 -6px;
+    margin: -3px 9px 0 -6px;
   }
   ul{
-    border-bottom: 1px solid #cbcbcb;
-    padding: 0 0 11px;
+    padding: 0 0 7px 6px;
     margin: 0 0 7px;
   }
   li{
     color: #5f5f5f;
-    font-family: "HelveticaNeueCyr";
-    font-size: 14px;
+    font-size: 10px;
     font-weight: bold;
-    line-height: 21px;
+    line-height: normal;
+    text-align: left;
     a{
       color: #5f5f5f;
       text-decoration: none;
       font-family: "HelveticaNeueCyr";
-      font-size: 14px;
+      font-size: 10px;
       font-weight: bold;
-      line-height: 21px;
     }
   }
-  a{
+  & > a{
     color: #df5f4b;
     font-family: "HelveticaNeueCyr";
-    font-size: 12px;
+    font-size: 9px;
     text-decoration: underline;
+    border-top: 1px solid #cbcbcb;
+    float: right;
+    padding: 5px 0 0;
+    margin: 0 6px 0 0;
     &:hover{
       text-decoration: none;
     }
   }
+  & > span{
+    color: #979797;
+    width: 100%;
+    text-align: right;
+    font-family: "HelveticaNeueCyr";
+    font-size: 9px;
+    float: right;
+    margin: -7px 6px 7px 0;
+
+  }
   p{
     color: #5f5f5f;
-    font-family: "HelveticaNeueCyr";
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     margin: 0 0 9px;
   }
 }
 .box-right-button{
+  padding: 10px 6px 0;
+  @include box-sizing(border-box);
   button{
-    width: 128px;
+    width: 100%;
     padding: 0 14px;
-    font-size: 12px;
+    font-size: 9px;
     text-transform: uppercase;
-    margin: 18px 0 0 ;
-    &:first-child{
-      margin: 0;
-    }
+    margin:0 0 5px ;
+  }
+  p{
+    margin: 0 0 10px;
+  }
+  i{
+    font-size: 12px;
+    position: relative;
+    top: -0.5px;
+    margin-top: 0;
   }
 }
 .orders-text{
   overflow: hidden;
   padding: 0 0 5px;
   margin: -1px 0 0;
+  clear: both;
   p, a{
-    line-height: 21px;
     text-decoration: none;
     overflow: hidden !important;
     color: #696a6a;
     font-family: "HelveticaNeueCyr";
-    font-size: 16px;
+    font-size: 12px;
     text-align: justify;
+    line-height: normal;
   }
 }
 .open-more-text{
@@ -1323,9 +1425,9 @@ input[type="number"]{
   cursor: pointer;
   position: relative;
   padding: 64px 0 0;
-  width: 552px;
+  width: 100%;
   border-bottom: 1px solid #d5d5d5;
-  margin: -55px 0 19px 169px;
+  margin: -55px 0 13px 0;
   @include box-sizing(border-box);
   text-align: center;
   background: -moz-linear-gradient(top,  rgba(250,250,250,0) 0%, rgba(250,250,250,1) 82%); /* FF3.6+ */
@@ -1336,7 +1438,7 @@ input[type="number"]{
   background: linear-gradient(to bottom,  rgba(250,250,250,0) 0%,rgba(250,250,250,1) 82%); /* W3C */
   &.active{
     background: none;
-    margin: -59px 0 19px 169px;
+    margin: -59px 0 13px 0;
   }
 }
 .active{
@@ -1358,8 +1460,8 @@ input[type="number"]{
   overflow: hidden;
 }
 .icon-cart{
-  font-size: 20px;
-  margin: -1px 10px -6px 0 !important;
+  font-size: 14px;
+  margin: -3px 10px -6px 0 !important;
   display: inline-block;
 }
 .btn-buy{
@@ -1367,20 +1469,21 @@ input[type="number"]{
 }
 .orders-location{
   color: #656565 !important;
-  font-size: 14px !important;
-  line-height: 22px !important;
+  font-size: 9px !important;
+  line-height: 11px !important;
   margin: 0 0 15px;
+  float: right;
   .icon-location{
-    font-size: 20px;
+    font-size: 10px;
     float: left;
     color: #aaaaaa;
-    margin: 0 8px 0 0;
+    margin: 0 4px 0 0;
   }
 }
 .orders-id{
   color: #9f9f9f !important;
-  font-size: 14px !important;
-
+  font-size: 9px !important;
+  float: left;
 }
 .orders-sum{
   color: #656565 !important;
@@ -1389,11 +1492,7 @@ input[type="number"]{
 .orders-bottom{
   clear: both;
   overflow: hidden;
-  padding: 3px 0 19px;
-}
-.orders-info{
-  width: 169px;
-  float: left;
+  margin: -3px 0 -3px;
 }
 .orders-tags{
   overflow: hidden;
@@ -1414,19 +1513,22 @@ input[type="number"]{
   text-align: center;
 }
 .btn-not{
-  width: 50px;
+  width: 25px;
   text-align: center;
   padding: 0;
+  margin: 0 5px 0 0;
+  position: relative;
+  top: -2px;
   i{
-    margin: 5px 0 0;
+    margin: 0;
     float: none;
   }
 }
 .btn-yes{
-  width: 72px;
-  padding: 0 0 0 13px;
+  padding: 0 23px 0 15px;
   i{
-    margin: 3px 0 0;
+    margin: 3px 5px 0 0;
+    font-size: 11px;
   }
 }
 .icon-calendar{
@@ -1437,20 +1539,25 @@ input[type="number"]{
 }
 .orders-data{
   overflow: hidden;
+  width: 100%;
   li{
-    float: left;
-    height: 22px;
-    line-height: 22px;
-    margin: 0 0 0 57px;
-    font-size: 14px;
+    font-size: 9px;
+    float: right;
+    clear: right;
+    text-align: right;
     color: #656565;
-    &:first-child{
-      margin: 0;
-    }
-    .icon-location{
-      font-size: 22px;
+    margin: 0 0 10px;
+    overflow: hidden;
+    &:nth-child(odd){
       float: left;
+      text-align: right;
+      clear: left;
+    }
+    i{
+      float: none;
+      font-size: 10px;
       color: #aaaaaa;
+      margin: 0 5px 0 0;
     }
   }
 }
@@ -1474,23 +1581,24 @@ input[type="number"]{
 .balance-page{
   background-color: #f9f9f9;
   @include box-sizing(border-box);
-  padding: 28px 73px 27px 71px;
+  padding: 14px 12px 5px 12px;
   @include box-shadow(#c1c1c1 0 0 12px 0px);
 }
 .balance-info{
   border-bottom: 1px solid #e1e1e1;
-  border-top: 1px solid #e1e1e1;
   padding: 27px 0 28px;
   overflow: hidden;
-  margin: 0 0 26px;
+  margin: -4px 0 -5px;
+  text-align: center;
   button{
-    padding: 0 25px 0 27px;
+    padding: 0 40px;
+    display: inline-block;
   }
 }
 .balance-info-in{
   color: #656565;
   font-family: "HelveticaNeueCyr";
-  font-size: 24px;
+  font-size: 14px;
   position: relative;
   display: inline-block;
   line-height: 63px;
@@ -1506,7 +1614,7 @@ input[type="number"]{
   }
   span{
     font-family: "HelveticaNeueCyr";
-    font-size: 30px;
+    font-size: 24px;
   }
   i{
     display: inline-block;
@@ -1517,9 +1625,24 @@ input[type="number"]{
     position: relative;
     top: 7px;
     height: 30px;
-    margin: 0 9px 0 26px;
+    margin: 0 9px 0 0;
   }
 
+}
+.date-after__in, .gldp-el{
+  width: 84px;
+  height: 31px;
+  line-height: 31px;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+  font-size: 15px;
+  font-family: "helveticaneuecyrlight";
+  text-align: center;
+  margin: 0 10px;
+}
+.date-before__in{
+  @extend .date-after__in;
+  background: #fafafa;
 }
 .negative-balance{
   color: #d5614f !important;
@@ -1529,22 +1652,28 @@ input[type="number"]{
 }
 .data-filter{
   position: relative;
-  .gldp-el{
-    background: transparent;
-    border: none;
-    color: #656565;
-    font-family: "helveticaneuecyrlight";
-    font-size: 22px;
-  }
+  text-align: center;
+  color: #9f9f9f;
+  font-family: "HelveticaNeueCyr";
+  font-size: 12px;
+  padding: 17px 0 0;
+  @include clearfix;
   .gldp-default{
     @include border-radius(2px);
     background-color: #f9f9f9;
     @include box-shadow(#cecece 0 0 5px 0px);
     padding: 13px 5px 10px;
+    left: 50% !important;
+    margin-left: -49px;
+  }
+  p{
+    margin: 0 0 10px;
   }
 }
 .data-filter-in{
-    .gldp-default{
+  @include clearfix;
+  margin: 0 0 11px;
+  .gldp-default{
       top: 35px !important;
       left: 108px !important;
       &:last-child{
@@ -1561,54 +1690,54 @@ input[type="number"]{
 .date-after, .date-before{
   position: relative;
   display: inline-block;
-  margin: 0 2px 0 0;
-  line-height: 52px;
-  p{
-    color: #9f9f9f;
-    font-family: "HelveticaNeueCyr";
-    font-size: 16px;
-    display: inline-block;
-  }
-  input{
-    width: 102px;
-    margin: 0 0 0 12px;
-    position: relative;
-    z-index: 5;
-  }
-  label{
-    cursor: pointer;
-    &:hover i{
-      color: #00ae9d;
-    }
-  }
+  text-align: center;
+  color: #9f9f9f;
+  font-family: "HelveticaNeueCyr";
+  font-size: 12px;
+  display: inline-block;
+  width: 50%;
+  float: left;
   i{
-    font-size: 25px;
+    font-size: 17px;
     float: none;
     background: transparent;
     position: relative;
-    top: 2px;
+    top: 7px;
+    left: 2px;
   }
-  span{
-    color: #9fa0a0;
-    font-family: "helveticaneuecyrlight";
-    font-size: 24px;
-
+  label{
+    float: left;
+    width: 31px;
+    height: 31px;
+    border: 1px solid #ebebeb;
+    background: #fcfcfc;
+    text-align: center;
+    margin: 0 -1px 0 0;
+    display: inline-block;
+  }
+  .mydate{
+    margin: 0;
+    float: left;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
+
 .search-table{
   position: relative;
-  float: right;
-  width: 339px;
-  height: 50px;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  height: 31px;
   border: 1px solid #f3f3f3;
   background: #FFFFFF;
   input{
-    height: 50px;
+    height: 31px;
     width: 100%;
     color: #b2b2b2;
     font-family: "HelveticaNeueCyr";
-    font-size: 16px;
-    padding: 0 50px 0 20px;
+    font-size: 12px;
+    padding: 0 23px 0 11px;
     @include box-sizing(border-box);
     background: transparent;
     border: none;
@@ -1617,22 +1746,17 @@ input[type="number"]{
     background: transparent;
     border: none;
     color: #b2b2b2;
-    font-size: 23px;
+    font-size: 12px;
     position: absolute;
-    right: 8px;
-    top: 10px;
+    right: 4px;
+    top: 5px;
   }
 
 }
 .history-table{
-  margin: 26px 0 24px;
-  tbody{
-    height: 527px;
-    overflow-y: auto;
-    display: inline-block;
-    width: 100%;
-    @include box-sizing(border-box);
-  }
+  border-top: 1px solid #e1e1e1;
+  margin: 10px 0 0;
+  padding: 5px 0 0;
   i{
     display: inline-block;
     width: auto;
@@ -1647,47 +1771,39 @@ input[type="number"]{
 }
 .result-table{
   color: #afafaf;
-  font-size: 41px;
-  line-height: 41px;
+  line-height: 12px;
+  width: 100%;
   p{
-    float: right;
+    margin: 0 0 10px;
     color: #656565;
     font-family: "HelveticaNeueCyr";
-    font-size: 14px;
+    font-size: 12px;
     position: relative;
-    &:after{
-      content: "/";
-      display: inline-block;
-      color: #afafaf;
-      font-size: 41px;
-      line-height: 41px;
-      position: absolute;
-      right: -31px;
-      top: 0;
-    }
-    &:first-child{
-      &:after{
-        display: none;
-      }
+    text-align: justify;
+    i{
+      background-size: 12px 14px !important;
     }
   }
   span{
-    font-size: 24px;
-    font-family: "HelveticaNeueCyr";
-
+    font-size: 12px;
+    float: right;
+    margin: 0 0 0 6px;
+    & + span{
+      font-size: 18px;
+    }
   }
 }
 .icon-coint{
   display: inline-block;
-  width: 24px;
-  height: 28px;
-  margin: 0 10px 0 0;
+  width: 12px;
+  height: 14px;
+  margin: 0 12px 0 0;
   position: relative;
-  top: 5px;
+  top: 3px;
+
 
 }
 .add-cash{
-  margin: 0 46px 0 0;
   .icon-coint{
     background: url("../images/coint-2.png") no-repeat;
   }
@@ -1732,10 +1848,10 @@ input[type="number"]{
 }
 .pagination{
   float: left;
-  margin: -9px 0 0;
+  margin: 10px 0 0;
   li{
     float: left;
-    margin: 7px 0 0 10px;
+    margin: 0 0 0 10px;
     &:first-child,
     &:last-child {
       margin-left: 0;
@@ -1759,7 +1875,7 @@ input[type="number"]{
     text-decoration: none;
     color: #d0d0d0;
     font-family: "HelveticaNeueCyr";
-    font-size: 18px;
+    font-size: 9px;
     &:hover{
       color: #00ae9d !important;
     }
@@ -1768,7 +1884,7 @@ input[type="number"]{
   .active{
     margin-top: 0;
     a{
-      font-size: 24px;
+      font-size: 12px;
       color: #00ae9d;
     }
     i{
@@ -1825,18 +1941,21 @@ input[type="number"]{
 .managing-menu{
   display: inline-block;
   overflow: hidden;
+  margin: 40px 0 0;
   li{
-    float: left;
-    margin: 0 0 0 90px;
+    margin: 0 ;
+    width: 100%;
+    text-align: center;
     &:first-child{
-      margin: 0;
       span{
-        padding: 33px 0 0 5px;
+        padding: 16px 0 0 3px;
       }
       i{
-        font-size: 19px;
+        font-size: 9px;
+        margin-left: -11px;
         &:first-child{
-          font-size: 41px;
+          font-size: 20px;
+          margin-left: 0;
         }
       }
     }
@@ -1844,34 +1963,33 @@ input[type="number"]{
   a{
     color: #a3a3a3;
     font-family: "HelveticaNeueCyr";
-    font-size: 20px;
+    font-size: 10px;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
     display: block;
-    width: 173px;
-    padding: 18px 0 28px;
+    width: 86px;
+    padding: 9px 0 14px;
     &:hover{
       background: #FFFFFF;
     }
   }
   span{
     display: inline-block;
-    width: 118px;
-    height: 118px;
+    width: 59px;
+    height: 59px;
     border: 2px solid #bebebe;
-    @include border-radius(59px);
+    @include border-radius(30px);
     position: relative;
     @include box-sizing(border-box);
-    padding: 16px 0 0 9px;
-    margin: 0 0 19px;
-    
+    padding: 8px 0 0 5px;
+    margin: 0 0 10px;
   }
   i{
-    font-size: 31px;
+    font-size: 15px;
     border: 2px solid #fafafa;
     border-radius: 23px;
-    margin: 0 0 0 -24px;
+    margin: 0 0 0 -15px;
     color: #b9b8b8;
     top: 5px;
     position: relative;
@@ -1879,14 +1997,14 @@ input[type="number"]{
     &:first-child{
       border: none;
       background: transparent;
-      font-size: 69px;
+      font-size: 35px;
       margin: 0;
       top: 0;
     }
   }
 }
 .accordion{
-
+  margin: 50px 0 0;
 }
 .accordion-item{
   overflow: hidden;
@@ -1896,8 +2014,8 @@ input[type="number"]{
 .accordion-title{
   color: #9f9f9f;
   font-family: "HelveticaNeueCyr";
-  font-size: 20px;
-  margin: 0 0 30px;
+  font-size: 12px;
+  margin: 0 0 10px;
   cursor: pointer;
   text-transform: uppercase;
   &:hover{
@@ -1936,26 +2054,29 @@ input[type="number"]{
 }
 .accordion-in{
   display: none;
-  li{
-    float: left;
-    width: 25%;
-    text-align: center;
-  }
-  a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 0 0 6px;
-    width: 100%;
-    color: #c6c6c6;
-    font-family: "HelveticaNeueCyr";
-    font-size: 18px;
-    border-bottom: 2px solid #d5d5d5;
-    text-transform: uppercase;
-    &:hover{
-      color: #00ad9d;
-      border-bottom: 2px solid #00ad9d;
+  & > ul{
+    li{
+      float: left;
+      width: 25%;
+      text-align: center;
+    }
+    a{
+      text-decoration: none;
+      display: inline-block;
+      padding: 0 0 3px;
+      width: 100%;
+      color: #c6c6c6;
+      font-family: "HelveticaNeueCyr";
+      font-size: 9px;
+      border-bottom: 2px solid #d5d5d5;
+      text-transform: uppercase;
+      &:hover{
+        color: #00ad9d;
+        border-bottom: 2px solid #00ad9d;
+      }
     }
   }
+
   .active{
     a{
       color: #00ad9d;
@@ -1988,7 +2109,4 @@ input[type="number"]{
   border-top: 0;
   padding: 0 0 15px;
   margin: 12px 0 0;
-}
-.mydate{
-  line-height: 40px;
 }

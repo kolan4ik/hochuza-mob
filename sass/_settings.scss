@@ -123,24 +123,28 @@ strong{
 .form-item{
   overflow: hidden;
   margin: 0 0 18px;
+  position: relative;
   label{
-    color: #9f9f9f;
-    font-family: "HelveticaNeueCyr";
-    font-size: 16px;
-    float: left;
-    width: 147px;
-    text-align: left;
-    line-height: 40px;
-    padding: 0 0 0 50px;
+    color: #f1f1f1;
+    font-size: 12px;
+    width: 31px;
+    height: 31px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #ebebeb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fcfcfc;
   }
   input{
-    width: 312px;
-    height: 42px;
+    width: 100%;
+    height: 33px;
     border: 1px solid #ebebeb;
     background-color: #fff;
     float: left;
     margin: 0 0 5px;
-    padding: 0 0 0 14px;
+    padding: 0 0 0 42px;
     @include box-sizing(border-box);
   }
   span{
@@ -148,7 +152,7 @@ strong{
     font-size: 12px !important;
     margin: 0 !important;
     display: block !important;
-    padding: 0 0 0 197px;
+    padding: 0 0 0 35px;
     text-align: left;
     clear: both;
 
@@ -157,41 +161,38 @@ strong{
 .login-form-item{
   display: inline-block;
   overflow: hidden;
-  padding: 0 15px;
-  margin: 0 0 15px;
+  margin: 0 0 12px;
   @include box-sizing(border-box);
+  position: relative;
+  width: 100%;
   label{
-    float: left;
-    width: 42px;
-    height: 42px;
-    @include box-sizing(border-box);
+    color: #f1f1f1;
+    font-size: 20px;
+    width: 31px;
+    height: 31px;
+    text-align: center;
+    line-height: 35px;
     border: 1px solid #ebebeb;
-    background: #fefefe;
-    position: relative;
-    z-index: 4;
-    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fcfcfc;
   }
   input{
-    float: left;
-    margin: 0 0 0 -42px;
     color: #a3a3a3;
     font-family: "HelveticaNeueCyr";
-    font-size: 16px;
-    width: 357px;
-    height: 42px;
+    font-size: 12px;
+    width: 100%;
+    height: 33px;
     border: 1px solid #ebebeb;
     background-color: #fff;
-    padding: 0 0 0 54px;
+    padding: 0 0 0 42px;
     @include box-sizing(border-box);
   }
   .icon-mail{
-    margin-top: 11px;
-    font-size: 22px;
     color: #aaaaaa;
   }
   .icon-mobile{
-    font-size: 22px;
-    margin-top: 11px;
     color: #aaaaaa;
   }
   span{
@@ -202,13 +203,13 @@ strong{
     clear: left;
     color: #b4b4b4;
     font-family: "HelveticaNeueCyr";
-    font-size: 12px;
+    font-size: 9px;
     margin: 6px 0 0;
-    padding: 0 0 0 43px;
+    padding: 0 0 0 34px;
     @include clearfix;
   }
   i{
-    margin: 8px 0 0 !important;
+    margin: 0 !important;
     float: none;
     width: auto;
   }
@@ -222,51 +223,45 @@ table{
   a{
     color: #656565;
     font-family: "HelveticaNeueCyr";
-    font-size: 14px;
+    font-size: 9px;
     text-decoration: underline;
+    display: block;
+    width: 100%;
     &:hover{
       text-decoration: none;
     }
 
   }
   span{
-    font-size: 24px;
+    font-size: 12px;
     font-family: "helveticaneuecyrlight";
   }
   td{
-    padding: 13px 8px 15px 0;
+    padding: 13px 0 15px 8px;
     color: #656565;
     font-family: "HelveticaNeueCyr";
-    font-size: 14px;
-    width: 457px;
+    font-size: 12px;
     @include box-sizing(border-box);
+    text-align: right;
     &:first-child{
-      padding: 13px 0 16px 35px;
-      width: 140px;
-    }
-    &:nth-child(3),
-    &:nth-child(4){
-      text-align: right;
-      width: 146px;
+      padding: 13px 0 16px 12px;
+      text-align: left;
     }
   }
 }
 thead{
-  border-bottom: 2px solid #afafaf;
-  display: inline-block;
-  width: 100%;
+  border-bottom: 2px solid #d5d5d5;
   td{
     text-transform: uppercase;
-    padding: 0 8px 5px 0;
+    padding: 0 0 5px 8px;
     &:first-child{
-      padding:  0 0 5px 35px;
-      width: 138px;
+      padding:  0 0 5px 12px;
     }
   }
   a{
     color: #9f9f9f;
     font-family: "HelveticaNeueCyr";
-    font-size: 18px;
+    font-size: 11px;
     text-decoration: none;
     &:hover, &:hover i{
       color: #00ae9d;
@@ -274,15 +269,13 @@ thead{
   }
 }
 tbody{
-  border-bottom: 2px solid #afafaf;
-  @include box-sizing(border-box);
   tr{
-   height: 52px;
     &:nth-child(even){
       background: #eeeeee;
     }
   }
-  td{
-    min-height: 52px;
+  a{
+    line-height: 12px;
+    text-decoration: none;
   }
 }

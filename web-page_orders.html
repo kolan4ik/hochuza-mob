@@ -12,57 +12,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/glDatePicker.default.css">
+    <script>document.write('<script src="http://'
+                + (location.host || 'localhost').split(':')[0]
+                + ':35729/livereload.js"></'
+                + 'script>')</script>
 </head>
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div class="container">
-    <nav class="pushy pushy-left nav-menu">
+    <nav id="main-nav" class="pushy pushy-left nav-menu">
         <ul>
+            <li><a class="logo" href="web-page_main.html"></a></li>
             <li><a href="web-page_main.html"><i class="icon-home"></i>главная</a></li>
             <li><a href="statistic.html"><i class="icon-pie"></i>статистика сайта</a></li>
             <li><a href="web-page_main.html"><i class="icon-file"></i>заявки</a></li>
             <li><a href="setting.html"><i class="icon-cog"></i>настройки</a></li>
-            <li><a href="#"><i class="icon-users"></i>пользователи</a></li>
-            <li><a href="#"><i class="icon-credit"></i>реквизиты</a></li>
-            <li><a href="#"><i class="icon-user3"></i>модерация</a></li>
-            <li><a href="#"><i class="icon-bars"></i>парсинг</a></li>
-            <li><a href="balance.html"><i class="icon-info"></i>баланс</a></li>
-            <li><a href="#"><i class="icon-lock2"></i>магазины</a></li>
-            <li><a href="managing.html"><i class="icon-user-add"></i>управление персоналом</a></li>
-            <li><a href="#"><i class="icon-group"></i>администраторы</a></li>
         </ul>
     </nav>
     <div class="site-overlay"></div>
     <div class="scroller">
         <header class="header">
             <article class="wrapper">
-                <button class="menu-btn">Menu</button>
-                <a class="link-cabinet" href="web-page_profile_all.html"><i class="icon-user2"></i> user profile</a>
+                <button class="menu-btn"><i class="icon-three-bars"></i></button>
+                <a class="link-cabinet" href="web-page_profile_all.html"><i class="icon-user"></i><i class="icon-caret-down"></i></a>
                 <a class="logo" href="web-page_main.html"></a>
             </article>
         </header>
         <div class="content">
             <article class="wrapper orders-page">
-                <h4>Заявки</h4>
-                <div class="select-categories">
-                    <select class="select" name="select" tabindex="1">
-                        <option value="1">Категория:</option>
-                        <option value="2">Категория:1</option>
-                        <option value="3">Категория:2</option>
-                        <option value="4">Категория:3</option>
-                        <option value="5">Категория:4</option>
-                        <option value="6">Категория:5</option>
-                        <option value="7">Категория:6</option>
-                    </select>
-                </div>
+                <h2>Мои заявки</h2>
                 <div class="tagsinput">
                     <form action="">
-                        <input id="tags_1" type="text" class="tags" value="холодильник, samsung" />
-                        <button type="submit"></button>
+                        <input id="tags_1" type="text" class="tags" />
+                        <button type="submit"><i class="icon-search"></i></button>
                     </form>
                 </div>
                 <div class="content-menu">
@@ -74,84 +60,53 @@
                 </div>
                 <div class="orders-item">
                     <div class="box-right ">
-                        <button class="btn btn-green btn-buy"><i class="icon-cart"></i>200 <span>грн</span></button>
+                        <p>До <strong>2 000</strong> грн</p>
+                        <button class="btn btn-green btn-buy"><i class="icon-cart"></i>купить заявку!</button>
+                    </div>
+                    <div class="small-preview">
+                        <ul>
+                            <li><a class="fancybox-thumb" data-fancybox-group="thumb1" href="images/big-photo-product.jpg"><img src="images/small-photo1.jpg" alt=""/></a></li>
+                            <li><a class="fancybox-thumb" data-fancybox-group="thumb1" href="images/big-photo-product2.jpg"><img src="images/small-photo2.jpg" alt=""/></a></li>
+                            <li><a class="fancybox-thumb" data-fancybox-group="thumb1" href="images/big-photo-product.jpg"><img  src="images/small-photo3.jpg" alt=""/></a></li>
+                            <li><a class="fancybox-thumb" data-fancybox-group="thumb1" href="images/big-photo-product.jpg"><img src="images/small-photo4.jpg" alt=""/></a></li>
+                        </ul>
                     </div>
                     <div class="orders-text">
-                        <div class="small-preview">
-                            <ul>
-                                <li><a class="fancybox-thumb" data-fancybox-group="thumb1" href="images/big-photo-product.jpg"><img src="images/small-photo1.jpg" alt=""/></a></li>
-                                <li><a class="fancybox-thumb" data-fancybox-group="thumb1" href="images/big-photo-product2.jpg"><img src="images/small-photo2.jpg" alt=""/></a></li>
-                                <li><a class="fancybox-thumb" data-fancybox-group="thumb1" href="images/big-photo-product.jpg"><img  src="images/small-photo3.jpg" alt=""/></a></li>
-                                <li><a class="fancybox-thumb" data-fancybox-group="thumb1" href="images/big-photo-product.jpg"><img src="images/small-photo4.jpg" alt=""/></a></li>
-                            </ul>
-                        </div>
                         <p>Луна находится на расстоянии всего лишь 380 000 км от Земли. Это единственный внеземной мир в космосе, который посетили люди. На Луне нет ни воздуха, ни воды, ни погоды. Поверхность её покрыта горами, кратерами, морями затвердевшей лавы и слоями пыли. Земля - единственная планета внутренней Солнечной системы, имеющая большую луну. Масса Земли в 81 раз больше массы Луны, а радиус - почти в четыре раза больше лунного. Пара Земля - Луна удерживается вместе силой тяготения. На лунной поверхности сила  тяготения в шесть раз меньше, чем на Земле, поскольку Луна имеет значительно меньшую массу. </p>
                         <span class="open-more-text"><i class="icon-arrow-down"></i></span>
                         <section class="orders-bottom">
-                            <div class="orders-info">
-                                <p class="orders-sum">До <strong>2 000</strong> грн</p>
-                                <p class="orders-location"><i class="icon-location"></i>Киев, Украина</p>
-                                <p class="orders-id">Заявка 1234567890</p>
-                            </div>
-                            <div class="orders-tags">
-                                <ul>
-                                    <li>холодильник</li>
-                                    <li>samsung</li>
-                                    <li>холодильник</li>
-                                    <li>samsung</li>
-                                    <li>холодильник</li>
-                                    <li>samsung</li>
-                                    <li>samsung</li>
-                                    <li>холодильник</li>
-                                    <li>samsung</li>
-                                    <li>холодильник</li>
-                                </ul>
-                            </div>
+                            <p class="orders-id">Заявка <strong>1234567890</strong></p>
+                            <p class="orders-location"><i class="icon-location"></i>Киев, Украина</p>
                         </section>
 
                     </div>
                 </div>
                 <div class="orders-item">
-                    <div class="box-right btn-group">
+                    <div class="box-right">
+                        <p>До <strong>2 000</strong> грн</p>
                         <button class="btn btn-red btn-not"><i class="icon-close"></i></button>
-                        <button class="btn btn-green btn-yes"><i class="icon-checkmark"></i><span>ДА</span></button>
+                        <button class="btn btn-green btn-yes"><i class="icon-checkmark"></i><span>купить!</span></button>
+                    </div>
+                    <div class="small-preview">
+                        <ul>
+                            <li><a class="fancybox-thumb" data-fancybox-group="thumb2" href="images/big-photo-product.jpg"><img src="images/small-photo1.jpg" alt=""/></a></li>
+                            <li><a class="fancybox-thumb" data-fancybox-group="thumb2" href="images/big-photo-product2.jpg"><img src="images/small-photo2.jpg" alt=""/></a></li>
+                            <li><a class="fancybox-thumb" data-fancybox-group="thumb2" href="images/big-photo-product.jpg"><img  src="images/small-photo3.jpg" alt=""/></a></li>
+                            <li><a class="fancybox-thumb" data-fancybox-group="thumb2" href="images/big-photo-product.jpg"><img src="images/small-photo4.jpg" alt=""/></a></li>
+                        </ul>
                     </div>
                     <div class="orders-text">
-                        <div class="small-preview">
-                            <ul>
-                                <li><a class="fancybox-thumb" data-fancybox-group="thumb2" href="images/big-photo-product.jpg"><img src="images/small-photo1.jpg" alt=""/></a></li>
-                                <li><a class="fancybox-thumb" data-fancybox-group="thumb2" href="images/big-photo-product2.jpg"><img src="images/small-photo2.jpg" alt=""/></a></li>
-                                <li><a class="fancybox-thumb" data-fancybox-group="thumb2" href="images/big-photo-product.jpg"><img  src="images/small-photo3.jpg" alt=""/></a></li>
-                                <li><a class="fancybox-thumb" data-fancybox-group="thumb2" href="images/big-photo-product.jpg"><img src="images/small-photo4.jpg" alt=""/></a></li>
-                            </ul>
-                        </div>
                         <p>Луна находится на расстоянии всего лишь 380 000 км от Земли. Это единственный внеземной мир в космосе, который посетили люди. На Луне нет ни воздуха, ни воды, ни погоды. Поверхность её покрыта горами, кратерами, морями затвердевшей лавы и слоями пыли. Земля - единственная планета внутренней Солнечной системы, имеющая большую луну. Масса Земли в 81 раз больше массы Луны, а радиус - почти в четыре раза больше лунного. Пара Земля - Луна удерживается вместе силой тяготения. На лунной поверхности сила  тяготения в шесть раз меньше, чем на Земле, поскольку Луна имеет значительно меньшую массу. </p>
                         <span class="open-more-text"><i class="icon-arrow-down"></i></span>
                         <section class="orders-bottom">
-                            <div class="orders-info">
-                                <p class="orders-sum">До <strong>2 000</strong> грн</p>
-                                <p class="orders-location"><i class="icon-location"></i>Киев, Украина</p>
-                                <p class="orders-id">Заявка 1234567890</p>
-                            </div>
-                            <div class="orders-tags">
-                                <ul>
-                                    <li>холодильник</li>
-                                    <li>samsung</li>
-                                    <li>холодильник</li>
-                                    <li>samsung</li>
-                                    <li>холодильник</li>
-                                    <li>samsung</li>
-                                    <li>samsung</li>
-                                    <li>холодильник</li>
-                                    <li>samsung</li>
-                                    <li>холодильник</li>
-                                </ul>
-                            </div>
+                            <p class="orders-id">Заявка <strong>1234567890</strong></p>
+                            <p class="orders-location"><i class="icon-location"></i>Киев, Украина</p>
                         </section>
                     </div>
                 </div>
                 <div class="orders-item">
                     <div class="box-right ">
+                        <span>До <strong>2 000</strong> грн</span>
                         <ul>
                             <li>BIG DIG</li>
                             <li>big@dig.com</li>
@@ -159,37 +114,20 @@
                         </ul>
                         <a href="#">Пожаловаться</a>
                     </div>
+                    <div class="small-preview">
+                        <ul>
+                            <li><a class="fancybox-thumb" data-fancybox-group="thumb3" href="images/big-photo-product.jpg"><img src="images/small-photo1.jpg" alt=""/></a></li>
+                            <li><a class="fancybox-thumb" data-fancybox-group="thumb3" href="images/big-photo-product2.jpg"><img src="images/small-photo2.jpg" alt=""/></a></li>
+                            <li><a class="fancybox-thumb" data-fancybox-group="thumb3" href="images/big-photo-product.jpg"><img  src="images/small-photo3.jpg" alt=""/></a></li>
+                            <li><a class="fancybox-thumb" data-fancybox-group="thumb3" href="images/big-photo-product.jpg"><img src="images/small-photo4.jpg" alt=""/></a></li>
+                        </ul>
+                    </div>
                     <div class="orders-text">
-                        <div class="small-preview">
-                            <ul>
-                                <li><a class="fancybox-thumb" data-fancybox-group="thumb3" href="images/big-photo-product.jpg"><img src="images/small-photo1.jpg" alt=""/></a></li>
-                                <li><a class="fancybox-thumb" data-fancybox-group="thumb3" href="images/big-photo-product2.jpg"><img src="images/small-photo2.jpg" alt=""/></a></li>
-                                <li><a class="fancybox-thumb" data-fancybox-group="thumb3" href="images/big-photo-product.jpg"><img  src="images/small-photo3.jpg" alt=""/></a></li>
-                                <li><a class="fancybox-thumb" data-fancybox-group="thumb3" href="images/big-photo-product.jpg"><img src="images/small-photo4.jpg" alt=""/></a></li>
-                            </ul>
-                        </div>
                         <p>Луна находится на расстоянии всего лишь 380 000 км от Земли. Это единственный внеземной мир в космосе, который посетили люди. На Луне нет ни воздуха, ни воды, ни погоды. Поверхность её покрыта горами, кратерами, морями затвердевшей лавы и слоями пыли. Земля - единственная планета внутренней Солнечной системы, имеющая большую луну. Масса Земли в 81 раз больше массы Луны, а радиус - почти в четыре раза больше лунного. Пара Земля - Луна удерживается вместе силой тяготения. На лунной поверхности сила  тяготения в шесть раз меньше, чем на Земле, поскольку Луна имеет значительно меньшую массу. </p>
                         <span class="open-more-text"><i class="icon-arrow-down"></i></span>
                         <section class="orders-bottom">
-                            <div class="orders-info">
-                                <p class="orders-sum">До <strong>2 000</strong> грн</p>
-                                <p class="orders-location"><i class="icon-location"></i>Киев, Украина</p>
-                                <p class="orders-id">Заявка 1234567890</p>
-                            </div>
-                            <div class="orders-tags">
-                                <ul>
-                                    <li>холодильник</li>
-                                    <li>samsung</li>
-                                    <li>холодильник</li>
-                                    <li>samsung</li>
-                                    <li>холодильник</li>
-                                    <li>samsung</li>
-                                    <li>samsung</li>
-                                    <li>холодильник</li>
-                                    <li>samsung</li>
-                                    <li>холодильник</li>
-                                </ul>
-                            </div>
+                            <p class="orders-id">Заявка <strong>1234567890</strong></p>
+                            <p class="orders-location"><i class="icon-location"></i>Киев, Украина</p>
                         </section>
 
                     </div>
@@ -198,12 +136,6 @@
         </div>
         <footer class="footer">
             <article class="wrapper">
-                <ul class="footer-nav-menu">
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="privacy.html">privacy</a></li>
-                    <li><a href="terms.html">terms</a></li>
-                    <li><a href="policy.html">policy</a></li>
-                </ul>
                 <ul class="social-menu">
                     <li><a href="#"><i class="icon-googleplus"></i></a></li>
                     <li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -216,15 +148,14 @@
     </div>
 </div>
 
-
-
 <script src="js/libs/jquery-1.9.1.min.js"></script>
-<script src="js/libs/jquery.fancybox.js"></script>
-<script src="js/libs/handsome.js"></script>
 <script src="js/libs/modernizr.custom.71422.js"></script>
 <script src="js/libs/pushy.js"></script>
+<script src="js/libs/handsome.js"></script>
+<script src="js/libs/jquery.fancybox.js"></script>
 <script src="js/libs/glDatePicker.min.js"></script>
 <script src="js/libs/jquery.fs.stepper.js"></script>
+<script src="js/libs/jquery.touchSwipe.min.js"></script>
 <script src="js/libs/jquery.tagsinput.min.js"></script>
 
 <script src="js/script.js"></script>

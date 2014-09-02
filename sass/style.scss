@@ -94,7 +94,7 @@ body {
   border: none;
   color: #fff;
   font-family: "HelveticaNeueCyr";
-  font-size: 18px;
+  font-size: 12px;
   @include box-shadow(inset 0 -3px 0 rgba(0,0,0,.21));
   @include box-sizing(border-box);
   text-align: center;
@@ -122,29 +122,29 @@ body {
 .btn-red{
   cursor: pointer;
   padding: 0 61px;
-  height: 63px;
+  height: 40px;
   background-color: #df5f4b;
 }
 .btn-green{
   padding: 0 48px;
-  height: 63px;
+  height: 40px;
   background-color: #00ad9d;
 }
 h2{
   color: #00ad9d;
   font-family: "Veles";
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
-  margin: 0 0 45px;
+  margin: 0 0 -25px;
   text-align: center;
 
 }
 h3{
   color: #d5614f;
   font-family: "Veles";
-  font-size: 24px;
+  font-size: 15px;
   font-weight: bold;
-  margin: 0 0 45px;
+  margin: 0 0 12px;
 
 }
 h4{

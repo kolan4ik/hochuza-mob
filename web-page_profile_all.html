@@ -21,28 +21,21 @@
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div class="container">
-    <nav class="pushy pushy-left nav-menu">
+    <nav id="main-nav" class="pushy pushy-left nav-menu">
         <ul>
+            <li><a class="logo" href="web-page_main.html"></a></li>
             <li><a href="web-page_main.html"><i class="icon-home"></i>главная</a></li>
             <li><a href="statistic.html"><i class="icon-pie"></i>статистика сайта</a></li>
             <li><a href="web-page_main.html"><i class="icon-file"></i>заявки</a></li>
             <li><a href="setting.html"><i class="icon-cog"></i>настройки</a></li>
-            <li><a href="#"><i class="icon-users"></i>пользователи</a></li>
-            <li><a href="#"><i class="icon-credit"></i>реквизиты</a></li>
-            <li><a href="#"><i class="icon-user3"></i>модерация</a></li>
-            <li><a href="#"><i class="icon-bars"></i>парсинг</a></li>
-            <li><a href="balance.html"><i class="icon-info"></i>баланс</a></li>
-            <li><a href="#"><i class="icon-lock2"></i>магазины</a></li>
-            <li><a href="managing.html"><i class="icon-user-add"></i>управление персоналом</a></li>
-            <li><a href="#"><i class="icon-group"></i>администраторы</a></li>
         </ul>
     </nav>
     <div class="site-overlay"></div>
     <div class="scroller">
         <header class="header">
             <article class="wrapper">
-                <button class="menu-btn">Menu</button>
-                <a class="link-cabinet" href="web-page_profile_all.html"><i class="icon-user2"></i> user profile</a>
+                <button class="menu-btn"><i class="icon-three-bars"></i></button>
+                <a class="link-cabinet" href="web-page_profile_all.html"><i class="icon-user"></i><i class="icon-caret-down"></i></a>
                 <a class="logo" href="web-page_main.html"></a>
             </article>
         </header>
@@ -58,28 +51,34 @@
                                 <button class="remove-photo"><i class="icon-trash-o"></i></button>
                             </div>
                         </div>
-                        <div class="contact-user__in fl_r">
-                            <p><i class="icon-user"></i><input type="text" readonly value="Имя Фамилия"/><i class="icon-pencil"></i></p>
-                            <p><i class="icon-mail"></i><input type="email" readonly value="welcome@bigdig.com.ua"/></p>
-                            <p class="tel-user"><i class="icon-mobile"></i><input type="text" readonly value="(012) 345-67-89"/> <i class="icon-plus"></i> </p>
-                            <p><i class="icon-key"></i><a class="open-pass-popup" href="#">Изменить пароль</a></p>
+                        <div class="contact-user__in">
+                            <p><label for="name"><i class="icon-user"></i></label><input type="text" readonly value="Имя Фамилия" id="name"/></p>
+                            <p><label for="email"><i class="icon-mail"></i></label><input type="email" readonly id="email" value="welcome@bigdig.com.ua"/></p>
+                            <p class="tel-user"><label><i class="icon-mobile"></i></label><input type="text"  readonly value="(012) 345-67-89"/></p>
+                            <p class="open-cheange-pass"><i class="icon-key"></i><a href="#">Изменить пароль</a></p>
+                            <div class="cheange-pass">
+                                <div class="form-item  accept">
+                                    <label for="pas"><i class="icon-checkmark"></i></label>
+                                    <input type="password" id="pas" placeholder="Старый пароль">
+                                </div>
+                                <div class="form-item">
+                                    <label for="pas1"><i class="icon-checkmark"></i></label>
+                                    <input type="password" id="pas1" placeholder="Новый пароль">
+                                    <span>более 6 символов</span>
+                                </div>
+                                <div class="form-item">
+                                    <label for="pas2"><i class="icon-checkmark"></i></label>
+                                    <input type="password" id="pas2" placeholder="Повторите пароль">
+                                </div>
+                            </div>
                         </div>
-                        <div class="btn-group">
-                            <button class="back"></button>
-                            <button class="btn btn-red disabled">Сохранить</button>
-                        </div>
+                        <button class="btn btn-red disabled">Сохранить</button>
                     </form>
                 </div>
             </article>
         </div>
         <footer class="footer">
             <article class="wrapper">
-                <ul class="footer-nav-menu">
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="privacy.html">privacy</a></li>
-                    <li><a href="terms.html">terms</a></li>
-                    <li><a href="policy.html">policy</a></li>
-                </ul>
                 <ul class="social-menu">
                     <li><a href="#"><i class="icon-googleplus"></i></a></li>
                     <li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -89,46 +88,18 @@
                 <span class="footer-img slippers"></span>
             </article>
         </footer>
-        <div class="size-popup">
-            <div class="popup-wrap">
-                <div class="popup__in">
-                    <div class="pass-popup">
-                        <a class="close-popup" href="#"></a>
-                        <h2>Изменить пароль</h2>
-                        <form class="form-chenche-password" action="">
-                            <div class="form-item">
-                                <label for="pas">Старый пароль:</label>
-                                <input type="password" id="pas">
-                            </div>
-                            <div class="form-item">
-                                <label for="pas1">Новый пароль:</label>
-                                <input type="password" id="pas1">
-                                <span>более 6 символов</span>
-                            </div>
-                            <div class="form-item">
-                                <label for="pas2">Ещё раз:</label>
-                                <input type="password" id="pas2">
-                                <span>более 6 символов</span>
-                            </div>
-                            <button type="submit" class="btn btn-red">сохранить</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="popup-overlay"></div>
-        </div>
     </div>
 </div>
 
-
-
 <script src="js/libs/jquery-1.9.1.min.js"></script>
-<script src="js/libs/jquery.fancybox.js"></script>
-<script src="js/libs/handsome.js"></script>
 <script src="js/libs/modernizr.custom.71422.js"></script>
 <script src="js/libs/pushy.js"></script>
+<script src="js/libs/handsome.js"></script>
+<script src="js/libs/jquery.fancybox.js"></script>
 <script src="js/libs/glDatePicker.min.js"></script>
 <script src="js/libs/jquery.fs.stepper.js"></script>
+<script src="js/libs/jquery.touchSwipe.min.js"></script>
+<script src="js/libs/jquery.tagsinput.min.js"></script>
 
 <script src="js/script.js"></script>
 </body>

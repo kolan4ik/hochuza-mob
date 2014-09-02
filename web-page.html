@@ -17,32 +17,26 @@
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/glDatePicker.default.css">
 
+
 </head>
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div class="container">
-    <nav class="pushy pushy-left nav-menu">
+    <nav id="main-nav" class="pushy pushy-left nav-menu">
         <ul>
+            <li><a class="logo" href="web-page_main.html"></a></li>
             <li><a href="web-page_main.html"><i class="icon-home"></i>главная</a></li>
             <li><a href="statistic.html"><i class="icon-pie"></i>статистика сайта</a></li>
             <li><a href="web-page_main.html"><i class="icon-file"></i>заявки</a></li>
             <li><a href="setting.html"><i class="icon-cog"></i>настройки</a></li>
-            <li><a href="#"><i class="icon-users"></i>пользователи</a></li>
-            <li><a href="#"><i class="icon-credit"></i>реквизиты</a></li>
-            <li><a href="#"><i class="icon-user3"></i>модерация</a></li>
-            <li><a href="#"><i class="icon-bars"></i>парсинг</a></li>
-            <li><a href="balance.html"><i class="icon-info"></i>баланс</a></li>
-            <li><a href="#"><i class="icon-lock2"></i>магазины</a></li>
-            <li><a href="managing.html"><i class="icon-user-add"></i>управление персоналом</a></li>
-            <li><a href="#"><i class="icon-group"></i>администраторы</a></li>
         </ul>
     </nav>
     <div class="site-overlay"></div>
     <div class="scroller">
         <header class="header">
             <article class="wrapper">
-                <button class="menu-btn">Menu</button>
-                <a class="link-cabinet" href="web-page_profile_all.html"><i class="icon-user2"></i> user profile</a>
+                <button class="menu-btn"><i class="icon-three-bars"></i></button>
+                <a class="link-cabinet" href="web-page_profile_all.html"><i class="icon-user"></i><i class="icon-caret-down"></i></a>
                 <a class="logo" href="web-page_main.html"></a>
             </article>
         </header>
@@ -57,19 +51,8 @@
                         <input type="text"   value="3 000"/>
                         <span>грн</span>
                     </div>
-                    <button class="btn-update"><i class="update-icon"></i>Обновить</button>
                 </div>
-                <div class="preview-product">
-                    <p>Не хватает слов?
-                        Добавь фотографию!</p>
-                    <div class="preview-gallery">
-                        <a class="fancybox-thumb" data-fancybox-group="thumb" href="images/big-photo-product.jpg"><img src="images/small-photo1.jpg" alt=""/></a>
-                        <a class="fancybox-thumb" data-fancybox-group="thumb" href="images/big-photo-product2.jpg"><img src="images/small-photo2.jpg" alt=""/></a>
-                        <a class="fancybox-thumb" data-fancybox-group="thumb" href="images/big-photo-product.jpg"><img  src="images/small-photo3.jpg" alt=""/></a>
-                        <span class="add-photo"><input type="file" name="file" value=""/></span>
-                        <i class="icon-trash-o"></i>
-                    </div>
-                </div>
+
                 <div class="select-box">
                     <div class="select-box-in">
                         <select class="select" name="select" tabindex="1">
@@ -88,19 +71,30 @@
                     <input type="text" readonly value="(012) 345-67-89"/>
                     <span class="icon-pencil"></span>
                 </div>
+                <div class="preview-product">
+                    <div class="preview-gallery">
+                        <a class="fancybox-thumb" data-fancybox-group="thumb" href="images/big-photo-product.jpg"><img src="images/small-photo1.jpg" alt=""/></a>
+                        <a class="fancybox-thumb" data-fancybox-group="thumb" href="images/big-photo-product2.jpg"><img src="images/small-photo2.jpg" alt=""/></a>
+                        <a class="fancybox-thumb" data-fancybox-group="thumb" href="images/big-photo-product.jpg"><img  src="images/small-photo3.jpg" alt=""/></a>
+                        <span class="add-photo"><input type="file" name="file" value=""/></span>
+                        <i class="icon-trash-o"></i>
+                    </div>
+                </div>
                 <form action="">
-                    <span class="title-more">дополнительно...
-                        <span>свернуть...</span>
-                    </span>
+                    <p class="title-more">
+                        <span>дополнительно... <i class="icon-arrow-down"></i> </span>
+                        <span>свернуть... <i class="icon-arrow-up"></i></span>
+                    </p>
                     <div class="more-info">
-                        <div class="quantity-product">
-                            <p>Предложений не более:</p>
-                            <input type="text" value="5" min="0"/>
-                        </div>
                         <div class="datepicker ">
                             <p>Товар нужен до:</p>
                             <input type="text" class="mydate" id="mydate" />
                         </div>
+                        <div class="quantity-product">
+                            <p>Предложений не более:</p>
+                            <input type="text" value="5" min="0"/>
+                        </div>
+
                     </div>
                     <div class="checkBox color_red btn-accept">
                         <input type="checkbox"  id="checkBox" class="checkbox-item"/>
@@ -112,12 +106,6 @@
         </div>
         <footer class="footer">
             <article class="wrapper">
-                <ul class="footer-nav-menu">
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="privacy.html">privacy</a></li>
-                    <li><a href="terms.html">terms</a></li>
-                    <li><a href="policy.html">policy</a></li>
-                </ul>
                 <ul class="social-menu">
                     <li><a href="#"><i class="icon-googleplus"></i></a></li>
                     <li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -130,14 +118,14 @@
     </div>
 </div>
 
-
 <script src="js/libs/jquery-1.9.1.min.js"></script>
-<script src="js/libs/jquery.fancybox.js"></script>
-<script src="js/libs/handsome.js"></script>
 <script src="js/libs/modernizr.custom.71422.js"></script>
 <script src="js/libs/pushy.js"></script>
+<script src="js/libs/handsome.js"></script>
+<script src="js/libs/jquery.fancybox.js"></script>
 <script src="js/libs/glDatePicker.min.js"></script>
 <script src="js/libs/jquery.fs.stepper.js"></script>
+<script src="js/libs/jquery.touchSwipe.min.js"></script>
 <script src="js/libs/jquery.tagsinput.min.js"></script>
 
 <script src="js/script.js"></script>

@@ -35,7 +35,7 @@
 /* Month/Year text and select */
 .gldp-default .monyear.title{
     width: 70% !important;
-    margin: -5px 0 0 -16px !important;
+    margin: -5px auto !important;
 }
 .gldp-default .monyear,
 .gldp-default .monyear select {
