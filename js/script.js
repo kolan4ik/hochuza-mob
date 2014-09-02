@@ -4,9 +4,10 @@ $(document).ready(function(){
     $('.orders-text > p').height(58);
     $(".scroller").swipe( {
         swipeRight:function(event, phase, direction, distance , duration , fingerCount) {
-            $('.menu-btn').click();
+            if(phase!="cancel" && phase!="end"){
+                $('.menu-btn').click();
+            }
         }
-
     });
     if ($.fn.checkBox !== undefined ) {
         $('.checkbox-item').checkBox();
