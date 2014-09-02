@@ -346,6 +346,9 @@
   @include transition-duration(0.5s);
   cursor: pointer;
   position: relative;
+  &:before{
+    content: "\e618";
+  }
   i{
     font-size: 15px !important;
     color: #fff !important;

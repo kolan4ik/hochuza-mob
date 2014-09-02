@@ -110,7 +110,6 @@ $(document).ready(function(){
         $(this).siblings('textarea').animate({
             height: '172px'
         });
-        $('.preview-product').slideUp();
         $(this).parent().addClass('show');
         $('.chenche-textarea').html( $(this).html());
 
@@ -119,7 +118,6 @@ $(document).ready(function(){
         $(this).animate({
             height: '31px'
         });
-        $('.preview-product').slideDown();
         $('.small-text').text($(this).siblings('textarea').val());
         $(this).parent().removeClass('show');
         return false

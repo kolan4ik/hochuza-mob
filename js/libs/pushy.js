@@ -11,8 +11,8 @@ $(function() {
         push.removeClass('pushy-left');
     });
     $('.site-overlay').on('click', function(){
-        pushy.hide();
-        //pushy.animate({left: "-" + menuWidth}, 100);
+        body.removeClass(pushyActiveClass); //toggle site overlay
+        pushy.animate({left: "-" + menuWidth}, 100);
     });
 
 });

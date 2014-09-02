@@ -1267,6 +1267,9 @@ h4 {
   cursor: pointer;
   position: relative;
 }
+.add-new-photo:before {
+  content: "\e618";
+}
 .add-new-photo i {
   font-size: 15px !important;
   color: #fff !important;
