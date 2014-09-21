@@ -2682,11 +2682,15 @@ input[type="number"]:after {
 }
 .data-filter p {
   margin: 0 0 10px;
+  line-height: normal;
 }
 
 .data-filter-in {
   *zoom: 1;
   margin: 0 0 11px;
+  position: relative;
+  line-height: 33px;
+  padding: 0 28px;
 }
 .data-filter-in:before, .data-filter-in:after {
   content: "";
@@ -2704,6 +2708,15 @@ input[type="number"]:after {
 }
 .data-filter-in .prev-arrow {
   margin: 0 0 0 37px;
+}
+.data-filter-in .date-after, .data-filter-in .date-before {
+  width: auto;
+}
+.data-filter-in .date-before {
+  float: right;
+}
+.data-filter-in .mydate {
+  margin: 0;
 }
 
 .date-after, .date-before {

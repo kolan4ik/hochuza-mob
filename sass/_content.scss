@@ -1675,11 +1675,15 @@ input[type="number"]{
   }
   p{
     margin: 0 0 10px;
+    line-height: normal;
   }
 }
 .data-filter-in{
   @include clearfix;
   margin: 0 0 11px;
+  position: relative;
+  line-height: 33px;
+  padding: 0 28px;
   .gldp-default{
       top: 35px !important;
       left: 49% !important;
@@ -1689,6 +1693,15 @@ input[type="number"]{
   }
   .prev-arrow{
     margin: 0 0 0 37px;
+  }
+  .date-after, .date-before{
+    width: auto;
+  }
+  .date-before{
+    float: right;
+  }
+  .mydate{
+    margin: 0;
   }
 }
 .date-after, .date-before{
