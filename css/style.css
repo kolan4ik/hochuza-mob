@@ -1084,7 +1084,7 @@ h4 {
   margin: -1px 0 0;
 }
 .bt-checker.checked {
-  background: url("../images/checkbox-checked.jpg") no-repeat -3px -3px;
+  background: url("../images/checkbox-checked.jpg") no-repeat 0;
 }
 
 .confirmation-numbers p {
@@ -1511,6 +1511,7 @@ h4 {
   margin: 0 0 20px;
   overflow: hidden;
   position: relative;
+  padding: 0 0 2px;
 }
 .choice-product span {
   color: #00ad9d;
@@ -1680,7 +1681,7 @@ h4 {
   -moz-osx-font-smoothing: grayscale;
   font-size: 17px;
   position: absolute;
-  top: 6px;
+  top: 9px;
   left: 1px;
 }
 .select-box-in select {
@@ -2030,7 +2031,7 @@ input[type="number"]:after {
   margin: 0;
 }
 
-.stepper-arrow.up {
+.stepper-arrow.down {
   display: block;
   color: transparent;
   font-size: 0;
@@ -2039,7 +2040,7 @@ input[type="number"]:after {
   top: 6px;
   cursor: pointer;
 }
-.stepper-arrow.up:before {
+.stepper-arrow.down:before {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -2054,7 +2055,7 @@ input[type="number"]:after {
   font-size: 25px;
 }
 
-.stepper-arrow.down {
+.stepper-arrow.up {
   position: absolute;
   right: 0;
   top: 6px;
@@ -2064,7 +2065,7 @@ input[type="number"]:after {
   font-size: 0;
   cursor: pointer;
 }
-.stepper-arrow.down:before {
+.stepper-arrow.up:before {
   content: "\e620";
   font-family: 'icomoon';
   speak: none;
@@ -2077,6 +2078,34 @@ input[type="number"]:after {
   -moz-osx-font-smoothing: grayscale;
   color: #00ae9d;
   font-size: 25px;
+}
+
+.info-text:after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 42%;
+  display: inline-block;
+  background: url("../images/arr-text.png") no-repeat;
+  width: 47px;
+  height: 39px;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.info-text {
+  font-family: "Veles";
+  line-height: 12px;
+  color: #a9a9a9;
+  font-size: 8px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: 14px;
+  margin: 0 0 40px;
 }
 
 .quantity-product {
@@ -2145,7 +2174,7 @@ input[type="number"]:after {
   height: auto !important;
   border: 1px solid #ebebeb;
   background-color: #fff;
-  padding: 3px 44px 3px 13px;
+  padding: 6px 44px 0 13px;
   text-align: left;
   overflow: hidden;
   -webkit-box-sizing: border-box;
@@ -2383,6 +2412,13 @@ input[type="number"]:after {
   font-size: 12px;
   text-align: justify;
   line-height: normal;
+}
+.orders-text > p {
+  margin: 0 0 5px;
+}
+
+.table.dataTable tbody tr {
+  background: transparent !important;
 }
 
 .open-more-text {
@@ -2752,6 +2788,10 @@ input[type="number"]:after {
   float: left;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.content-bid h4 {
+  font-size: 16px;
 }
 
 .search-table {
@@ -3452,5 +3492,17 @@ input[type="email"] {
   .content-tel {
     width: 100%;
     margin-top: 0;
+  }
+
+  .info-text {
+    display: inline-block;
+    width: 80px;
+    top: 26px;
+    right: -35px;
+  }
+
+  .info-text:after {
+    left: 0;
+    bottom: -35px;
   }
 }
