@@ -1864,7 +1864,6 @@ h4 {
 .content-tel {
   float: right;
   position: relative;
-  left: 15px;
   margin: 5px 0 30px;
 }
 .content-tel input[readonly="readonly"],
@@ -3564,6 +3563,8 @@ input[type="email"] {
   .content-tel {
     width: 100%;
     margin-top: 0;
+      left: 15px;
+
   }
 
   .info-text {
