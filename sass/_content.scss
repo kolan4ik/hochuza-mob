@@ -76,7 +76,7 @@
   position: relative;
   text-align: center;
   h2{
-    margin: 0 0 12px;
+    margin: 0 0 18px;
   }
   p{
     color: #656565;
@@ -84,7 +84,7 @@
     font-size: 15px;
     margin: 0 0 21px;
     display: inline-block;
-    line-height: 1em;
+    line-height: normal;
     a{
       color: #656565;
       font-size: 20px;
@@ -128,23 +128,36 @@
   background-color: #f9f9f9;
   margin: 0 auto;
   @include box-shadow(#c1c1c1 0 0 12px 0px);
-  position: relative;
-  padding: 15px 11px 5px;
+  padding: 15px 11px 47px;
   @include box-sizing(border-box);
   text-align: center;
+  min-height: 100%;
+  height: 100%;
+  position: relative;
   .checkBox{
-    margin: 15px 0 24px;
+    margin: 9px 0 24px;
     label{
       font-size: 12px;
     }
   }
+  form{
+    margin: 0 0 35px;
+  }
   h2{
-    margin: 0 0 27px;
+    margin: 0 0 20px;
   }
   button{
     padding: 0 56px;
   }
-
+  .login-bottom{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    border-left: 12px solid #f9f9f9;
+    border-right: 12px solid #f9f9f9;
+    @include box-sizing(border-box);
+  }
 }
 .form-link{
   color: #656565;
@@ -152,7 +165,7 @@
   font-size: 12px;
   text-decoration: underline;
   display: block;
-  margin: 17px 0 0;
+  margin: 14px 0 0;
   &:hover{
     color: #d5614f;
   }
@@ -189,7 +202,7 @@
   background-size: contain;
   margin: -1px 0 0;
   &.checked{
-    background: url("../images/checkbox-checked.jpg") no-repeat 0;
+    background: #fff url("../images/checkbox-checked.jpg") no-repeat center center;
 
   }
 }
@@ -268,10 +281,10 @@
   @include box-sizing(border-box);
   overflow: hidden;
   h2{
-    margin: 0 0 26px;
+    margin: 0 0 20px;
   }
   .checkBox{
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
   .btn{
     padding: 0 34px;
@@ -284,12 +297,15 @@
   background-color: #f9f9f9;
   @include box-shadow(#e5e5e1 0 0 12px 0px);
   h2{
-    margin: 0 0 18px 0;
+    margin: 0 0 21px 0;
   }
 }
 .profile-user{
   @extend .product-info;
   padding: 15px 12px 21px 12px;
+  h2{
+    margin: -3px 0 22px;
+  }
 }
 .photo-user{
   width: 160px;
@@ -386,7 +402,7 @@
     padding: 0 0 0 45px;
     height: 33px;
     border: 1px solid #ebebeb;
-    background-color: #fff;
+    background-color: #fafafa;
     @include box-sizing(border-box);
     color: #676767;
     font-family: "HelveticaNeueCyr";
@@ -401,7 +417,7 @@
   }
   i{
     margin: 0 !important;
-    font-size: 20px !important;
+    font-size: 17px !important;
     display: inline-block !important;
     float: none;
     line-height: 28px;
@@ -427,6 +443,11 @@
     line-height: 27px;
     &:hover{
       text-decoration: none;
+    }
+  }
+  .form-item{
+    span{
+      font-size: 9px !important;
     }
   }
 }
@@ -461,6 +482,7 @@
     width: 33px;
     position: relative;
     top: 3px;
+    right: -7px;
   }
   .icon-checkmark{
     color: #f1f1f1;
@@ -575,7 +597,7 @@
   }
 }
 .choice-product{
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   overflow: hidden;
   position: relative;
   padding: 0 0 2px;
@@ -600,7 +622,7 @@
     padding: 0 0 0 22px;
     @include box-sizing(border-box);
     resize: none;
-    height: 31px;
+    height: 33px;
     margin: 0 18px 12px 0;
     position: relative;
   }
@@ -624,6 +646,10 @@
 .cash{
   text-align: center;
   padding: 12px 0 0;
+  input{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 .show{
   .btn-update{
@@ -651,7 +677,7 @@
   font-size: 12px;
   padding: 0 0 0 22px;
   @include box-sizing(border-box);
-  height: 31px;
+  height: 33px;
 }
 .preview-product{
   overflow: hidden;
@@ -660,13 +686,13 @@
 }
 .preview-gallery{
   position: relative;
-  height: 57px;
+  height: 58px;
   overflow: hidden;
   width: 100%;
   a{
     float: left;
     border: 1px solid #e0e5e3;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 15px;
     height: 55px;
     width: 52px;
     display: block;
@@ -694,9 +720,9 @@
   font-size: 0;
   color: transparent;
   border: 1px solid #e0e5e3;
-  width: 52px;
-  height: 55px;
-  margin: 0 0 0 10px;
+  width: 55px;
+  height: 56px;
+  margin: 0 0 0 14px;
   display: inline-block;
   background: url("../images/add-icon.jpg") no-repeat center center;
   cursor: pointer;
@@ -711,6 +737,9 @@
     font-size: 0;
     color: transparent;
     cursor: pointer;
+  }
+  &:first-child{
+    margin: 0;
   }
 }
 .select-box-in{
@@ -758,9 +787,9 @@
       height: 0;
       display: inline-block;
       position: absolute;
-      border-left: 7px solid transparent;
-      border-right: 7px solid transparent;
-      border-top: 7px solid #00ae9d;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-top: 3px solid #00ae9d;
       right:10px;
       top: 13px;
     }
@@ -896,6 +925,8 @@
 }
 .content-tel{
   float: right;
+  position: relative;
+  left: 15px;
   margin: 5px 0 30px;
   input[readonly="readonly"],
   input[readonly=""] {
@@ -933,6 +964,11 @@
       display: none;
     }
   }
+}
+.select-box{
+  left: 15px;
+  float: left;
+  position: relative;
 }
 .icon-pencil{
   width: 24px;
@@ -978,7 +1014,7 @@
 
 .title-more{
   border-top: 1px solid #d5d5d5;
-  margin: 0 0 27px;
+  margin: 0 0 26px;
   span{
     text-align: left;
     width: 110px;
@@ -1146,11 +1182,11 @@ input[type="number"]{
   font-family: "Veles";
   line-height: 12px;
   color: #a9a9a9;
-  font-size: 8px;
+  font-size: 8px !important;
   font-weight: bold;
   text-align: center;
   position: relative;
-  top: 14px;
+  top: 17px;
   margin: 0 0 40px;
 }
 .quantity-product{
@@ -1307,35 +1343,40 @@ input[type="number"]{
   margin: 0 0 19px;
   &:last-child{
     border-bottom: none;
-    margin-bottom: -19px;
+    margin-bottom: -10px;
   }
 }
 .small-preview{
   width: 90px;
   float: left;
   height: 90px;
-  overflow: hidden;
   margin: 0 6px 0 -7px;
   li{
     border: 1px solid #ececec;
     position: relative;
+    display: none;
     &:first-child{
-      &:after{
-        position: absolute;
-        right: 5px;
-        bottom: 6px;
-        content: "все фото";
-        display: inline-block;
-        color: #fff;
-        font-family: "HelveticaNeueCyr";
-        font-size: 9px;
-        text-decoration: underline;
-      }
+      display: block;
     }
   }
   img{
     width: 90px;
     height: 90px;
+  }
+  span{
+    background: url("../images/more-photo.png") no-repeat;
+    width: 27px;
+    height: 19px;
+    color: #fff;
+    text-align: right;
+    position: absolute;
+    bottom: 14px;
+    left: -3px;
+    z-index: 5;
+    font-size: 10px;
+    line-height: 18px;
+    padding: 0 3px 0 0;
+    @include box-sizing(border-box);
   }
 }
 .box-right, .box-right-button{
@@ -1349,6 +1390,7 @@ input[type="number"]{
   font-family: "HelveticaNeueCyr";
   @include box-sizing(border-box);
   margin: 0 0 10px;
+  display: table;
   button{
     color: #fff;
     font-family: "HelveticaNeueCyr";
@@ -1412,8 +1454,16 @@ input[type="number"]{
     margin: 0 0 9px;
   }
 }
+.ver_center{
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  @include box-sizing(border-box);
+  padding: 0 5px;
+}
 .box-right-button{
-  padding: 10px 6px 0;
+  padding: 8px 6px 0;
   @include box-sizing(border-box);
   button{
     width: 100%;
@@ -1463,7 +1513,7 @@ input[type="number"]{
   padding: 64px 0 0;
   width: 100%;
   border-bottom: 1px solid #d5d5d5;
-  margin: -55px 0 13px 0;
+  margin: -55px 0 15px 0;
   @include box-sizing(border-box);
   text-align: center;
   background: -moz-linear-gradient(top,  rgba(250,250,250,0) 0%, rgba(250,250,250,1) 82%); /* FF3.6+ */
@@ -1582,7 +1632,7 @@ input[type="number"]{
     clear: right;
     text-align: right;
     color: #656565;
-    margin: 0 0 10px;
+    margin: 0 0 8px;
     overflow: hidden;
     &:nth-child(odd){
       float: left;
@@ -1593,7 +1643,9 @@ input[type="number"]{
       float: none;
       font-size: 10px;
       color: #aaaaaa;
-      margin: 0 5px 0 0;
+      margin: 0px 5px 0 0;
+      position: relative;
+      top: 1px;
     }
   }
 }
@@ -1622,7 +1674,7 @@ input[type="number"]{
 }
 .balance-info{
   border-bottom: 1px solid #e1e1e1;
-  padding: 27px 0 28px;
+  padding: 27px 0 12px;
   overflow: hidden;
   margin: -4px 0 -5px;
   text-align: center;
@@ -1638,6 +1690,7 @@ input[type="number"]{
   position: relative;
   display: inline-block;
   line-height: 63px;
+  margin: 0 0 -8px;
   &:after{
     position: absolute;
     top: 27px;
@@ -1688,6 +1741,8 @@ input[type="number"]{
 }
 .data-filter{
   position: relative;
+  width: 224px;
+  margin: 0 auto;
   text-align: center;
   color: #9f9f9f;
   font-family: "HelveticaNeueCyr";
@@ -1703,7 +1758,7 @@ input[type="number"]{
     margin-left: -49px;
   }
   p{
-    margin: 0 0 10px;
+    margin: 0 0 9px;
     line-height: normal;
   }
 }
@@ -1712,7 +1767,7 @@ input[type="number"]{
   margin: 0 0 11px;
   position: relative;
   line-height: 33px;
-  padding: 0 28px;
+  padding: 0 ;
   .gldp-default{
       top: 35px !important;
       left: 49% !important;
@@ -1747,7 +1802,7 @@ input[type="number"]{
     float: none;
     background: transparent;
     position: relative;
-    top: 7px;
+    top: 3px;
     left: 2px;
   }
   label{
@@ -1757,7 +1812,7 @@ input[type="number"]{
     border: 1px solid #ebebeb;
     background: #fcfcfc;
     text-align: center;
-    margin: 0 -1px 0 0;
+    margin: 0 -1px 0 -24px;
     display: inline-block;
   }
   .mydate{
@@ -1765,6 +1820,14 @@ input[type="number"]{
     float: left;
     padding-top: 0;
     padding-bottom: 0;
+  }
+}
+.date-before{
+  label{
+    margin-left: 0;
+    & + input{
+      margin-right: -24px !important;
+    }
   }
 }
 .content-bid{
@@ -1822,8 +1885,9 @@ input[type="number"]{
   color: #afafaf;
   line-height: 12px;
   width: 100%;
+  margin: 0 0 13px;
   p{
-    margin: 0 0 10px;
+    margin: 0 0 8px;
     color: #656565;
     font-family: "HelveticaNeueCyr";
     font-size: 12px;

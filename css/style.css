@@ -500,7 +500,7 @@ body {
 h2 {
   color: #00ad9d;
   font-family: "Veles";
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   margin: 0 0 -25px;
   text-align: center;
@@ -590,13 +590,13 @@ h4 {
 .nav-menu a {
   text-decoration: none;
   color: #fff;
-  height: 61px;
+  height: 45px;
   font-family: "helveticaneuecyrlight";
   font-size: 15px;
   text-transform: uppercase;
   display: block;
   padding: 0 0 0 18px;
-  line-height: 61px;
+  line-height: 45px;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -959,7 +959,7 @@ h4 {
   text-align: center;
 }
 .recover-password h2 {
-  margin: 0 0 12px;
+  margin: 0 0 18px;
 }
 .recover-password p {
   color: #656565;
@@ -967,7 +967,7 @@ h4 {
   font-size: 15px;
   margin: 0 0 21px;
   display: inline-block;
-  line-height: 1em;
+  line-height: normal;
 }
 .recover-password p a {
   color: #656565;
@@ -1019,24 +1019,40 @@ h4 {
   -webkit-box-shadow: #c1c1c1 0 0 12px 0px;
   -moz-box-shadow: #c1c1c1 0 0 12px 0px;
   box-shadow: #c1c1c1 0 0 12px 0px;
-  position: relative;
-  padding: 15px 11px 5px;
+  padding: 15px 11px 47px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
+  min-height: 100%;
+  height: 100%;
+  position: relative;
 }
 .login-form .checkBox {
-  margin: 15px 0 24px;
+  margin: 9px 0 24px;
 }
 .login-form .checkBox label {
   font-size: 12px;
 }
+.login-form form {
+  margin: 0 0 35px;
+}
 .login-form h2 {
-  margin: 0 0 27px;
+  margin: 0 0 20px;
 }
 .login-form button {
   padding: 0 56px;
+}
+.login-form .login-bottom, .login-form .regis-bottom {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  border-left: 12px solid #f9f9f9;
+  border-right: 12px solid #f9f9f9;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .form-link {
@@ -1045,7 +1061,7 @@ h4 {
   font-size: 12px;
   text-decoration: underline;
   display: block;
-  margin: 17px 0 0;
+  margin: 14px 0 0;
 }
 .form-link:hover {
   color: #d5614f;
@@ -1084,7 +1100,7 @@ h4 {
   margin: -1px 0 0;
 }
 .bt-checker.checked {
-  background: url("../images/checkbox-checked.jpg") no-repeat 0;
+  background: white url("../images/checkbox-checked.jpg") no-repeat center center;
 }
 
 .confirmation-numbers p {
@@ -1171,10 +1187,10 @@ h4 {
   overflow: hidden;
 }
 .product-info h2, .profile-user h2, .offer-page h2 {
-  margin: 0 0 26px;
+  margin: 0 0 20px;
 }
 .product-info .checkBox, .profile-user .checkBox, .offer-page .checkBox {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 .product-info .btn, .profile-user .btn, .offer-page .btn {
   padding: 0 34px;
@@ -1196,11 +1212,14 @@ h4 {
   box-shadow: #e5e5e1 0 0 12px 0px;
 }
 .orders-page h2 {
-  margin: 0 0 18px 0;
+  margin: 0 0 21px 0;
 }
 
 .profile-user {
   padding: 15px 12px 21px 12px;
+}
+.profile-user h2 {
+  margin: -3px 0 22px;
 }
 
 .photo-user {
@@ -1308,7 +1327,7 @@ h4 {
   padding: 0 0 0 45px;
   height: 33px;
   border: 1px solid #ebebeb;
-  background-color: #fff;
+  background-color: #fafafa;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1325,7 +1344,7 @@ h4 {
 }
 .contact-user i {
   margin: 0 !important;
-  font-size: 20px !important;
+  font-size: 17px !important;
   display: inline-block !important;
   float: none;
   line-height: 28px;
@@ -1352,6 +1371,9 @@ h4 {
 }
 .contact-user a:hover {
   text-decoration: none;
+}
+.contact-user .form-item span {
+  font-size: 9px !important;
 }
 
 .contact-user__in {
@@ -1390,6 +1412,7 @@ h4 {
   width: 33px;
   position: relative;
   top: 3px;
+  right: -7px;
 }
 .contact-user__in .icon-checkmark {
   color: #f1f1f1;
@@ -1508,7 +1531,7 @@ h4 {
 }
 
 .choice-product {
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   overflow: hidden;
   position: relative;
   padding: 0 0 2px;
@@ -1536,7 +1559,7 @@ h4 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   resize: none;
-  height: 31px;
+  height: 33px;
   margin: 0 18px 12px 0;
   position: relative;
 }
@@ -1559,6 +1582,10 @@ h4 {
 .cash {
   text-align: center;
   padding: 12px 0 0;
+}
+.cash input {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .show .btn-update {
@@ -1588,7 +1615,7 @@ h4 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 31px;
+  height: 33px;
 }
 
 .preview-product {
@@ -1599,14 +1626,14 @@ h4 {
 
 .preview-gallery {
   position: relative;
-  height: 57px;
+  height: 58px;
   overflow: hidden;
   width: 100%;
 }
 .preview-gallery a {
   float: left;
   border: 1px solid #e0e5e3;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 15px;
   height: 55px;
   width: 52px;
   display: block;
@@ -1634,9 +1661,9 @@ h4 {
   font-size: 0;
   color: transparent;
   border: 1px solid #e0e5e3;
-  width: 52px;
-  height: 55px;
-  margin: 0 0 0 10px;
+  width: 55px;
+  height: 56px;
+  margin: 0 0 0 14px;
   display: inline-block;
   background: url("../images/add-icon.jpg") no-repeat center center;
   cursor: pointer;
@@ -1654,6 +1681,9 @@ h4 {
   font-size: 0;
   color: transparent;
   cursor: pointer;
+}
+.add-photo:first-child {
+  margin: 0;
 }
 
 .select-box-in {
@@ -1705,9 +1735,9 @@ h4 {
   height: 0;
   display: inline-block;
   position: absolute;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 7px solid #00ae9d;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid #00ae9d;
   right: 10px;
   top: 13px;
 }
@@ -1833,6 +1863,8 @@ h4 {
 
 .content-tel {
   float: right;
+  position: relative;
+  left: 15px;
   margin: 5px 0 30px;
 }
 .content-tel input[readonly="readonly"],
@@ -1870,6 +1902,12 @@ h4 {
 }
 .content-tel .icon-pencil:after {
   display: none;
+}
+
+.select-box {
+  left: 15px;
+  float: left;
+  position: relative;
 }
 
 .icon-pencil {
@@ -1919,7 +1957,7 @@ h4 {
 
 .title-more {
   border-top: 1px solid #d5d5d5;
-  margin: 0 0 27px;
+  margin: 0 0 26px;
 }
 .title-more span {
   text-align: left;
@@ -2100,11 +2138,11 @@ input[type="number"]:after {
   font-family: "Veles";
   line-height: 12px;
   color: #a9a9a9;
-  font-size: 8px;
+  font-size: 8px !important;
   font-weight: bold;
   text-align: center;
   position: relative;
-  top: 14px;
+  top: 17px;
   margin: 0 0 40px;
 }
 
@@ -2269,34 +2307,43 @@ input[type="number"]:after {
 }
 .orders-item:last-child {
   border-bottom: none;
-  margin-bottom: -19px;
+  margin-bottom: -10px;
 }
 
 .small-preview {
   width: 90px;
   float: left;
   height: 90px;
-  overflow: hidden;
   margin: 0 6px 0 -7px;
 }
 .small-preview li {
   border: 1px solid #ececec;
   position: relative;
+  display: none;
 }
-.small-preview li:first-child:after {
-  position: absolute;
-  right: 5px;
-  bottom: 6px;
-  content: "все фото";
-  display: inline-block;
-  color: #fff;
-  font-family: "HelveticaNeueCyr";
-  font-size: 9px;
-  text-decoration: underline;
+.small-preview li:first-child {
+  display: block;
 }
 .small-preview img {
   width: 90px;
   height: 90px;
+}
+.small-preview span {
+  background: url("../images/more-photo.png") no-repeat;
+  width: 27px;
+  height: 19px;
+  color: #fff;
+  text-align: right;
+  position: absolute;
+  bottom: 14px;
+  left: -3px;
+  z-index: 5;
+  font-size: 10px;
+  line-height: 18px;
+  padding: 0 3px 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .box-right, .box-right-button {
@@ -2312,6 +2359,7 @@ input[type="number"]:after {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 0 10px;
+  display: table;
 }
 .box-right button, .box-right-button button {
   color: #fff;
@@ -2375,8 +2423,19 @@ input[type="number"]:after {
   margin: 0 0 9px;
 }
 
+.ver_center {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
 .box-right-button {
-  padding: 10px 6px 0;
+  padding: 8px 6px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2431,7 +2490,7 @@ input[type="number"]:after {
   padding: 64px 0 0;
   width: 100%;
   border-bottom: 1px solid #d5d5d5;
-  margin: -55px 0 13px 0;
+  margin: -55px 0 15px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2572,7 +2631,7 @@ input[type="number"]:after {
   clear: right;
   text-align: right;
   color: #656565;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   overflow: hidden;
 }
 .orders-data li:nth-child(odd) {
@@ -2584,7 +2643,9 @@ input[type="number"]:after {
   float: none;
   font-size: 10px;
   color: #aaaaaa;
-  margin: 0 5px 0 0;
+  margin: 0px 5px 0 0;
+  position: relative;
+  top: 1px;
 }
 
 .icon-lock {
@@ -2618,7 +2679,7 @@ input[type="number"]:after {
 
 .balance-info {
   border-bottom: 1px solid #e1e1e1;
-  padding: 27px 0 28px;
+  padding: 27px 0 12px;
   overflow: hidden;
   margin: -4px 0 -5px;
   text-align: center;
@@ -2635,6 +2696,7 @@ input[type="number"]:after {
   position: relative;
   display: inline-block;
   line-height: 63px;
+  margin: 0 0 -8px;
 }
 .balance-info-in:after {
   position: absolute;
@@ -2688,6 +2750,8 @@ input[type="number"]:after {
 
 .data-filter {
   position: relative;
+  width: 224px;
+  margin: 0 auto;
   text-align: center;
   color: #9f9f9f;
   font-family: "HelveticaNeueCyr";
@@ -2717,7 +2781,7 @@ input[type="number"]:after {
   margin-left: -49px;
 }
 .data-filter p {
-  margin: 0 0 10px;
+  margin: 0 0 9px;
   line-height: normal;
 }
 
@@ -2726,7 +2790,7 @@ input[type="number"]:after {
   margin: 0 0 11px;
   position: relative;
   line-height: 33px;
-  padding: 0 28px;
+  padding: 0;
 }
 .data-filter-in:before, .data-filter-in:after {
   content: "";
@@ -2770,7 +2834,7 @@ input[type="number"]:after {
   float: none;
   background: transparent;
   position: relative;
-  top: 7px;
+  top: 3px;
   left: 2px;
 }
 .date-after label, .date-before label {
@@ -2780,7 +2844,7 @@ input[type="number"]:after {
   border: 1px solid #ebebeb;
   background: #fcfcfc;
   text-align: center;
-  margin: 0 -1px 0 0;
+  margin: 0 -1px 0 -24px;
   display: inline-block;
 }
 .date-after .mydate, .date-before .mydate {
@@ -2788,6 +2852,13 @@ input[type="number"]:after {
   float: left;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.date-before label {
+  margin-left: 0;
+}
+.date-before label + input {
+  margin-right: -24px !important;
 }
 
 .content-bid h4 {
@@ -2843,9 +2914,10 @@ input[type="number"]:after {
   color: #afafaf;
   line-height: 12px;
   width: 100%;
+  margin: 0 0 13px;
 }
 .result-table p, .calc-item p {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   color: #656565;
   font-family: "HelveticaNeueCyr";
   font-size: 12px;
@@ -3497,8 +3569,9 @@ input[type="email"] {
   .info-text {
     display: inline-block;
     width: 80px;
-    top: 26px;
-    right: -35px;
+    top: 165px;
+    right: 10px;
+    position: absolute;
   }
 
   .info-text:after {

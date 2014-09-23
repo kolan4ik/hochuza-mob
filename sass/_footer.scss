@@ -162,8 +162,9 @@ input[type="email"]{
   .info-text {
     display: inline-block;
     width: 80px;
-    top: 26px;
-    right: -35px;
+    top: 165px;
+    right: 10px;
+    position: absolute;
   }
     .info-text:after {
       left: 0;

@@ -74,6 +74,8 @@ $(document).ready(function(){
         if($('.fancybox-thumb').length < 3) {
             $(this).parents('div.preview-gallery').prepend('<a href="' + $(this).val() + '" class="fancybox-thumb" data-fancybox-group="thumb"><img alt="" style="background: green" src=""></a>');
         }
+        $(this).parent().hide();
+
     });
 
     $('.bt-dropdown ').on('click', function(){
