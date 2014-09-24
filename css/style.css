@@ -2530,7 +2530,7 @@ input[type="number"]:after {
   padding: 64px 0 0;
   width: 100%;
   border-bottom: 1px solid #d5d5d5;
-  margin: -55px 0 15px 0;
+  margin: -55px 0 10px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2611,6 +2611,7 @@ input[type="number"]:after {
   clear: both;
   overflow: hidden;
   margin: -3px 0 -3px;
+  padding: 5px 0 0;
 }
 
 .orders-tags {
@@ -2662,8 +2663,15 @@ input[type="number"]:after {
 }
 
 .orders-data {
-  overflow: hidden;
+  *zoom: 1;
   width: 100%;
+}
+.orders-data:before, .orders-data:after {
+  content: "";
+  display: table;
+}
+.orders-data:after {
+  clear: both;
 }
 .orders-data li {
   font-size: 9px;
