@@ -1600,6 +1600,7 @@ input[type="number"]{
   @include clearfix;
   margin: 0 0 -3px;
   padding: 2px 0 0;
+  line-height: normal;
   position: relative;
   z-index: 5;
 }
@@ -1655,7 +1656,7 @@ input[type="number"]{
     clear: right;
     text-align: right;
     color: #656565;
-    margin: 0 0 8px;
+    margin: 0 0 7px;
     overflow: hidden;
     &:nth-child(odd){
       float: left;
