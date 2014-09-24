@@ -3,7 +3,7 @@
   vertical-align: middle;
   height: 100%;
   width: 100%;
-  padding: 17px 12px;
+  padding: 48px 12px 40px;
   @include box-sizing(border-box);
 }
 
@@ -12,6 +12,7 @@
   width: 100% !important;
   height: 100% !important;
   overflow: hidden;
+  min-height: 100%;
 }
 .container{
   width: 100%;
@@ -75,6 +76,7 @@
   @include box-shadow(#c1c1c1 0 0 12px 0px);
   position: relative;
   text-align: center;
+  height: 100%;
   h2{
     margin: 0 0 18px;
   }
@@ -131,8 +133,9 @@
   padding: 15px 11px 47px;
   @include box-sizing(border-box);
   text-align: center;
-  min-height: 100%;
+  //min-height: 100%;
   height: 100%;
+  display: table;
   position: relative;
   .checkBox{
     margin: 9px 0 24px;
@@ -725,10 +728,10 @@
   color: transparent;
   border: 1px solid #e0e5e3;
   width: 55px;
-  height: 56px;
+  height: 55px;
   margin: 0 0 0 14px;
   display: inline-block;
-  background: url("../images/add-icon.jpg") no-repeat center center;
+  background: url("../images/add-icon.png") no-repeat center center;
   cursor: pointer;
   float: left;
   input{
@@ -1314,7 +1317,7 @@ input[type="number"]{
 }
 .content-menu{
   padding: 0 0 12px;
-  overflow: hidden;
+  @include clearfix;
   clear: both;
   li{
     float: left;
@@ -1370,7 +1373,7 @@ input[type="number"]{
     height: 90px;
   }
   span{
-    background: #d5614f url("../images/more-photo.png") no-repeat 5px  4px;
+    background: #d5614f;
     width: 27px;
     height: 16px;
     border-radius: 2px;
@@ -1384,6 +1387,16 @@ input[type="number"]{
     line-height: 18px;
     padding: 0 3px 0 0;
     @include box-sizing(border-box);
+    &:after{
+      position: absolute;
+      content: "";
+      left: -4px;
+      height: 3px;
+    }
+    i{
+      float: left;
+      margin: 4px 0 0 5px;
+    }
   }
 }
 .box-right, .box-right-button{
