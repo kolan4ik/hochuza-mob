@@ -2609,9 +2609,16 @@ input[type="number"]:after {
 
 .orders-bottom {
   clear: both;
-  overflow: hidden;
-  margin: -3px 0 -3px;
-  padding: 5px 0 0;
+  *zoom: 1;
+  margin: 0 0 -3px;
+  padding: 2px 0 0;
+}
+.orders-bottom:before, .orders-bottom:after {
+  content: "";
+  display: table;
+}
+.orders-bottom:after {
+  clear: both;
 }
 
 .orders-tags {

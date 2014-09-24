@@ -85,8 +85,8 @@
           <file leaf-file-name="_content.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/_content.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.33292383" vertical-offset="8977" max-vertical-offset="12393">
-                  <caret line="1646" column="12" selection-start-line="1646" selection-start-column="1" selection-end-line="1646" selection-end-column="12" />
+                <state vertical-scroll-proportion="0.7506142" vertical-offset="8977" max-vertical-offset="12393">
+                  <caret line="1670" column="3" selection-start-line="1670" selection-start-column="3" selection-end-line="1670" selection-end-column="3" />
                   <folding>
                     <element signature="e#289#384#0" expanded="false" />
                     <element signature="e#624#871#0" expanded="false" />
@@ -562,7 +562,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../item/artem smirnov/capital/exemple" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -786,12 +786,12 @@
       <workItem from="1411485773833" duration="9959000" />
       <workItem from="1411537926918" duration="2558000" />
       <workItem from="1411544415731" duration="1843000" />
-      <workItem from="1411560071054" duration="111000" />
+      <workItem from="1411560071054" duration="461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63083000" />
+    <option name="totallyTimeSpent" value="63433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1634" height="1066" extended-state="6" />
@@ -1212,8 +1212,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_content.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33292383" vertical-offset="8977" max-vertical-offset="12393">
-          <caret line="1646" column="12" selection-start-line="1646" selection-start-column="1" selection-end-line="1646" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.7506142" vertical-offset="8977" max-vertical-offset="12393">
+          <caret line="1670" column="3" selection-start-line="1670" selection-start-column="3" selection-end-line="1670" selection-end-column="3" />
           <folding>
             <element signature="e#289#384#0" expanded="false" />
             <element signature="e#624#871#0" expanded="false" />
