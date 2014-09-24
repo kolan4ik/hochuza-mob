@@ -2684,6 +2684,7 @@ input[type="number"]:after {
   clear: both;
 }
 .orders-data li {
+  line-height: normal;
   font-size: 9px;
   float: right;
   clear: right;

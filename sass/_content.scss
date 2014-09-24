@@ -1651,6 +1651,7 @@ input[type="number"]{
   @include clearfix;
   width: 100%;
   li{
+    line-height: normal;
     font-size: 9px;
     float: right;
     clear: right;
