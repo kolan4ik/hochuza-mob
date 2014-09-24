@@ -3,7 +3,7 @@
   vertical-align: middle;
   height: 100%;
   width: 100%;
-  padding: 45px 12px;
+  padding: 17px 12px;
   @include box-sizing(border-box);
 }
 
@@ -483,6 +483,7 @@
     position: relative;
     top: 3px;
     right: -7px;
+    margin-right: 13px !important;
   }
   .icon-checkmark{
     color: #f1f1f1;
@@ -613,18 +614,19 @@
   textarea{
     float: left;
     width: 100%;
-    line-height: 31px;
+    line-height: 15px;
     border: 1px solid #ebebeb;
     background-color: #fff;
     color: #676767;
     font-family: "HelveticaNeueCyr";
     font-size: 12px;
-    padding: 0 0 0 22px;
+    padding: 0 20px 0 22px;
     @include box-sizing(border-box);
     resize: none;
     height: 33px;
     margin: 0 18px 12px 0;
     position: relative;
+    padding-top: 11px;
   }
   input{
     width: 61px;
@@ -642,7 +644,9 @@
     border-bottom: 1px solid #d5d5d5;
     padding: 0 0 28px;
   }
-}
+}.pos-rel{
+   position: relative;
+ }
 .cash{
   text-align: center;
   padding: 12px 0 0;
@@ -669,7 +673,7 @@
   z-index: 5;
   width: 100%;
   overflow: hidden;
-  line-height: 31px;
+  line-height: 35px;
   border: 1px solid #ebebeb;
   background-color: #fff;
   color: #676767;
@@ -926,7 +930,6 @@
 .content-tel{
   float: right;
   position: relative;
-  left: 15px;
   margin: 5px 0 30px;
   input[readonly="readonly"],
   input[readonly=""] {
@@ -1009,6 +1012,9 @@
     border-top: 7px solid #fafafa;
     z-index: 3;
     bottom:-6px;
+  }
+  .datepicker{
+    width: 100%;
   }
 }
 
@@ -1364,9 +1370,10 @@ input[type="number"]{
     height: 90px;
   }
   span{
-    background: url("../images/more-photo.png") no-repeat;
+    background: #d5614f url("../images/more-photo.png") no-repeat 5px  4px;
     width: 27px;
-    height: 19px;
+    height: 16px;
+    border-radius: 2px;
     color: #fff;
     text-align: right;
     position: absolute;

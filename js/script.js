@@ -110,7 +110,7 @@ $(document).ready(function(){
     });
     $('.small-text').on('click', function(){
         $(this).siblings('textarea').animate({
-            height: '172px'
+            height: '80px'
         });
         $(this).parent().addClass('show');
         $('.chenche-textarea').html( $(this).html());
