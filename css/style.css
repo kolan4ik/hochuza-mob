@@ -2612,6 +2612,8 @@ input[type="number"]:after {
   *zoom: 1;
   margin: 0 0 -3px;
   padding: 2px 0 0;
+  position: relative;
+  z-index: 5;
 }
 .orders-bottom:before, .orders-bottom:after {
   content: "";
