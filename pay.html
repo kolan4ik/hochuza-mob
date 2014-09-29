@@ -12,16 +12,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/glDatePicker.default.css">
-
+    <script>document.write('<script src="http://'
+                + (location.host || 'localhost').split(':')[0]
+                + ':35729/livereload.js"></'
+                + 'script>')</script>
 </head>
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div class="container">
-    <nav class="pushy pushy-left nav-menu">
+    <nav id="main-nav" class="pushy pushy-left nav-menu">
         <ul>
             <li><a class="logo" href="web-page_main.html"></a></li>
             <li><a href="web-page_main.html"><i class="icon-home"></i>главная</a></li>
@@ -40,34 +43,28 @@
             </article>
         </header>
         <div class="content">
-            <ul>
-                <li><a href="web-page.html">web-page</a></li>
-                <li><a href="web-page_login.html">web-page_login</a></li>
-                <li><a href="web-page_login2.html">web-page_login2</a></li>
-                <li><a href="web-page_main.html">web-page_main</a></li>
-                <li><a href="web-page_orders.html">web-page_orders</a></li>
-                <li><a href="web-page_orders_customer.html">web-page_orders_customer</a></li>
-                <li><a href="web-page_password.html">web-page_password</a></li>
-                <li><a href="web-page_password-step3.html">web-page_password-step3</a></li>
-                <li><a href="web-page_password_fail.html">web-page_password_fail</a></li>
-                <li><a href="web-page_password-step2.html">web-page_password_fail</a></li>
-                <li><a href="web-page_password-step4.html">web-page_password-step4</a></li>
-                <li><a href="web-page_profile_all.html">web-page_profile_all</a></li>
-                <li><a href="balace_02.html">balace_02</a></li>
-                <li><a href="balance.html">balance</a></li>
-                <li><a href="balace_shorttlist.html">balace_shorttlist</a></li>
-                <li><a href="statistics.html">statistics</a></li>
-                <li><a href="managing.html">managing</a></li>
-                <li><a href="web-page_register.html">web-page_register</a></li>
-            </ul>
-            <hr/>
-            <ul>
-                <li><a href="pay.html">pay</a></li>
-            </ul>
+            <article class="recover-password pay">
+                <h2>Пополнение баланса</h2>
+                <p>Я хочу пополнить баланс на</p>
+
+                <form class="pay-form" action="">
+                    <span class="pay1">
+                        <i class="icon-cash"></i>
+                        <input  type="text" value="200"/>
+                        грн
+                    </span>
+                    <span class="pay2">
+                        <input  type="text" value="200"/>
+                        коп
+                    </span>
+                    <button class="">Оплатить картой</button>
+                    или
+                    <a href="#">Выписать счёт</a>
+                </form>
+            </article>
         </div>
         <footer class="footer">
             <article class="wrapper">
-
                 <ul class="social-menu">
                     <li><a href="#"><i class="icon-googleplus"></i></a></li>
                     <li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -78,7 +75,6 @@
             </article>
         </footer>
     </div>
-
 </div>
 
 <script src="js/libs/jquery-1.9.1.min.js"></script>
